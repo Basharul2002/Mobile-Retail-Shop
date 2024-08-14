@@ -1,111 +1,170 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\",
+  "WorkspaceRootPath": "D:\\University\\Github\\Mobile-Retail-Shop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|c:\\users\\user\\downloads\\mobile-retail-shop\\mobile retail shop\\admindeshboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\admindeshboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|d:\\university\\github\\mobile-retail-shop\\mobile retail shop\\newproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\newproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\admindeshboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\admindeshboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|d:\\university\\github\\mobile-retail-shop\\mobile retail shop\\newproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\newproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\shopowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\shopowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\shopowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\shopowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\newshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\newshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\newshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\newshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\newshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\allproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\allproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\productinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|d:\\university\\github\\mobile-retail-shop\\mobile retail shop\\customerdashboarddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\customerdashboarddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\productinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\productinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\productinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\productinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\allproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\allproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|d:\\university\\github\\mobile-retail-shop\\mobile retail shop\\customerdashboarddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\customerdashboarddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|d:\\university\\github\\mobile-retail-shop\\mobile retail shop\\customerregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\customerregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\newuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\newuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\customerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\customerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\customerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\customerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\admindeshboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\admindeshboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\admindeshboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\admindeshboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\AppData\\Local\\Temp\\ma0wa2qa..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\customerregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\customerregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\newuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\newuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\shopowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\shopowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\shopowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\shopowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\newshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\newshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__UNIVERSITY_GITHUB_MOBILE_RETAIL_SHOP_DATABASE_MOBILE_RETAIL_SHOP.MDF/True/SqlTable/dbo.User_Information.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\newuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\newuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\newuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\newuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\productinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\productinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\allproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\allproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\allproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\newuser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\newuser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\newuser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\admindeshboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\admindeshboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\admindeshboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\mobile retail shop\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EFEB93E-CD22-4709-9ECA-4E4ADB99229B}|Mobile Retail Shop\\Mobile Retail Shop.csproj|solutionrelative:mobile retail shop\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Github\\Mobile-Retail-Shop\\mobile retail shop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:mobile retail shop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Mobile Retail Shop\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\AppData\\Local\\Temp\\ma0wa2qa..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\AppData\\Local\\Temp\\ma0wa2qa..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -115,72 +174,103 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "AllProduct.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\AllProduct.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\AllProduct.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\AllProduct.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\AllProduct.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\AllProduct.cs",
               "RelativeToolTip": "Mobile Retail Shop\\AllProduct.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAUwB4AAABpAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAADwv0sAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-01T09:33:33.249Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 30,
               "Title": "Utility.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\Utility.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Utility.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\Utility.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\Utility.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Utility.cs",
               "RelativeToolTip": "Mobile Retail Shop\\Utility.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T12:42:59.514Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "ProductInformation.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\ProductInformation.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\ProductInformation.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\ProductInformation.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\ProductInformation.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\ProductInformation.cs",
               "RelativeToolTip": "Mobile Retail Shop\\ProductInformation.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAmwA0AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-01T10:22:37.755Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\Product.cs",
-              "RelativeDocumentMoniker": "Mobile Retail Shop\\Product.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\Product.cs",
-              "RelativeToolTip": "Mobile Retail Shop\\Product.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAiwKEAAABcAAAA",
+              "DocumentIndex": 0,
+              "Title": "NewProduct.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewProduct.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\NewProduct.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewProduct.cs*",
+              "RelativeToolTip": "Mobile Retail Shop\\NewProduct.cs*",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAAwKgAAAAjAQAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-01T11:26:02.48Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 29,
               "Title": "NewShop.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewShop.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewShop.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\NewShop.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewShop.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewShop.cs",
               "RelativeToolTip": "Mobile Retail Shop\\NewShop.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAADwvzMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T13:10:38.613Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerDashBoardData.cs [Design]",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\CustomerDashBoardData.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\CustomerDashBoardData.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\CustomerDashBoardData.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\CustomerDashBoardData.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T07:07:51.676Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomerDashboard.cs [Design]",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\CustomerDashboard.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\CustomerDashboard.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\CustomerDashboard.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\CustomerDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:26:51.726Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -192,74 +282,291 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "NewProduct.cs [Design]",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewProduct.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\NewProduct.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewProduct.cs [Design]*",
+              "RelativeToolTip": "Mobile Retail Shop\\NewProduct.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T13:33:13.728Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewShop.cs [Design]",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewShop.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\NewShop.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewShop.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\NewShop.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T13:05:04.353Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerDashBoardData.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\CustomerDashBoardData.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\CustomerDashBoardData.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\CustomerDashBoardData.cs",
+              "RelativeToolTip": "Mobile Retail Shop\\CustomerDashBoardData.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAgwDUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T07:10:36.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductInformation.cs [Design]",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\ProductInformation.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\ProductInformation.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\ProductInformation.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\ProductInformation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T10:16:15.164Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Shop.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Shop.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\Shop.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Shop.cs",
+              "RelativeToolTip": "Mobile Retail Shop\\Shop.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T09:27:35.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerRegistration.cs [Design]",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\CustomerRegistration.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\CustomerRegistration.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\CustomerRegistration.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\CustomerRegistration.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:32:09.71Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Payment.cs [Design]",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Payment.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\Payment.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Payment.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\Payment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T10:43:02.478Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NewUser.cs [Design]",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewUser.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\NewUser.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewUser.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\NewUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:01:33.324Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Login.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\Login.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Login.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:24:44.14Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Program.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\Program.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Program.cs",
+              "RelativeToolTip": "Mobile Retail Shop\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T14:14:47.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CustomerDashboard.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\CustomerDashboard.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\CustomerDashboard.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\CustomerDashboard.cs",
+              "RelativeToolTip": "Mobile Retail Shop\\CustomerDashboard.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBcAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:26:54.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "AdminDeshBoard.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\AdminDeshBoard.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\AdminDeshBoard.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\AdminDeshBoard.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\AdminDeshBoard.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\AdminDeshBoard.cs",
               "RelativeToolTip": "Mobile Retail Shop\\AdminDeshBoard.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAcwFUAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T12:29:54.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NewShop.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewShop.cs",
-              "RelativeDocumentMoniker": "Mobile Retail Shop\\NewShop.cs",
-              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewShop.cs [Design]",
+              "DocumentIndex": 17,
+              "Title": "AdminDeshBoard.cs [Design]",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\AdminDeshBoard.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\AdminDeshBoard.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\AdminDeshBoard.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\AdminDeshBoard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T13:05:04.353Z"
+              "WhenOpened": "2024-07-30T12:29:45.122Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminDeshBoard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\AdminDeshBoard.cs",
-              "RelativeDocumentMoniker": "Mobile Retail Shop\\AdminDeshBoard.cs",
-              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\AdminDeshBoard.cs [Design]*",
+              "DocumentIndex": 18,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\USER\\AppData\\Local\\Temp\\ma0wa2qa..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-14T07:13:55.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CustomerRegistration.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\CustomerRegistration.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\CustomerRegistration.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\CustomerRegistration.cs",
+              "RelativeToolTip": "Mobile Retail Shop\\CustomerRegistration.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAYwFUAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T12:29:45.122Z"
+              "WhenOpened": "2024-08-14T06:33:41.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Login.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\Login.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Login.cs",
+              "RelativeToolTip": "Mobile Retail Shop\\Login.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAADwv1gAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:24:49.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NewUser.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewUser.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\NewUser.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewUser.cs",
+              "RelativeToolTip": "Mobile Retail Shop\\NewUser.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:09:54.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\Login.Designer.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Login.Designer.cs",
+              "RelativeToolTip": "Mobile Retail Shop\\Login.Designer.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAiwHwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:45:20.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Users.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\Users.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Users.cs",
+              "RelativeToolTip": "Mobile Retail Shop\\Users.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:32:43.532Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "User.cs [Design]",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\User.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\User.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\User.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\User.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:32:26.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Users.cs [Design]",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Users.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\Users.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Users.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\Users.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:24:11.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Form1.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\Form1.cs",
               "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Form1.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T11:34:33.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 28,
               "Title": "Shop.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\Shop.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Shop.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\Shop.cs",
-              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Shop.cs [Design]*",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Shop.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\Shop.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T17:03:56.78Z"
+              "WhenOpened": "2024-07-31T17:03:56.78Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Shop.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\Shop.cs",
-              "RelativeDocumentMoniker": "Mobile Retail Shop\\Shop.cs",
-              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Shop.cs*",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAYwDAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T09:27:35.43Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 27,
               "Title": "ShopOwner.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\ShopOwner.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\ShopOwner.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\ShopOwner.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\ShopOwner.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\ShopOwner.cs",
               "RelativeToolTip": "Mobile Retail Shop\\ShopOwner.cs",
               "ViewState": "AQIAADUAAAAAAAAAAAAiwFAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -267,17 +574,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 26,
               "Title": "ShopOwner.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\ShopOwner.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\ShopOwner.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\ShopOwner.cs",
               "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\ShopOwner.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\ShopOwner.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T17:03:00.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 31,
               "Title": "dbo.User_Information.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__UNIVERSITY_GITHUB_MOBILE_RETAIL_SHOP_DATABASE_MOBILE_RETAIL_SHOP.MDF/True/SqlTable/dbo.User_Information.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__UNIVERSITY_GITHUB_MOBILE_RETAIL_SHOP_DATABASE_MOBILE_RETAIL_SHOP.MDF/True/SqlTable/dbo.User_Information.sql",
@@ -286,119 +594,61 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "NewUser.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewUser.cs",
-              "RelativeDocumentMoniker": "Mobile Retail Shop\\NewUser.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewUser.cs",
-              "RelativeToolTip": "Mobile Retail Shop\\NewUser.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAYwHgAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T12:09:54.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "NewUser.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewUser.cs",
-              "RelativeDocumentMoniker": "Mobile Retail Shop\\NewUser.cs",
-              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewUser.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T12:01:33.324Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Product.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\Product.cs",
-              "RelativeDocumentMoniker": "Mobile Retail Shop\\Product.cs",
-              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Product.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T13:33:13.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\Program.cs",
-              "RelativeDocumentMoniker": "Mobile Retail Shop\\Program.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\Program.cs",
-              "RelativeToolTip": "Mobile Retail Shop\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T14:14:47.192Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ProductInformation.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\ProductInformation.cs",
-              "RelativeDocumentMoniker": "Mobile Retail Shop\\ProductInformation.cs",
-              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\ProductInformation.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T10:16:15.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 39,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Form1.cs",
+              "RelativeDocumentMoniker": "Mobile Retail Shop\\Form1.cs",
               "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Form1.cs",
+              "RelativeToolTip": "Mobile Retail Shop\\Form1.cs",
               "ViewState": "AQIAADYAAAAAAAAAAADwv0kAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T12:04:48.176Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 32,
               "Title": "AllProduct.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\AllProduct.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\AllProduct.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\AllProduct.cs",
               "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\AllProduct.cs [Design]",
+              "RelativeToolTip": "Mobile Retail Shop\\AllProduct.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T09:33:22.412Z"
+              "WhenOpened": "2024-08-01T09:33:22.412Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Payment.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\Payment.cs",
-              "RelativeDocumentMoniker": "Mobile Retail Shop\\Payment.cs",
-              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Payment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T10:43:02.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 33,
               "Title": "Payment.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\Payment.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Payment.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\Payment.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\Payment.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\Payment.cs",
               "RelativeToolTip": "Mobile Retail Shop\\Payment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T11:40:14.195Z"
+              "WhenOpened": "2024-08-01T11:40:14.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 35,
               "Title": "NewUser.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewUser.Designer.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewUser.Designer.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\NewUser.Designer.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewUser.Designer.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\NewUser.Designer.cs",
               "RelativeToolTip": "Mobile Retail Shop\\NewUser.Designer.cs",
               "ViewState": "AQIAAKQAAAAAAAAAAAAiwLsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T12:45:42.287Z"
+              "WhenOpened": "2024-07-31T12:45:42.287Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 34,
               "Title": "DataBase.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\DataBase.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\DataBase.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\DataBase.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\DataBase.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\DataBase.cs",
               "RelativeToolTip": "Mobile Retail Shop\\DataBase.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -406,23 +656,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 36,
               "Title": "AdminDeshBoard.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\AdminDeshBoard.Designer.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\AdminDeshBoard.Designer.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\AdminDeshBoard.Designer.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\AdminDeshBoard.Designer.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\AdminDeshBoard.Designer.cs",
               "RelativeToolTip": "Mobile Retail Shop\\AdminDeshBoard.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T11:25:13.164Z"
+              "WhenOpened": "2024-07-31T11:25:13.164Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 37,
               "Title": "DataBaseConnection.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\DataBaseConnection.cs",
+              "DocumentMoniker": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\DataBaseConnection.cs",
               "RelativeDocumentMoniker": "Mobile Retail Shop\\DataBaseConnection.cs",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\Mobile-Retail-Shop\\Mobile Retail Shop\\DataBaseConnection.cs",
+              "ToolTip": "D:\\University\\Github\\Mobile-Retail-Shop\\Mobile Retail Shop\\DataBaseConnection.cs",
               "RelativeToolTip": "Mobile Retail Shop\\DataBaseConnection.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T11:41:15.094Z"

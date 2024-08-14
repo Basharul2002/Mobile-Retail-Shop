@@ -28,7 +28,7 @@ namespace Mobile_Retail_Shop
             if (!ShopOwner.Instance.panelContainer.Controls.ContainsKey("Product"))
             {
                 ShopOwner.Instance.panelContainer.Controls.Clear();
-                Product addNewProduct = new Product(newProduct: true);
+                NewProduct addNewProduct = new NewProduct(shopID: this.shopID, newProduct: true);
                 addNewProduct.Dock = DockStyle.Fill;
                 ShopOwner.Instance.panelContainer.Controls.Add(addNewProduct);
 

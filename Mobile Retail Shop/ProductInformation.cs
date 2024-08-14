@@ -12,12 +12,13 @@ namespace Mobile_Retail_Shop
 {
     public partial class ProductInformation : UserControl
     {
+        private string shopID;
         public ProductInformation()
         {
             InitializeComponent();
         }
 
-        public ProductInformation(string id, string name, string price, string discount = null, Image picture = null) : this()
+        public ProductInformation(string shopID, string id, string name, string price, string discount = null, Image picture = null) : this()
         {
             product_details_btn.Tag = product_buy_btn.Tag = id;
             product_picture.Image =  (picture != null) ? picture : Properties.Resources.hide;
@@ -39,7 +40,7 @@ namespace Mobile_Retail_Shop
             if (ShopOwner.Instance.panelContainer.Controls.ContainsKey("AllProduct"))
             {
                 ShopOwner.Instance.panelContainer.Controls.Clear();
-                Product allProduct = new Product(productID: product_details_btn.Tag.ToString());
+                NewProduct allProduct = new NewProduct(shopID: this.shopID, productID: product_details_btn.Tag.ToString());
                 allProduct.Dock = DockStyle.Fill;
                 ShopOwner.Instance.panelContainer.Controls.Add(allProduct);
             }

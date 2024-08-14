@@ -54,6 +54,8 @@ namespace Mobile_Retail_Shop
                 return;
 
             }
+
+            // User Type 1 mean user is admin
             if (dataTable.Rows[0]["User Type"].ToString() == "1")
             {
                 AdminDeshBoard adminDeshBoard = new AdminDeshBoard(dataTable.Rows[0]["ID"].ToString());
@@ -62,15 +64,28 @@ namespace Mobile_Retail_Shop
 
             }
 
-
+            // User Type 2 mean user is shop owner
             if (dataTable.Rows[0]["User Type"].ToString() == "2")
             {
                 ShopOwner shopOwner = new ShopOwner(dataTable.Rows[0]["ID"].ToString());
                 this.Hide();
                 shopOwner.Show();
             }
+
+            // User Type 3 mean user is customer
+            if (dataTable.Rows[0]["User Type"].ToString() == "3")
+            {
+                CustomerDashboard customerDashboard = new CustomerDashboard(dataTable.Rows[0]["ID"].ToString());
+                this.Hide();
+                customerDashboard.Show();
+            }
         }
 
-      
+        private void customer_sign_in_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CustomerRegistration customerRegistration = new CustomerRegistration();
+            customerRegistration.Show();
+        }
     }
 }
