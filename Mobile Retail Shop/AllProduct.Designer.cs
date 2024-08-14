@@ -30,8 +30,8 @@
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.search_tb = new Guna.UI2.WinForms.Guna2TextBox();
-            this.search_btn = new Guna.UI2.WinForms.Guna2Button();
             this.product_result_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.search_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,28 +56,13 @@
             this.search_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.search_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.search_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.search_tb.Location = new System.Drawing.Point(39, 23);
+            this.search_tb.Location = new System.Drawing.Point(67, 23);
             this.search_tb.Name = "search_tb";
             this.search_tb.PasswordChar = '\0';
             this.search_tb.PlaceholderText = "Search you product here";
             this.search_tb.SelectedText = "";
             this.search_tb.Size = new System.Drawing.Size(241, 36);
             this.search_tb.TabIndex = 0;
-            // 
-            // search_btn
-            // 
-            this.search_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.search_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.search_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.search_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.search_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.search_btn.ForeColor = System.Drawing.Color.White;
-            this.search_btn.Location = new System.Drawing.Point(287, 23);
-            this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(67, 36);
-            this.search_btn.TabIndex = 1;
-            this.search_btn.Text = "search";
-            this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
             // 
             // product_result_panel
             // 
@@ -86,6 +71,22 @@
             this.product_result_panel.Name = "product_result_panel";
             this.product_result_panel.Size = new System.Drawing.Size(426, 376);
             this.product_result_panel.TabIndex = 1;
+            // 
+            // search_btn
+            // 
+            this.search_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.search_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.search_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.search_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.search_btn.FillColor = System.Drawing.Color.Transparent;
+            this.search_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.search_btn.ForeColor = System.Drawing.Color.White;
+            this.search_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.search1;
+            this.search_btn.Location = new System.Drawing.Point(315, 23);
+            this.search_btn.Name = "search_btn";
+            this.search_btn.Size = new System.Drawing.Size(33, 36);
+            this.search_btn.TabIndex = 1;
+            this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
             // 
             // AllProduct
             // 

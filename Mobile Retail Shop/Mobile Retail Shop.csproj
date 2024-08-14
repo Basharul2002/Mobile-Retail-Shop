@@ -87,11 +87,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mobile_Retail_ShopDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Mobile_Retail_ShopDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="NewShop.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -195,17 +190,6 @@
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Mobile_Retail_ShopDataSet.xsc">
-      <DependentUpon>Mobile_Retail_ShopDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Mobile_Retail_ShopDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Mobile_Retail_ShopDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Mobile_Retail_ShopDataSet.xss">
-      <DependentUpon>Mobile_Retail_ShopDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -237,13 +221,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Mobile Retail Shop.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Mobile Retail Shop_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Mobile Retail Shop.mdf</DependentUpon>
-    </Content>
+    <None Include="Resources\search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
