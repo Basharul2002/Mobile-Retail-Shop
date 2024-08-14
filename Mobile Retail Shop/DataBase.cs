@@ -39,5 +39,29 @@ namespace Mobile_Retail_Shop
                 return null;
             }
         }
+
+        public bool DataInsert(string query, out string error)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(DataBaseConnection.connectionString))
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.ExecuteNonQuery();
+                        connection.Close();
+                        error = string.Empty;
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+                return false;
+            }
+        }
     }
 }

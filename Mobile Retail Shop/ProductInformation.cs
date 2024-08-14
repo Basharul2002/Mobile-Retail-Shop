@@ -22,6 +22,7 @@ namespace Mobile_Retail_Shop
         {
             product_details_btn.Tag = product_buy_btn.Tag = id;
             product_picture.Image =  (picture != null) ? picture : Properties.Resources.hide;
+            product_name.Text = name;
             string error;
             if (discount != null)
                 product_price.Text = (Utility.ConvertStringToInt(price, out error) - Utility.ConvertStringToInt(discount, out error)).ToString();
