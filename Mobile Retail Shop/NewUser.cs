@@ -26,10 +26,10 @@ namespace Mobile_Retail_Shop
 
         private void submit_btn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(label54210.Text))
+            if (string.IsNullOrWhiteSpace(name_tb.Text))
             {
                 MessageBox.Show("Fill up the name");
-                label54210.Focus();
+                name_tb.Focus();
                 return;
             }
 

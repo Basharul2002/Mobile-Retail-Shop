@@ -26,7 +26,6 @@ D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Reta
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile R.95BF2F3F.Up2Date
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.exe
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.pdb
-D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Product.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Shop.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopOwner.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.AllProduct.resources
@@ -83,3 +82,33 @@ C:\Users\USER\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile R
 C:\Users\USER\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile R.95BF2F3F.Up2Date
 C:\Users\USER\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.exe
 C:\Users\USER\Downloads\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.pdb
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CustomerRegistration.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CustomerDashboard.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CustomerDashBoardData.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.NewProduct.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.exe.config
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.exe
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Mobile Retail Shop.pdb
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\bin\Debug\Guna.UI2.dll
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.AssemblyReference.cache
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.AdminDeshBoard.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.AllProduct.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CustomerDashboard.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CustomerDashBoardData.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CustomerRegistration.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Login.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.NewShop.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.NewUser.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Payment.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.NewProduct.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ProductInformation.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Properties.Resources.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Shop.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopOwner.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.User.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Users.resources
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.GenerateResource.cache
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.csproj.CoreCompileInputs.cache
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile R.95BF2F3F.Up2Date
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.exe
+C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.pdb

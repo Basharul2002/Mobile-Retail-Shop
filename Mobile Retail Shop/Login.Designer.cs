@@ -31,7 +31,7 @@
             this.login_btn = new Guna.UI2.WinForms.Guna2Button();
             this.password_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.email_tb = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.customer_sign_in_btn = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // login_btn
@@ -43,10 +43,10 @@
             this.login_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.login_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.login_btn.ForeColor = System.Drawing.Color.White;
-            this.login_btn.Location = new System.Drawing.Point(375, 330);
-            this.login_btn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.login_btn.Location = new System.Drawing.Point(281, 268);
+            this.login_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.login_btn.Name = "login_btn";
-            this.login_btn.Size = new System.Drawing.Size(320, 68);
+            this.login_btn.Size = new System.Drawing.Size(240, 55);
             this.login_btn.TabIndex = 5;
             this.login_btn.Text = "LOGIN";
             this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
@@ -62,13 +62,13 @@
             this.password_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.password_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.password_tb.Location = new System.Drawing.Point(356, 239);
-            this.password_tb.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.password_tb.Location = new System.Drawing.Point(267, 194);
+            this.password_tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.password_tb.Name = "password_tb";
             this.password_tb.PasswordChar = '\0';
             this.password_tb.PlaceholderText = "Password";
             this.password_tb.SelectedText = "";
-            this.password_tb.Size = new System.Drawing.Size(356, 54);
+            this.password_tb.Size = new System.Drawing.Size(267, 44);
             this.password_tb.TabIndex = 4;
             // 
             // email_tb
@@ -82,32 +82,43 @@
             this.email_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.email_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.email_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.email_tb.Location = new System.Drawing.Point(356, 156);
-            this.email_tb.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.email_tb.Location = new System.Drawing.Point(267, 127);
+            this.email_tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.email_tb.Name = "email_tb";
             this.email_tb.PasswordChar = '\0';
             this.email_tb.PlaceholderText = "Email";
             this.email_tb.SelectedText = "";
-            this.email_tb.Size = new System.Drawing.Size(356, 54);
+            this.email_tb.Size = new System.Drawing.Size(267, 44);
             this.email_tb.TabIndex = 3;
             // 
-            // guna2Panel1
+            // customer_sign_in_btn
             // 
-            this.guna2Panel1.Location = new System.Drawing.Point(734, 96);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(265, 373);
-            this.guna2Panel1.TabIndex = 6;
+            this.customer_sign_in_btn.BorderRadius = 10;
+            this.customer_sign_in_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.customer_sign_in_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.customer_sign_in_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.customer_sign_in_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.customer_sign_in_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.customer_sign_in_btn.ForeColor = System.Drawing.Color.White;
+            this.customer_sign_in_btn.Location = new System.Drawing.Point(401, 361);
+            this.customer_sign_in_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.customer_sign_in_btn.Name = "customer_sign_in_btn";
+            this.customer_sign_in_btn.Size = new System.Drawing.Size(240, 55);
+            this.customer_sign_in_btn.TabIndex = 5;
+            this.customer_sign_in_btn.Text = "New Account";
+            this.customer_sign_in_btn.Click += new System.EventHandler(this.customer_sign_in_btn_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.guna2Panel1);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.customer_sign_in_btn);
             this.Controls.Add(this.login_btn);
             this.Controls.Add(this.password_tb);
             this.Controls.Add(this.email_tb);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -120,7 +131,7 @@
         private Guna.UI2.WinForms.Guna2Button login_btn;
         private Guna.UI2.WinForms.Guna2TextBox password_tb;
         private Guna.UI2.WinForms.Guna2TextBox email_tb;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button customer_sign_in_btn;
     }
 }
 
