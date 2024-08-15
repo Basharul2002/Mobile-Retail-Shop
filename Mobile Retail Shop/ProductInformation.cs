@@ -12,21 +12,26 @@ namespace Mobile_Retail_Shop
 {
     public partial class ProductInformation : UserControl
     {
-        private string shopID;
+        private string personID, shopID;
         private AllProduct allProduct;
+        private bool shopOwner;
+        private CustomerDashboard customerDashboard;
         public ProductInformation()
         {
             InitializeComponent();
         }
 
-        public ProductInformation(bool shopOwner, string shopID, string id, string name, string price, string discount = null, Image picture = null, AllProduct allProduct = null) : this()
+        public ProductInformation(CustomerDashboard customerDashboard = null, bool shopOwner = false, string personID = null, string shopID = null, string id = null, string name = null, string price = null, string discount = null, Image picture = null, AllProduct allProduct = null) : this()
         {
+            this.customerDashboard = customerDashboard;
+            this.personID = personID;
+            this.shopOwner = shopOwner;
             this.allProduct = allProduct;
             product_details_btn.Tag = product_buy_btn.Tag = id;
             if (shopOwner)
                 product_buy_btn.Text = "DELETE";
             else
-                product_buy_btn.Text = "BUY";
+                product_buy_btn.Text = "Add Cart";
 
             product_picture.Image =  (picture != null) ? picture : Properties.Resources.hide;
             product_name.Text = name;
@@ -40,10 +45,11 @@ namespace Mobile_Retail_Shop
 
         private void product_buy_btn_Click(object sender, EventArgs e)
         {
-            if (product_buy_btn.Text == "DELETE")
+            // Shop Owner
+            if (shopOwner)
                 ProductDelete();
-
-            else if (product_buy_btn.Text == "DELETE")
+            // Customer
+            else if (!shopOwner)
                 ProductBuy();
         }
 
@@ -79,13 +85,20 @@ namespace Mobile_Retail_Shop
 
         private void product_details_btn_Click(object sender, EventArgs e)
         {
-            if (ShopOwner.Instance.panelContainer.Controls.ContainsKey("AllProduct"))
+
+            if (customerDashboard == null && (ShopOwner.Instance.panelContainer.Controls.ContainsKey("AllProduct")))
             {
                 ShopOwner.Instance.panelContainer.Controls.Clear();
                 NewProduct allProduct = new NewProduct(shopID: this.shopID, productID: product_details_btn.Tag.ToString());
                 allProduct.Dock = DockStyle.Fill;
                 ShopOwner.Instance.panelContainer.Controls.Add(allProduct);
             }
+            
+            if (this.customerDashboard != null)
+            {
+                CustomerDashboard customerDashboard = new CustomerDashboard(id: this.personID, shopID: this.shopID, productID: product_details_btn.Tag.ToString(), form: this.customerDashboard);
+            }
+
         }
     }
 }

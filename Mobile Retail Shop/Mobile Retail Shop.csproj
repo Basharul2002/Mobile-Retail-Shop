@@ -79,6 +79,7 @@
     <Compile Include="AllProduct.Designer.cs">
       <DependentUpon>AllProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="CartItem.cs" />
     <Compile Include="CustomerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>

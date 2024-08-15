@@ -97,21 +97,6 @@ namespace Mobile_Retail_Shop
             Utility.pictureUpload(product_image);
         }
 
-        private void submit_btn_Click(object sender, EventArgs e)
-        {
-            string error, query = $"UPDATE [User Information] SET [Total Review] = {totalReview + Convert.ToDecimal(product_rating_star.Value)}, [Total Reviewer] = {totalReviewer + 1} WHERE ID = {this.productID}";
-
-            DataBase dataBase = new DataBase();
-            dataBase.ExecuteNonQuery(query, out error);
-
-            if (!string.IsNullOrEmpty(error))
-            {
-                MessageBox.Show($"CLass : NewProduct FUnction: submit_btn_Click \nError: {error}");
-                return;
-            }
-
-            MessageBox.Show("Review successfully submiited");
-        }
 
         private void add_btn_Click(object sender, EventArgs e)
         {

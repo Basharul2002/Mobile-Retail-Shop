@@ -62,11 +62,11 @@
             this.product_buy_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.product_buy_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.product_buy_btn.ForeColor = System.Drawing.Color.White;
-            this.product_buy_btn.Location = new System.Drawing.Point(129, 258);
+            this.product_buy_btn.Location = new System.Drawing.Point(131, 258);
             this.product_buy_btn.Name = "product_buy_btn";
-            this.product_buy_btn.Size = new System.Drawing.Size(88, 31);
+            this.product_buy_btn.Size = new System.Drawing.Size(78, 31);
             this.product_buy_btn.TabIndex = 2;
-            this.product_buy_btn.Text = "Buy";
+            this.product_buy_btn.Text = "Add Cart";
             this.product_buy_btn.Click += new System.EventHandler(this.product_buy_btn_Click);
             // 
             // product_details_btn

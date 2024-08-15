@@ -54,9 +54,9 @@
             this.new_product_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.product_image = new Guna.UI2.WinForms.Guna2PictureBox();
             this.product_panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.product_rating_star = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.rating = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.discount = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.submit_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.back_btn = new Guna.UI2.WinForms.Guna2Button();
             this.price = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.color = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -66,8 +66,6 @@
             this.model = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.compnay_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.product_picture = new System.Windows.Forms.PictureBox();
-            this.rating = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.new_product_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.product_image)).BeginInit();
@@ -373,7 +371,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 825);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(390, 23);
+            this.guna2Panel2.Size = new System.Drawing.Size(364, 23);
             this.guna2Panel2.TabIndex = 23;
             // 
             // add_btn
@@ -399,9 +397,9 @@
             this.choose_picture_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.choose_picture_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.choose_picture_btn.ForeColor = System.Drawing.Color.White;
-            this.choose_picture_btn.Location = new System.Drawing.Point(230, 105);
+            this.choose_picture_btn.Location = new System.Drawing.Point(135, 174);
             this.choose_picture_btn.Name = "choose_picture_btn";
-            this.choose_picture_btn.Size = new System.Drawing.Size(180, 45);
+            this.choose_picture_btn.Size = new System.Drawing.Size(145, 31);
             this.choose_picture_btn.TabIndex = 25;
             this.choose_picture_btn.Text = "Choose a picture";
             this.choose_picture_btn.Click += new System.EventHandler(this.choose_picture_btn_Click);
@@ -433,24 +431,22 @@
             this.new_product_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.new_product_panel.Location = new System.Drawing.Point(0, 0);
             this.new_product_panel.Name = "new_product_panel";
-            this.new_product_panel.Size = new System.Drawing.Size(390, 848);
+            this.new_product_panel.Size = new System.Drawing.Size(364, 848);
             this.new_product_panel.TabIndex = 26;
             // 
             // product_image
             // 
             this.product_image.ImageRotate = 0F;
-            this.product_image.Location = new System.Drawing.Point(40, 35);
+            this.product_image.Location = new System.Drawing.Point(135, 10);
             this.product_image.Name = "product_image";
-            this.product_image.Size = new System.Drawing.Size(154, 169);
+            this.product_image.Size = new System.Drawing.Size(154, 153);
             this.product_image.TabIndex = 26;
             this.product_image.TabStop = false;
             // 
             // product_panel
             // 
-            this.product_panel.Controls.Add(this.product_rating_star);
             this.product_panel.Controls.Add(this.rating);
             this.product_panel.Controls.Add(this.discount);
-            this.product_panel.Controls.Add(this.submit_btn);
             this.product_panel.Controls.Add(this.guna2Button1);
             this.product_panel.Controls.Add(this.back_btn);
             this.product_panel.Controls.Add(this.price);
@@ -464,15 +460,17 @@
             this.product_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.product_panel.Location = new System.Drawing.Point(0, 848);
             this.product_panel.Name = "product_panel";
-            this.product_panel.Size = new System.Drawing.Size(390, 390);
+            this.product_panel.Size = new System.Drawing.Size(364, 390);
             this.product_panel.TabIndex = 27;
             // 
-            // product_rating_star
+            // rating
             // 
-            this.product_rating_star.Location = new System.Drawing.Point(74, 243);
-            this.product_rating_star.Name = "product_rating_star";
-            this.product_rating_star.Size = new System.Drawing.Size(120, 28);
-            this.product_rating_star.TabIndex = 25;
+            this.rating.BackColor = System.Drawing.Color.Transparent;
+            this.rating.Location = new System.Drawing.Point(158, 174);
+            this.rating.Name = "rating";
+            this.rating.Size = new System.Drawing.Size(78, 15);
+            this.rating.TabIndex = 15;
+            this.rating.Text = "Company Name";
             // 
             // discount
             // 
@@ -483,20 +481,19 @@
             this.discount.TabIndex = 15;
             this.discount.Text = "Company Name";
             // 
-            // submit_btn
+            // guna2Button1
             // 
-            this.submit_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.submit_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.submit_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.submit_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.submit_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.submit_btn.ForeColor = System.Drawing.Color.White;
-            this.submit_btn.Location = new System.Drawing.Point(213, 243);
-            this.submit_btn.Name = "submit_btn";
-            this.submit_btn.Size = new System.Drawing.Size(98, 30);
-            this.submit_btn.TabIndex = 24;
-            this.submit_btn.Text = "Submit";
-            this.submit_btn.Click += new System.EventHandler(this.submit_btn_Click);
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(17, 249);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(143, 45);
+            this.guna2Button1.TabIndex = 24;
+            this.guna2Button1.Text = "Back";
             // 
             // back_btn
             // 
@@ -506,7 +503,7 @@
             this.back_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.back_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.back_btn.ForeColor = System.Drawing.Color.White;
-            this.back_btn.Location = new System.Drawing.Point(213, 295);
+            this.back_btn.Location = new System.Drawing.Point(203, 249);
             this.back_btn.Name = "back_btn";
             this.back_btn.Size = new System.Drawing.Size(143, 45);
             this.back_btn.TabIndex = 24;
@@ -583,29 +580,6 @@
             this.product_picture.TabIndex = 14;
             this.product_picture.TabStop = false;
             // 
-            // rating
-            // 
-            this.rating.BackColor = System.Drawing.Color.Transparent;
-            this.rating.Location = new System.Drawing.Point(158, 174);
-            this.rating.Name = "rating";
-            this.rating.Size = new System.Drawing.Size(78, 15);
-            this.rating.TabIndex = 15;
-            this.rating.Text = "Company Name";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(27, 295);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(143, 45);
-            this.guna2Button1.TabIndex = 24;
-            this.guna2Button1.Text = "Back";
-            // 
             // NewProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -614,7 +588,7 @@
             this.Controls.Add(this.product_panel);
             this.Controls.Add(this.new_product_panel);
             this.Name = "NewProduct";
-            this.Size = new System.Drawing.Size(390, 876);
+            this.Size = new System.Drawing.Size(364, 469);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.new_product_panel.ResumeLayout(false);
@@ -663,8 +637,6 @@
         private System.Windows.Forms.PictureBox product_picture;
         private Guna.UI2.WinForms.Guna2HtmlLabel discount;
         private Guna.UI2.WinForms.Guna2Button back_btn;
-        private Guna.UI2.WinForms.Guna2RatingStar product_rating_star;
-        private Guna.UI2.WinForms.Guna2Button submit_btn;
         private Guna.UI2.WinForms.Guna2PictureBox product_image;
         private Guna.UI2.WinForms.Guna2HtmlLabel rating;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
