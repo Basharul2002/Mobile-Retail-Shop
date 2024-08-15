@@ -39,11 +39,12 @@ namespace Mobile_Retail_Shop
             }
 
             //         public ProductInformation(string id, string name, string price, string discount = null, Image picture = null) : this()
+            ProductInformation productInformation;
 
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
-                ProductInformation productInformation = new ProductInformation(shopID: this.shopID, id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["name"].ToString(), price: dataTable.Rows[i]["Price"].ToString(), 
-                    discount: dataTable.Rows[i]["Discount"].ToString(), picture: Utility.ByteArrayToImage((byte[])(dataTable.Rows[i]["Picture"])));
+                productInformation = new ProductInformation(shopID: this.shopID, id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["Company Name"].ToString(), price: dataTable.Rows[i]["Price"].ToString(), 
+                    discount: dataTable.Rows[i]["Discount"].ToString()/*, picture: Utility.ByteArrayToImage((byte[])(dataTable.Rows[i]["Picture"]*/);
                 product_result_panel.Controls.Add(productInformation);  
             }
         }
@@ -77,7 +78,7 @@ namespace Mobile_Retail_Shop
 
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
-                ProductInformation productInformation = new ProductInformation(shopID: this.shopID, id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["name"].ToString(), price: dataTable.Rows[i]["Price"].ToString(), discount: dataTable.Rows[i]["Discount"].ToString(), picture: Utility.ByteArrayToImage((byte[])(dataTable.Rows[i]["Picture"])));
+                ProductInformation productInformation = new ProductInformation(shopID: this.shopID, id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["Company Name"].ToString(), price: dataTable.Rows[i]["Price"].ToString(), discount: dataTable.Rows[i]["Discount"].ToString(), picture: Utility.ByteArrayToImage((byte[])(dataTable.Rows[i]["Picture"])));
                 product_result_panel.Controls.Add(productInformation);
             }
         }

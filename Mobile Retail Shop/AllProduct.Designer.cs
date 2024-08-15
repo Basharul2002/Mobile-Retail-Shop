@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.search_tb = new Guna.UI2.WinForms.Guna2TextBox();
-            this.product_result_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.search_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.search_tb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.product_result_panel = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,6 +44,22 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(426, 77);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // search_btn
+            // 
+            this.search_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.search_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.search_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.search_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.search_btn.FillColor = System.Drawing.Color.Transparent;
+            this.search_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.search_btn.ForeColor = System.Drawing.Color.White;
+            this.search_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.search1;
+            this.search_btn.Location = new System.Drawing.Point(315, 23);
+            this.search_btn.Name = "search_btn";
+            this.search_btn.Size = new System.Drawing.Size(33, 36);
+            this.search_btn.TabIndex = 1;
+            this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
             // 
             // search_tb
             // 
@@ -66,27 +82,12 @@
             // 
             // product_result_panel
             // 
+            this.product_result_panel.AutoScroll = true;
             this.product_result_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.product_result_panel.Location = new System.Drawing.Point(0, 77);
             this.product_result_panel.Name = "product_result_panel";
             this.product_result_panel.Size = new System.Drawing.Size(426, 376);
             this.product_result_panel.TabIndex = 1;
-            // 
-            // search_btn
-            // 
-            this.search_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.search_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.search_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.search_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.search_btn.FillColor = System.Drawing.Color.Transparent;
-            this.search_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.search_btn.ForeColor = System.Drawing.Color.White;
-            this.search_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.search1;
-            this.search_btn.Location = new System.Drawing.Point(315, 23);
-            this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(33, 36);
-            this.search_btn.TabIndex = 1;
-            this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
             // 
             // AllProduct
             // 
@@ -106,6 +107,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button search_btn;
         private Guna.UI2.WinForms.Guna2TextBox search_tb;
-        private Guna.UI2.WinForms.Guna2Panel product_result_panel;
+        private System.Windows.Forms.FlowLayoutPanel product_result_panel;
     }
 }
