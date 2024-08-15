@@ -64,66 +64,79 @@ namespace Mobile_Retail_Shop
             }
         }
 
-
         public static ImageFormat GetImageFormat(System.Drawing.Image image)
-        {
-            if (image.RawFormat.Equals(ImageFormat.Jpeg))
-                return ImageFormat.Jpeg;
-            
-            else if (image.RawFormat.Equals(ImageFormat.Png))
-                return ImageFormat.Png;
-            
-            else if (image.RawFormat.Equals(ImageFormat.Gif))
-                return ImageFormat.Gif;
-            
-            else if (image.RawFormat.Equals(ImageFormat.Bmp))
-                return ImageFormat.Bmp;
-            
-            else if (image.RawFormat.Equals(ImageFormat.Icon))
-                return ImageFormat.Icon;
-            
-            else
-                // Handle other formats or return null if not recognized
-                return null;
-            
-        }
-
-        // For Database to normal formated image
-        public static System.Drawing.Image ByteArrayToImage(byte[] byteArray)
-        {
-            using (MemoryStream ms = new MemoryStream(byteArray))
-                return System.Drawing.Image.FromStream(ms);
-            
-        }
-
-        // For normal to Database formated image
-        public static byte[] ImageToByteArray(System.Drawing.Image image, ImageFormat imageFormat)
         {
             if (image == null)
                 return null;
-            
+
+            if (image.RawFormat.Equals(ImageFormat.Jpeg))
+                return ImageFormat.Jpeg;
+
+            else if (image.RawFormat.Equals(ImageFormat.Png))
+                return ImageFormat.Png;
+
+            else if (image.RawFormat.Equals(ImageFormat.Gif))
+                return ImageFormat.Gif;
+
+            else if (image.RawFormat.Equals(ImageFormat.Bmp))
+                return ImageFormat.Bmp;
+
+            else if (image.RawFormat.Equals(ImageFormat.Icon))
+                return ImageFormat.Icon;
+
+            // Handle other formats or return a default if not recognized
+            return null;
+        }
+
+        public static System.Drawing.Image ByteArrayToImage(byte[] byteArray)
+        {
+            try
+            {
+                if (byteArray == null || byteArray.Length == 0)
+                {
+                    MessageBox.Show("The byte array is null or empty.");
+                    return null; // Return null if the byte array is invalid
+                }
+
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    return Image.FromStream(ms);
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Class Utility Function ByteArrayToImage \n Error: {ex.Message}");
+                return null;
+            }
+           
+           
+        }
+
+        // For normal to Database formatted image
+        public static byte[] ImageToByteArray(System.Drawing.Image image, ImageFormat imageFormat)
+        {
+            if (image == null)
+                return null; // Return null if the image is null
 
             // Use a try-catch block to handle any potential GDI+ exceptions
             try
             {
                 using (MemoryStream stream = new MemoryStream())
                 {
-                    if (imageFormat != null)
-                        image.Save(stream, imageFormat); // Save the image with the determined format
-                    
-                    else
-                        image.Save(stream, ImageFormat.Jpeg);  // If the image format is not recognized, save it as JPEG (or another default format)
-
-                    return stream.ToArray();
+                    // Save the image with the specified format
+                    image.Save(stream, imageFormat != null ? imageFormat : ImageFormat.Jpeg);
+                    return stream.ToArray(); // Return the byte array
                 }
             }
             catch (Exception ex)
             {
                 // Handle any exceptions related to GDI+ here
-                MessageBox.Show("Error in ImageToByteArray: " + ex.Message);
-                return null;
+                MessageBox.Show("Class: Utility Function: ImageToByteArray \nError: " + ex.Message);
+                return null; // Return null if an error occurs
             }
         }
+
 
 
         public static void pictureUpload(Guna2PictureBox pictureBox)

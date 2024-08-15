@@ -40,7 +40,7 @@ namespace Mobile_Retail_Shop
             }
         }
 
-        public bool DataInsert(string query, out string error)
+        public bool ExecuteNonQuery(string query, out string error)
         {
             try
             {

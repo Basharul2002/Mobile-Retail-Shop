@@ -30,11 +30,10 @@ namespace Mobile_Retail_Shop
 
         private void DataLoad()
         {
-
-            Instance.panelContainer.Controls.Clear();
+            CustomerDashboard.Instance.panelContainer.Controls.Clear();
             CustomerDashBoardData data = new CustomerDashBoardData();
             data.Dock = DockStyle.Fill;
-            Instance.panelContainer.Controls.Add(data);
+            CustomerDashboard.Instance.panelContainer.Controls.Add(data);
         }
 
         private void CustomerDashboard_Load(object sender, EventArgs e)

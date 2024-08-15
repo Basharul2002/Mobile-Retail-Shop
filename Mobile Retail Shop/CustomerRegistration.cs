@@ -119,7 +119,7 @@ namespace Mobile_Retail_Shop
             query = $@"INSERT INTO [User Information] (Name, Email, [Phone Number], City, Password, [User Type])
                               VALUES('{name_tb.Text}', '{email_tb.Text}', '{phone_number_tb.Text}', '{city_tb.Text}', '{password_tb.Text}', {3})";
 
-            dataTable = dataBase.DataAccess(query, out error);
+            dataBase.ExecuteNonQuery(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -130,6 +130,16 @@ namespace Mobile_Retail_Shop
             this.Hide();
             Login login = new Login();
             login.Show();
+        }
+
+        private void password_toggle_btn_Click(object sender, EventArgs e)
+        {
+            Utility.TogglePasswordVisibility(password_tb, password_toggle_btn);
+        }
+
+        private void confirm_toggle_btn_Click(object sender, EventArgs e)
+        {
+            Utility.TogglePasswordVisibility(confirm_password_tb, confirm_toggle_btn);
         }
     }
 }

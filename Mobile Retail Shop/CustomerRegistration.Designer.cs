@@ -32,6 +32,7 @@
             this.confirm_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
             this.password_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
             this.submit_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.back_btn = new Guna.UI2.WinForms.Guna2Button();
             this.clear_btn = new Guna.UI2.WinForms.Guna2Button();
             this.confirm_password_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -45,7 +46,6 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.name_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.label54210 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.back_btn = new Guna.UI2.WinForms.Guna2Button();
             this.data_panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +89,7 @@
             this.confirm_toggle_btn.Name = "confirm_toggle_btn";
             this.confirm_toggle_btn.Size = new System.Drawing.Size(43, 31);
             this.confirm_toggle_btn.TabIndex = 15;
+            this.confirm_toggle_btn.Click += new System.EventHandler(this.confirm_toggle_btn_Click);
             // 
             // password_toggle_btn
             // 
@@ -105,6 +106,7 @@
             this.password_toggle_btn.Name = "password_toggle_btn";
             this.password_toggle_btn.Size = new System.Drawing.Size(43, 31);
             this.password_toggle_btn.TabIndex = 16;
+            this.password_toggle_btn.Click += new System.EventHandler(this.password_toggle_btn_Click);
             // 
             // submit_btn
             // 
@@ -120,6 +122,20 @@
             this.submit_btn.TabIndex = 17;
             this.submit_btn.Text = "Submit";
             this.submit_btn.Click += new System.EventHandler(this.submit_btn_Click);
+            // 
+            // back_btn
+            // 
+            this.back_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.back_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.back_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.back_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.back_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.back_btn.ForeColor = System.Drawing.Color.White;
+            this.back_btn.Location = new System.Drawing.Point(73, 514);
+            this.back_btn.Name = "back_btn";
+            this.back_btn.Size = new System.Drawing.Size(128, 47);
+            this.back_btn.TabIndex = 18;
+            this.back_btn.Text = "Back";
             // 
             // clear_btn
             // 
@@ -137,6 +153,7 @@
             // 
             // confirm_password_tb
             // 
+            this.confirm_password_tb.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.confirm_password_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.confirm_password_tb.DefaultText = "";
             this.confirm_password_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -145,10 +162,11 @@
             this.confirm_password_tb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.confirm_password_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.confirm_password_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.confirm_password_tb.ForeColor = System.Drawing.Color.Black;
             this.confirm_password_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.confirm_password_tb.Location = new System.Drawing.Point(152, 441);
             this.confirm_password_tb.Name = "confirm_password_tb";
-            this.confirm_password_tb.PasswordChar = '\0';
+            this.confirm_password_tb.PasswordChar = '●';
             this.confirm_password_tb.PlaceholderText = "";
             this.confirm_password_tb.SelectedText = "";
             this.confirm_password_tb.Size = new System.Drawing.Size(271, 36);
@@ -165,6 +183,7 @@
             // 
             // password_tb
             // 
+            this.password_tb.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.password_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.password_tb.DefaultText = "";
             this.password_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -173,10 +192,11 @@
             this.password_tb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.password_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.password_tb.ForeColor = System.Drawing.Color.Black;
             this.password_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_tb.Location = new System.Drawing.Point(152, 361);
             this.password_tb.Name = "password_tb";
-            this.password_tb.PasswordChar = '\0';
+            this.password_tb.PasswordChar = '●';
             this.password_tb.PlaceholderText = "";
             this.password_tb.SelectedText = "";
             this.password_tb.Size = new System.Drawing.Size(271, 36);
@@ -193,6 +213,7 @@
             // 
             // city_tb
             // 
+            this.city_tb.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.city_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.city_tb.DefaultText = "";
             this.city_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -201,6 +222,7 @@
             this.city_tb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.city_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.city_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.city_tb.ForeColor = System.Drawing.Color.Black;
             this.city_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.city_tb.Location = new System.Drawing.Point(152, 287);
             this.city_tb.Name = "city_tb";
@@ -221,6 +243,7 @@
             // 
             // phone_number_tb
             // 
+            this.phone_number_tb.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.phone_number_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.phone_number_tb.DefaultText = "";
             this.phone_number_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -229,6 +252,7 @@
             this.phone_number_tb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.phone_number_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phone_number_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.phone_number_tb.ForeColor = System.Drawing.Color.Black;
             this.phone_number_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phone_number_tb.Location = new System.Drawing.Point(152, 210);
             this.phone_number_tb.Name = "phone_number_tb";
@@ -249,6 +273,7 @@
             // 
             // email_tb
             // 
+            this.email_tb.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.email_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.email_tb.DefaultText = "";
             this.email_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -257,6 +282,7 @@
             this.email_tb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.email_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.email_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.email_tb.ForeColor = System.Drawing.Color.Black;
             this.email_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.email_tb.Location = new System.Drawing.Point(152, 129);
             this.email_tb.Name = "email_tb";
@@ -277,6 +303,7 @@
             // 
             // name_tb
             // 
+            this.name_tb.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.name_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.name_tb.DefaultText = "";
             this.name_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -285,6 +312,7 @@
             this.name_tb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.name_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.name_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.name_tb.ForeColor = System.Drawing.Color.Black;
             this.name_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.name_tb.Location = new System.Drawing.Point(152, 58);
             this.name_tb.Name = "name_tb";
@@ -302,20 +330,6 @@
             this.label54210.Size = new System.Drawing.Size(31, 15);
             this.label54210.TabIndex = 8;
             this.label54210.Text = "Name";
-            // 
-            // back_btn
-            // 
-            this.back_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.back_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.back_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.back_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.back_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.back_btn.ForeColor = System.Drawing.Color.White;
-            this.back_btn.Location = new System.Drawing.Point(73, 514);
-            this.back_btn.Name = "back_btn";
-            this.back_btn.Size = new System.Drawing.Size(128, 47);
-            this.back_btn.TabIndex = 18;
-            this.back_btn.Text = "Back";
             // 
             // CustomerRegistration
             // 

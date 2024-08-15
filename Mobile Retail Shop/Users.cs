@@ -150,7 +150,7 @@ namespace Mobile_Retail_Shop
 
 
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            dataBase.ExecuteNonQuery(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
