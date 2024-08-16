@@ -98,12 +98,6 @@
     <Compile Include="Customer.Designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerDashboard.Designer.cs">
-      <DependentUpon>CustomerDashboard.cs</DependentUpon>
-    </Compile>
     <Compile Include="CustomerDashBoardData.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,6 +141,12 @@
     </Compile>
     <Compile Include="NewProduct.Designer.cs">
       <DependentUpon>NewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
     </Compile>
     <Compile Include="ProductInformation.cs">
       <SubType>UserControl</SubType>
@@ -196,9 +196,6 @@
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomerDashboard.resx">
-      <DependentUpon>CustomerDashboard.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CustomerDashBoardData.resx">
       <DependentUpon>CustomerDashBoardData.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewProduct.resx">
       <DependentUpon>NewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductInformation.resx">
       <DependentUpon>ProductInformation.cs</DependentUpon>

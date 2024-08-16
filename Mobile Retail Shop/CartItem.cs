@@ -24,7 +24,7 @@ namespace Mobile_Retail_Shop
         }
 
 
-        public static void AddToCart(Dictionary<string, CartItem> cart, string productID, string productName, string shopID, int quantity, double price)
+        public void AddToCart(Dictionary<string, CartItem> cart, string productID, string productName, string shopID, int quantity, double price)
         {
             // If the product already exists in the cart, update the quantity and price.
             if (cart.ContainsKey(productID))                 

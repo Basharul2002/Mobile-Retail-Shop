@@ -29,16 +29,15 @@ namespace Mobile_Retail_Shop
         {
             this.customerID = customerID;
             this.productID = productID;
-            this.form = form;   
-            this.cart = cart;
+            this.form = form;
+            this.cart = cart ?? new Dictionary<string, CartItem>(); // Ensure cart is initialized
 
             if (productID == null)
                 LoadProducts();
-
             else
                 LoadProductDetails();
-
         }
+
 
         private void search_btn_Click(object sender, EventArgs e)
         {
@@ -67,7 +66,7 @@ namespace Mobile_Retail_Shop
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
                 //   ProductInformation productInformation = new ProductInformation(shopID: dataTable.Rows[i]["Shop ID"].ToString(), id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["Company Name"].ToString() + dataTable.Rows[i]["Model"], price: dataTable.Rows[i]["Price"].ToString(), discount: dataTable.Rows[i]["Discount"].ToString(), picture: Utility.ByteArrayToImage((byte[])dataTable.Rows[i]["Picture"]); 
-                productInformation = new ProductInformation(shopOwner: false, shopID: dataTable.Rows[i]["Shop ID"].ToString(), id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["Company Name"].ToString() + dataTable.Rows[i]["Model"], price: dataTable.Rows[i]["Price"].ToString(), discount: dataTable.Rows[i]["Discount"].ToString());
+                productInformation = new ProductInformation(shopOwner: false, personID: this.customerID, shopID: dataTable.Rows[i]["Shop ID"].ToString(), id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["Company Name"].ToString() + dataTable.Rows[i]["Model"], price: dataTable.Rows[i]["Price"].ToString(), discount: dataTable.Rows[i]["Discount"].ToString(), cart: this.cart);
                 result_panel.Controls.Add(productInformation);
             }
 
@@ -131,7 +130,11 @@ namespace Mobile_Retail_Shop
         private void cart_btn_Click(object sender, EventArgs e)
         {
             Cart cart = new Cart(customerID: this.customerID, cartItems: this.cart);
-            cart.ShowDialog();
+            DialogResult dialogResult = cart.ShowDialog();
+
+            if (dialogResult == DialogResult.OK)
+                cart.Hide();
+            
         }
     }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,38 +17,46 @@ namespace Mobile_Retail_Shop
         private AllProduct allProduct;
         private bool shopOwner;
         private Customer customerDashboard;
+        private Dictionary<string, CartItem> cart; 
+
         public ProductInformation()
         {
             InitializeComponent();
         }
 
-        public ProductInformation(Customer customerDashboard = null, bool shopOwner = false, string personID = null, string shopID = null, string id = null, string name = null, string price = null, string discount = null, Image picture = null, AllProduct allProduct = null) : this()
+        public ProductInformation(Customer customerDashboard = null, bool shopOwner = false, string personID = null, string shopID = null, string id = null, string name = null, string price = null, string discount = null, Image picture = null, AllProduct allProduct = null, Dictionary<string, CartItem> cart = null) : this()
         {
             this.customerDashboard = customerDashboard;
             this.personID = personID;
             this.shopOwner = shopOwner;
             this.allProduct = allProduct;
+            this.cart = cart; // Initialize the cart dictionary
             product_details_btn.Tag = product_buy_btn.Tag = id;
             if (shopOwner)
                 product_buy_btn.Text = "DELETE";
             else
                 product_buy_btn.Text = "Add Cart";
 
-            product_picture.Image =  (picture != null) ? picture : Properties.Resources.hide;
+            product_picture.Image = (picture != null) ? picture : Properties.Resources.hide;
             product_name.Text = name;
             string error;
             if (discount != null)
                 product_price.Text = (Utility.ConvertStringToInt(price, out error) - Utility.ConvertStringToInt(discount, out error)).ToString();
             else
                 product_price.Text = price;
-
         }
 
         private void product_buy_btn_Click(object sender, EventArgs e)
         {
             // Shop Owner
             if (shopOwner)
-                ProductDelete();
+            {
+                DialogResult dialogResult = MessageBox.Show($"Are you sure you want to delete this product?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (dialogResult == DialogResult.Yes)
+                    ProductDelete();
+            }
+
             // Customer
             else if (!shopOwner)
                 ProductBuy();
@@ -78,7 +87,20 @@ namespace Mobile_Retail_Shop
 
         private void ProductBuy()
         {
-           
+            string error, query = $"SELECT * FROM [Product Information] WHERE ID = '{product_buy_btn.Tag.ToString()}'";
+            DataBase dataBase = new DataBase() ;
+            DataTable dataTable = dataBase.DataAccess(query, out error);
+
+            if (!string .IsNullOrEmpty(error))
+            {
+                MessageBox.Show($"Class ProductInformation Function ProductBuy \nError: {error}");
+                return;
+            }
+
+
+            CartItem cartItem = new CartItem(productId: dataTable.Rows[0]["ID"].ToString(), productName: dataTable.Rows[0]["Company Name"].ToString() + " " + dataTable.Rows[0]["Model"].ToString(), shopId: dataTable.Rows[0]["Shop ID"].ToString(), quantity: 1, price: Convert.ToDouble(dataTable.Rows[0]["Price"]));
+            cartItem.AddToCart(cart, productID: dataTable.Rows[0]["ID"].ToString(), productName: dataTable.Rows[0]["Company Name"].ToString() +" " + dataTable.Rows[0]["Model"].ToString(), shopID: dataTable.Rows[0]["Shop ID"].ToString(), quantity: 1, price: Convert.ToDouble(dataTable.Rows[0]["Price"]));
+
         }
 
 
@@ -96,7 +118,10 @@ namespace Mobile_Retail_Shop
 
             if (!this.shopOwner)
             {
-                customerDashboard = new Customer(customerID: this.personID, productID: product_details_btn.Tag.ToString(), form: this.customerDashboard);
+                Customer.Instance.panelContainer.Controls.Clear();
+                Product allProduct = new Product(customerID: this.personID, productID: product_details_btn.Tag.ToString(), cart: this.cart);
+                allProduct.Dock = DockStyle.Fill;
+                Customer.Instance.panelContainer.Controls.Add(allProduct);
             }
 
         }

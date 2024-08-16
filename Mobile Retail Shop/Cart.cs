@@ -14,6 +14,8 @@ namespace Mobile_Retail_Shop
     {
         private string customerID;
         private Dictionary<string, CartItem> cartItems;
+        private double totalPrice = 0;
+
         public Cart()
         {
             InitializeComponent();
@@ -48,7 +50,10 @@ namespace Mobile_Retail_Shop
                                         productQuantity: cartItem.Quantity,
                                         productPrice: cartItem.Price);
                 cart_list_panel.Controls.Add(cartList);
+                this.totalPrice += cartItem.Price;
             }
+
+            total_price.Text = $"Total Price: {this.totalPrice}";
         }
 
 
@@ -60,7 +65,13 @@ namespace Mobile_Retail_Shop
                 Payment payment = new Payment(customerID: this.customerID, cartItems: this.cartItems);
                 payment.Dock = DockStyle.Fill;
                 Customer.Instance.Controls.Add(payment);
+                this.Hide();
             }
+        }
+
+        private void total_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
