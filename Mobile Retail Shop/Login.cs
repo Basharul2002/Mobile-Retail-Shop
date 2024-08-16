@@ -80,7 +80,7 @@ namespace Mobile_Retail_Shop
             // User Type 3 mean user is customer
             if (dataTable.Rows[0]["User Type"].ToString() == "3")
             {
-                CustomerDashboard customerDashboard = new CustomerDashboard(dataTable.Rows[0]["ID"].ToString());
+                Customer customerDashboard = new Customer(dataTable.Rows[0]["ID"].ToString());
                 this.Hide();
                 customerDashboard.Show();
             }
