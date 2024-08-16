@@ -15,13 +15,13 @@ namespace Mobile_Retail_Shop
         private string personID, shopID;
         private AllProduct allProduct;
         private bool shopOwner;
-        private CustomerDashboard customerDashboard;
+        private Customer customerDashboard;
         public ProductInformation()
         {
             InitializeComponent();
         }
 
-        public ProductInformation(CustomerDashboard customerDashboard = null, bool shopOwner = false, string personID = null, string shopID = null, string id = null, string name = null, string price = null, string discount = null, Image picture = null, AllProduct allProduct = null) : this()
+        public ProductInformation(Customer customerDashboard = null, bool shopOwner = false, string personID = null, string shopID = null, string id = null, string name = null, string price = null, string discount = null, Image picture = null, AllProduct allProduct = null) : this()
         {
             this.customerDashboard = customerDashboard;
             this.personID = personID;
@@ -93,10 +93,10 @@ namespace Mobile_Retail_Shop
                 allProduct.Dock = DockStyle.Fill;
                 ShopOwner.Instance.panelContainer.Controls.Add(allProduct);
             }
-            
-            if (this.customerDashboard != null)
+
+            if (!this.shopOwner)
             {
-                CustomerDashboard customerDashboard = new CustomerDashboard(id: this.personID, shopID: this.shopID, productID: product_details_btn.Tag.ToString(), form: this.customerDashboard);
+                customerDashboard = new Customer(customerID: this.personID, productID: product_details_btn.Tag.ToString(), form: this.customerDashboard);
             }
 
         }

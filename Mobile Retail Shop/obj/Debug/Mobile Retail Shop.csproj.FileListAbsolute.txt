@@ -112,3 +112,6 @@ C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop
 C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile R.95BF2F3F.Up2Date
 C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.exe
 C:\.Tanjim\VARSITY\5. Summer 23-24\Project\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.pdb
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Customer.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Cart.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CartList.resources

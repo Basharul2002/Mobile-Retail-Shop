@@ -48,16 +48,17 @@
             this.rom = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ram = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.sim = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.compnay_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.model = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.product_picture = new System.Windows.Forms.PictureBox();
             this.main_panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.compnay_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.card_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.cvv_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.expiry_date_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.cvv = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.card_holder_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.payment_btn = new Guna.UI2.WinForms.Guna2Button();
             this.card_number_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.expiry_date = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -65,7 +66,6 @@
             this.card_number = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.card_holder_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.payment_btn = new Guna.UI2.WinForms.Guna2Button();
             this.data_panel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.product_details_panel.SuspendLayout();
@@ -305,6 +305,15 @@
             this.sim.TabIndex = 33;
             this.sim.Text = "Company Name";
             // 
+            // compnay_name
+            // 
+            this.compnay_name.BackColor = System.Drawing.Color.Transparent;
+            this.compnay_name.Location = new System.Drawing.Point(202, 21);
+            this.compnay_name.Name = "compnay_name";
+            this.compnay_name.Size = new System.Drawing.Size(78, 15);
+            this.compnay_name.TabIndex = 34;
+            this.compnay_name.Text = "Company Name";
+            // 
             // model
             // 
             this.model.BackColor = System.Drawing.Color.Transparent;
@@ -333,15 +342,6 @@
             this.main_panel.Name = "main_panel";
             this.main_panel.Size = new System.Drawing.Size(636, 1128);
             this.main_panel.TabIndex = 2;
-            // 
-            // compnay_name
-            // 
-            this.compnay_name.BackColor = System.Drawing.Color.Transparent;
-            this.compnay_name.Location = new System.Drawing.Point(202, 21);
-            this.compnay_name.Name = "compnay_name";
-            this.compnay_name.Size = new System.Drawing.Size(78, 15);
-            this.compnay_name.TabIndex = 34;
-            this.compnay_name.Text = "Company Name";
             // 
             // card_panel
             // 
@@ -447,6 +447,21 @@
             this.guna2HtmlLabel3.TabIndex = 7;
             this.guna2HtmlLabel3.Text = "Expiry Date";
             // 
+            // payment_btn
+            // 
+            this.payment_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.payment_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.payment_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.payment_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.payment_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.payment_btn.ForeColor = System.Drawing.Color.White;
+            this.payment_btn.Location = new System.Drawing.Point(179, 313);
+            this.payment_btn.Name = "payment_btn";
+            this.payment_btn.Size = new System.Drawing.Size(143, 45);
+            this.payment_btn.TabIndex = 37;
+            this.payment_btn.Text = "Back";
+            this.payment_btn.Click += new System.EventHandler(this.payment_btn_Click);
+            // 
             // card_number_tb
             // 
             this.card_number_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -528,21 +543,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 5;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // payment_btn
-            // 
-            this.payment_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.payment_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.payment_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.payment_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.payment_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.payment_btn.ForeColor = System.Drawing.Color.White;
-            this.payment_btn.Location = new System.Drawing.Point(179, 313);
-            this.payment_btn.Name = "payment_btn";
-            this.payment_btn.Size = new System.Drawing.Size(143, 45);
-            this.payment_btn.TabIndex = 37;
-            this.payment_btn.Text = "Back";
-            this.payment_btn.Click += new System.EventHandler(this.payment_btn_Click);
             // 
             // CustomerDashboard
             // 
