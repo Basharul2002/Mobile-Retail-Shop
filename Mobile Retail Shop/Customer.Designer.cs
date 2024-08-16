@@ -47,6 +47,7 @@
             this.ClientSize = new System.Drawing.Size(700, 454);
             this.Controls.Add(this.data_panel);
             this.Name = "Customer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer";
             this.Load += new System.EventHandler(this.Customer_Load);
             this.ResumeLayout(false);

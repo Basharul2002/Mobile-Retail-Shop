@@ -17,17 +17,20 @@ namespace Mobile_Retail_Shop
         private bool newProduct;
         private string shopID, productID;
         private int totalReviewer;
-        private decimal totalReview;
+        private double totalReview;
+        private Dictionary<string, CartItem> cart;
+
         public NewProduct()
         {
             InitializeComponent();
         }
 
-        public NewProduct(string shopID, bool newProduct = false, string productID = null) : this ()
+        public NewProduct(string shopID, bool newProduct = false, string productID = null, Dictionary<string, CartItem> cart = null) : this ()
         {
             this.shopID = shopID;
             this.newProduct = newProduct;
-            this.productID = productID;
+            add_btn.Tag = remove_btn.Tag = add_cart_btn.Tag = this.productID = productID;
+            this.cart = cart;
 
             Design();
         }
@@ -48,6 +51,16 @@ namespace Mobile_Retail_Shop
                 
         }
 
+
+        private int SimNumber()
+        {
+            if (one_sim_rb.Checked)
+                return 1;
+            else if (two_sim_rb.Checked)
+                return 2;
+            else
+                return 0;
+        }
 
         private void DataLoad()
         {
@@ -74,11 +87,11 @@ namespace Mobile_Retail_Shop
             discount.Text = $"Discount: {dataTable.Rows[0]["Discount"]}";
 
             // Convert Total Review to decimal and Total Reviewer to int
-            totalReview = Convert.ToDecimal(dataTable.Rows[0]["Total Review"]);
+            totalReview = Convert.ToDouble(dataTable.Rows[0]["Total Review"]);
             totalReviewer = Convert.ToInt32(dataTable.Rows[0]["Total Reviewer"]);
 
             // Calculate the rating
-            decimal ratingValue;
+            double ratingValue;
 
             if (totalReviewer > 0) // Ensure there are reviewers to avoid division by zero
             {
@@ -99,6 +112,16 @@ namespace Mobile_Retail_Shop
 
 
         private void add_btn_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void add_cart_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void add_new_product_btn_Click(object sender, EventArgs e)
         {
             // Validate inputs
             if (string.IsNullOrWhiteSpace(company_name_tb.Text))
@@ -198,14 +221,11 @@ namespace Mobile_Retail_Shop
             }
         }
 
-        private int SimNumber()
+        private void remove_btn_Click(object sender, EventArgs e)
         {
-            if (one_sim_rb.Checked)
-                return 1;
-            else if (two_sim_rb.Checked)
-                return 2;
-            else
-                return 0;
+
         }
+
+       
     }
 }

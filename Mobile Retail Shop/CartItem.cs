@@ -22,6 +22,20 @@ namespace Mobile_Retail_Shop
             Price = price;
             ProductName = productName;
         }
-    }
 
+
+        public void AddToCart(Dictionary<string, CartItem> cart, string productID, string productName, string shopID, int quantity, double price)
+        {
+            // If the product already exists in the cart, update the quantity and price.
+            if (cart.ContainsKey(productID))                 
+            {
+                cart[productID].Quantity += quantity;
+                cart[productID].Price += price;
+            }
+            // If the product does not exist in the cart, add it.
+            else
+                cart[productID] = new CartItem(productID, productName, shopID, quantity, price); 
+
+        }
+    }
 }

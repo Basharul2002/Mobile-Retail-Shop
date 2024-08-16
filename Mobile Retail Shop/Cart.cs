@@ -13,13 +13,15 @@ namespace Mobile_Retail_Shop
     public partial class Cart : Form
     {
         private string customerID;
-        private List<CartItem> cartItems;
+        private Dictionary<string, CartItem> cartItems;
+        private double totalPrice = 0;
+
         public Cart()
         {
             InitializeComponent();
         }
 
-        public Cart(string customerID, List<CartItem> cartItems) : this()
+        public Cart(string customerID, Dictionary<string, CartItem> cartItems) : this()
         {
             this.customerID = customerID;
             this.cartItems = cartItems;
@@ -29,8 +31,7 @@ namespace Mobile_Retail_Shop
 
         private void Design()
         {
-
-            if (cartItems == null)
+            if (cartItems == null || cartItems.Count == 0)
             {
                 zero_iteam_panel.Visible = true;
                 iteam_panel.Visible = false;
@@ -41,13 +42,20 @@ namespace Mobile_Retail_Shop
             iteam_panel.Visible = true;
 
             CartList cartList;
-            for(int i = 0; i < cartItems.Count; i++)
+
+            foreach (var cartItem in cartItems.Values)
             {
-                cartList = new CartList(productID: cartItems[i].ProductID, productName: cartItems[i].ProductName, productQuantity: cartItems[i].Quantity, productPrice: cartItems[i].Price);
+                cartList = new CartList(productID: cartItem.ProductID,
+                                        productName: cartItem.ProductName,
+                                        productQuantity: cartItem.Quantity,
+                                        productPrice: cartItem.Price);
                 cart_list_panel.Controls.Add(cartList);
+                this.totalPrice += cartItem.Price;
             }
 
+            total_price.Text = $"Total Price: {this.totalPrice}";
         }
+
 
         private void payment_btn_Click(object sender, EventArgs e)
         {
@@ -57,7 +65,13 @@ namespace Mobile_Retail_Shop
                 Payment payment = new Payment(customerID: this.customerID, cartItems: this.cartItems);
                 payment.Dock = DockStyle.Fill;
                 Customer.Instance.Controls.Add(payment);
+                this.Hide();
             }
+        }
+
+        private void total_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

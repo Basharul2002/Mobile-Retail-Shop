@@ -16,29 +16,28 @@ namespace Mobile_Retail_Shop
         private string customerID, shopID, productID;
 
         private int totalReviewer;
-        private decimal totalReview;
+        private double totalReview;
         private CustomerDashBoardData form;
-        private List<CartItem> cart = new List<CartItem>();
+        private Dictionary<string, CartItem> cart = new Dictionary<string, CartItem>();
 
         public CustomerDashBoardData()
         {
             InitializeComponent();
         }
 
-        public CustomerDashBoardData(string customerID, string productID = null, CustomerDashBoardData form = null, List<CartItem> cart = null) : this()
+        public CustomerDashBoardData(string customerID, string productID = null, CustomerDashBoardData form = null, Dictionary<string, CartItem> cart = null) : this()
         {
             this.customerID = customerID;
             this.productID = productID;
-            this.form = form;   
-            this.cart = cart;
+            this.form = form;
+            this.cart = cart ?? new Dictionary<string, CartItem>(); // Ensure cart is initialized
 
             if (productID == null)
                 LoadProducts();
-
             else
                 LoadProductDetails();
-
         }
+
 
         private void search_btn_Click(object sender, EventArgs e)
         {
@@ -67,7 +66,7 @@ namespace Mobile_Retail_Shop
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
                 //   ProductInformation productInformation = new ProductInformation(shopID: dataTable.Rows[i]["Shop ID"].ToString(), id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["Company Name"].ToString() + dataTable.Rows[i]["Model"], price: dataTable.Rows[i]["Price"].ToString(), discount: dataTable.Rows[i]["Discount"].ToString(), picture: Utility.ByteArrayToImage((byte[])dataTable.Rows[i]["Picture"]); 
-                productInformation = new ProductInformation(shopOwner: false, shopID: dataTable.Rows[i]["Shop ID"].ToString(), id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["Company Name"].ToString() + dataTable.Rows[i]["Model"], price: dataTable.Rows[i]["Price"].ToString(), discount: dataTable.Rows[i]["Discount"].ToString());
+                productInformation = new ProductInformation(shopOwner: false, personID: this.customerID, shopID: dataTable.Rows[i]["Shop ID"].ToString(), id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["Company Name"].ToString() + dataTable.Rows[i]["Model"], price: dataTable.Rows[i]["Price"].ToString(), discount: dataTable.Rows[i]["Discount"].ToString(), cart: this.cart);
                 result_panel.Controls.Add(productInformation);
             }
 
@@ -102,11 +101,11 @@ namespace Mobile_Retail_Shop
             discount.Text = $"Discount: {dataTable.Rows[0]["Discount"]}";
 
             // Convert Total Review to decimal and Total Reviewer to int
-            totalReview = Convert.ToDecimal(dataTable.Rows[0]["Total Review"]);
+            totalReview = Convert.ToDouble(dataTable.Rows[0]["Total Review"]);
             totalReviewer = Convert.ToInt32(dataTable.Rows[0]["Total Reviewer"]);
 
             // Calculate the rating
-            decimal ratingValue;
+            double ratingValue;
 
             if (totalReviewer > 0) // Ensure there are reviewers to avoid division by zero
             {
@@ -131,7 +130,11 @@ namespace Mobile_Retail_Shop
         private void cart_btn_Click(object sender, EventArgs e)
         {
             Cart cart = new Cart(customerID: this.customerID, cartItems: this.cart);
-            cart.ShowDialog();
+            DialogResult dialogResult = cart.ShowDialog();
+
+            if (dialogResult == DialogResult.OK)
+                cart.Hide();
+            
         }
     }
 
