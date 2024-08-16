@@ -50,7 +50,7 @@ namespace Mobile_Retail_Shop
             string error, query = $@"SELECT * FROM [Product Information]";
 
             if (!string.IsNullOrEmpty(search_tb.Text))
-                query += $@" WHERE [Compnay Name] = %{search_tb.Text}% OR [Model] = %{search_tb.Text}%";
+                query += $@" WHERE [Compnay Name] LIKE %'{search_tb.Text}'% OR [Model] LIKE %'{search_tb.Text}'%";
 
             DataBase dataBase = new DataBase();
 
@@ -121,6 +121,8 @@ namespace Mobile_Retail_Shop
 
         private void log_out_btn_Click(object sender, EventArgs e)
         {
+           
+
             this.Hide();
             Login login = new Login();
             login.Show();

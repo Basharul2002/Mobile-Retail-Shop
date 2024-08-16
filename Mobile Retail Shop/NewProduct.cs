@@ -29,7 +29,7 @@ namespace Mobile_Retail_Shop
         {
             this.shopID = shopID;
             this.newProduct = newProduct;
-            add_btn.Tag = remove_btn.Tag = add_cart_btn.Tag = this.productID = productID;
+            delete_btn.Tag = this.productID = productID;
             this.cart = cart;
 
             Design();
@@ -110,16 +110,6 @@ namespace Mobile_Retail_Shop
             Utility.pictureUpload(product_image);
         }
 
-
-        private void add_btn_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void add_cart_btn_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void add_new_product_btn_Click(object sender, EventArgs e)
         {
@@ -221,11 +211,44 @@ namespace Mobile_Retail_Shop
             }
         }
 
-        private void remove_btn_Click(object sender, EventArgs e)
+        private void back_btn_Click(object sender, EventArgs e)
         {
 
         }
 
-       
+        private void delete_btn_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show($"Are you sure you want to delete this product?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (dialogResult == DialogResult.Yes)
+                ProductDelete();
+            
+        }
+
+
+        private void ProductDelete()
+        {
+            string error, query = $"DELETE FROM [Product Information] WHERE ID = {this.productID}";
+
+            DataBase dataBase = new DataBase();
+            dataBase.ExecuteNonQuery(query, out error);
+
+
+            if (!string.IsNullOrEmpty(error))
+            {
+                MessageBox.Show($"Class: NewProduct Function: ProductDelete \nError: {error}");
+                return;
+            }
+
+            MessageBox.Show("Product Successfully deleted");
+
+            ShopOwner.Instance.panelContainer.Controls.Clear();
+            AllProduct allProduct = new AllProduct(this.shopID);
+            allProduct.Dock = DockStyle.Fill;
+            ShopOwner.Instance.panelContainer.Controls.Add(allProduct);
+        }
+
+
+
     }
 }

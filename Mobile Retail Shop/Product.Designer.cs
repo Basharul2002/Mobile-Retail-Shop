@@ -42,6 +42,7 @@
             this.model = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.compnay_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.product_picture = new System.Windows.Forms.PictureBox();
+            this.quantity = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.product_picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -196,10 +197,21 @@
             this.product_picture.TabIndex = 25;
             this.product_picture.TabStop = false;
             // 
+            // quantity
+            // 
+            this.quantity.BackColor = System.Drawing.Color.Transparent;
+            this.quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantity.Location = new System.Drawing.Point(210, 306);
+            this.quantity.Name = "quantity";
+            this.quantity.Size = new System.Drawing.Size(13, 22);
+            this.quantity.TabIndex = 26;
+            this.quantity.Text = "0";
+            // 
             // Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.quantity);
             this.Controls.Add(this.rating);
             this.Controls.Add(this.discount);
             this.Controls.Add(this.back_btn);
@@ -238,5 +250,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel model;
         private Guna.UI2.WinForms.Guna2HtmlLabel compnay_name;
         private System.Windows.Forms.PictureBox product_picture;
+        private Guna.UI2.WinForms.Guna2HtmlLabel quantity;
     }
 }
