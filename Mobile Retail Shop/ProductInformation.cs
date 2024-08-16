@@ -16,7 +16,7 @@ namespace Mobile_Retail_Shop
         private string personID, shopID;
         private AllProduct allProduct;
         private bool shopOwner;
-        private Customer customerDashboard;
+        private CustomerDashboard customerDashboard;
         private Dictionary<string, CartItem> cart; 
 
         public ProductInformation()
@@ -24,7 +24,7 @@ namespace Mobile_Retail_Shop
             InitializeComponent();
         }
 
-        public ProductInformation(Customer customerDashboard = null, bool shopOwner = false, string personID = null, string shopID = null, string id = null, string name = null, string price = null, string discount = null, Image picture = null, AllProduct allProduct = null, Dictionary<string, CartItem> cart = null) : this()
+        public ProductInformation(CustomerDashboard customerDashboard = null, bool shopOwner = false, string personID = null, string shopID = null, string id = null, string name = null, string price = null, string discount = null, Image picture = null, AllProduct allProduct = null, Dictionary<string, CartItem> cart = null) : this()
         {
             this.customerDashboard = customerDashboard;
             this.personID = personID;
@@ -118,10 +118,10 @@ namespace Mobile_Retail_Shop
 
             if (!this.shopOwner)
             {
-                Customer.Instance.panelContainer.Controls.Clear();
+                CustomerDashboard.Instance.panelContainer.Controls.Clear();
                 Product allProduct = new Product(customerID: this.personID, productID: product_details_btn.Tag.ToString(), cart: this.cart);
                 allProduct.Dock = DockStyle.Fill;
-                Customer.Instance.panelContainer.Controls.Add(allProduct);
+                CustomerDashboard.Instance.panelContainer.Controls.Add(allProduct);
             }
 
         }

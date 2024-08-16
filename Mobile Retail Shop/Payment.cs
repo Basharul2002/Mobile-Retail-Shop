@@ -81,12 +81,12 @@ namespace Mobile_Retail_Shop
 
         private void payment_btn_Click(object sender, EventArgs e)
         {
-            if (!Customer.Instance.panelContainer.Controls.ContainsKey("CustomerDashboardData"))
+            if (!CustomerDashboard.Instance.panelContainer.Controls.ContainsKey("CustomerDashboardData"))
             {
-                Customer.Instance.panelContainer.Controls.Clear();
+                CustomerDashboard.Instance.panelContainer.Controls.Clear();
                 CustomerDashBoardData customerDashBoard = new CustomerDashBoardData(customerID: this.customerID);
                 customerDashBoard.Dock = DockStyle.Fill;
-                Customer.Instance.panelContainer.Controls.Add(customerDashBoard);
+                CustomerDashboard.Instance.panelContainer.Controls.Add(customerDashBoard);
             }
             
         }

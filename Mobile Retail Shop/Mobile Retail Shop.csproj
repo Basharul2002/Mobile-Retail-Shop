@@ -92,11 +92,11 @@
     <Compile Include="CartList.Designer.cs">
       <DependentUpon>CartList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer.cs">
+    <Compile Include="CustomerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer.Designer.cs">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <Compile Include="CustomerDashboard.Designer.cs">
+      <DependentUpon>CustomerDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerDashBoardData.cs">
       <SubType>UserControl</SubType>
@@ -193,8 +193,8 @@
     <EmbeddedResource Include="CartList.resx">
       <DependentUpon>CartList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Customer.resx">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerDashboard.resx">
+      <DependentUpon>CustomerDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerDashBoardData.resx">
       <DependentUpon>CustomerDashBoardData.cs</DependentUpon>

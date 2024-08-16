@@ -1,6 +1,6 @@
 ﻿namespace Mobile_Retail_Shop
 {
-    partial class Customer
+    partial class CustomerDashboard
     {
         /// <summary>
         /// Required designer variable.

@@ -124,7 +124,6 @@ D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Sho
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.AllProduct.resources
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Cart.resources
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CartList.resources
-D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Customer.resources
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CustomerDashBoardData.resources
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CustomerRegistration.resources
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Login.resources
@@ -144,3 +143,4 @@ D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Sho
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile R.95BF2F3F.Up2Date
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.exe
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.pdb
+D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CustomerDashboard.resources

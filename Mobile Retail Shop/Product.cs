@@ -86,18 +86,18 @@ namespace Mobile_Retail_Shop
 
         private void add_cart_btn_Click(object sender, EventArgs e)
         {
-            Customer.Instance.panelContainer.Controls.Clear();
+            CustomerDashboard.Instance.panelContainer.Controls.Clear();
             CustomerDashBoardData customerDashBoardData = new CustomerDashBoardData(customerID: this.customerID, cart: this.cart);
             customerDashBoardData.Dock = DockStyle.Fill;
-            Customer.Instance.panelContainer.Controls.Add(customerDashBoardData);
+            CustomerDashboard.Instance.panelContainer.Controls.Add(customerDashBoardData);
         }
 
         private void back_btn_Click(object sender, EventArgs e)
         {
-            Customer.Instance.panelContainer.Controls.Clear();
+            CustomerDashboard.Instance.panelContainer.Controls.Clear();
             CustomerDashBoardData customerDashBoardData = new CustomerDashBoardData(customerID: this.customerID, cart: this.cart);
             customerDashBoardData.Dock = DockStyle.Fill;
-            Customer.Instance.panelContainer.Controls.Add(customerDashBoardData);
+            CustomerDashboard.Instance.panelContainer.Controls.Add(customerDashBoardData);
         }
     }
 }

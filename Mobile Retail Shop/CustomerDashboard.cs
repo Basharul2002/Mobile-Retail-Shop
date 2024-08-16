@@ -11,21 +11,21 @@ using System.Windows.Forms;
 
 namespace Mobile_Retail_Shop
 {
-    public partial class Customer : Form
+    public partial class CustomerDashboard : Form
     {
-        public static Customer obj;
-        public Customer form;
+        public static CustomerDashboard obj;
+        public CustomerDashboard form;
         private string customerID, productID;
         Dictionary<string, CartItem> cart = new Dictionary<string, CartItem>();
 
-        public Customer()
+        public CustomerDashboard()
         {
             InitializeComponent();
             
         }
 
 
-        public Customer(string customerID, string productID = null, Customer form = null, Dictionary<string, CartItem> cart = null) : this()
+        public CustomerDashboard(string customerID, string productID = null, CustomerDashboard form = null, Dictionary<string, CartItem> cart = null) : this()
         {
             this.customerID = customerID;
             this.productID = productID;
@@ -46,12 +46,12 @@ namespace Mobile_Retail_Shop
         }
 
 
-        public static Customer Instance
+        public static CustomerDashboard Instance
         {
             get
             {
                 if (obj == null)
-                    obj = new Customer();
+                    obj = new CustomerDashboard();
 
                 return obj;
             }

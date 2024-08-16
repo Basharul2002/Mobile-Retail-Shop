@@ -59,12 +59,12 @@ namespace Mobile_Retail_Shop
 
         private void payment_btn_Click(object sender, EventArgs e)
         {
-            if (!Customer.Instance.Controls.ContainsKey("Payment"))
+            if (!CustomerDashboard.Instance.Controls.ContainsKey("Payment"))
             {
-                Customer.Instance.Controls.Clear();
+                CustomerDashboard.Instance.Controls.Clear();
                 Payment payment = new Payment(customerID: this.customerID, cartItems: this.cartItems);
                 payment.Dock = DockStyle.Fill;
-                Customer.Instance.Controls.Add(payment);
+                CustomerDashboard.Instance.Controls.Add(payment);
                 this.Hide();
             }
         }
