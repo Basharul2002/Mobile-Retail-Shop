@@ -90,6 +90,7 @@ namespace Mobile_Retail_Shop
 
         private void add_btn_Click(object sender, EventArgs e)
         {
+            remove_btn.Enabled = true;
             CartItem cartItem = new CartItem(productId: this.productID, productName: compnay_name.Text + " " + model.Text, shopId: this.shopID, quantity: 1, price: Convert.ToDouble(price.Text.Substring(7)));
             cartItem.AddToCart(cart, productID: this.productID, productName: compnay_name.Text + " " + model.Text, shopID: this.shopID, quantity: 1, price: Convert.ToDouble(price.Text.Substring(7)));
             UpdateQuantityDisplay();
@@ -98,12 +99,17 @@ namespace Mobile_Retail_Shop
 
         private void remove_btn_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(this.cart[this.productID]) > 0)
+            if (Convert.ToInt32(this.cart[this.productID].Quantity) > 0)
             {
                 CartItem cartItem = new CartItem(productId: this.productID, productName: compnay_name.Text + " " + model.Text, shopId: this.shopID, quantity: -1, price: (-(Convert.ToDouble(price.Text.Substring(7)))));
                 cartItem.AddToCart(cart, productID: this.productID, productName: compnay_name.Text + " " + model.Text, shopID: this.shopID, quantity: -1, price: (-(Convert.ToDouble(price.Text.Substring(7)))));
+                UpdateQuantityDisplay();
             }
-            
+
+            if (Convert.ToInt32(this.cart[this.productID].Quantity) == 0)
+                remove_btn.Enabled = false;
+
+
         }
 
         private void add_cart_btn_Click(object sender, EventArgs e)
