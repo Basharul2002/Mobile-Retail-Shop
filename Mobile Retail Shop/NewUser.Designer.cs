@@ -152,11 +152,12 @@
             this.password_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_tb.Location = new System.Drawing.Point(41, 382);
             this.password_tb.Name = "password_tb";
-            this.password_tb.PasswordChar = '\0';
+            this.password_tb.PasswordChar = '●';
             this.password_tb.PlaceholderText = "";
             this.password_tb.SelectedText = "";
             this.password_tb.Size = new System.Drawing.Size(271, 36);
             this.password_tb.TabIndex = 1;
+            this.password_tb.UseSystemPasswordChar = true;
             // 
             // guna2HtmlLabel4
             // 
@@ -180,11 +181,12 @@
             this.confirm_password_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.confirm_password_tb.Location = new System.Drawing.Point(41, 462);
             this.confirm_password_tb.Name = "confirm_password_tb";
-            this.confirm_password_tb.PasswordChar = '\0';
+            this.confirm_password_tb.PasswordChar = '●';
             this.confirm_password_tb.PlaceholderText = "";
             this.confirm_password_tb.SelectedText = "";
             this.confirm_password_tb.Size = new System.Drawing.Size(271, 36);
             this.confirm_password_tb.TabIndex = 1;
+            this.confirm_password_tb.UseSystemPasswordChar = true;
             // 
             // clear_btn
             // 

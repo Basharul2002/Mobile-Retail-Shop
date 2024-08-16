@@ -18,6 +18,11 @@ namespace Mobile_Retail_Shop
             InitializeComponent();
         }
 
+        private void password_toggle_btn_Click(object sender, EventArgs e)
+        {
+            Utility.TogglePasswordVisibility(password_tb, password_toggle_btn);
+        }
+
         private void login_btn_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(email_tb.Text))

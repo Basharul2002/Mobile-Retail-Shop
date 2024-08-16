@@ -121,7 +121,7 @@ namespace Mobile_Retail_Shop
             query = $@"INSERT INTO [User Information] (Name, Email, [Phone Number], City, Password, [User Type])
                               VALUES('{name_tb.Text}', '{email_tb.Text}', '{phone_number_tb.Text}', '{city_tb.Text}', '{password_tb.Text}', {this.userType})";
 
-            dataTable = dataBase.DataAccess(query, out error);
+            dataBase.ExecuteNonQuery(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -129,7 +129,7 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            
+            MessageBox.Show($"{name_tb.Text} Resistered");
 
         }
 

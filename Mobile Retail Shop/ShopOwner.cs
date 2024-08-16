@@ -68,7 +68,7 @@ namespace Mobile_Retail_Shop
                         Dock = DockStyle.Top
                     };
                     shopButton.Click += new System.EventHandler(this.shop_btn_Click);
-                    left_panel.Controls.Add(shopButton);
+                    shop_panel.Controls.Add(shopButton);
                 }
             }
         }
@@ -89,6 +89,13 @@ namespace Mobile_Retail_Shop
         private void ShopOwner_Load(object sender, EventArgs e)
         {
             obj = this;
+        }
+
+        private void log_out_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();    
+            Login login = new Login();
+            login.Show();   
         }
     }
 }

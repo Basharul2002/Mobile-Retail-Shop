@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mobile_Retail_Shop.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,18 +35,41 @@ namespace Mobile_Retail_Shop
 
             if (!string.IsNullOrEmpty(error))
             {
-                MessageBox.Show($"Class AllProduct Function ProductShow \n error; {error}");
+                MessageBox.Show($"Class AllProduct Function ProductShow \nError: {error}");
                 return;
             }
 
-            //         public ProductInformation(string id, string name, string price, string discount = null, Image picture = null) : this()
-            ProductInformation productInformation;
-
+            // Iterate through each product in the DataTable
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
-                productInformation = new ProductInformation(shopID: this.shopID, id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["Company Name"].ToString(), price: dataTable.Rows[i]["Price"].ToString(), 
-                    discount: dataTable.Rows[i]["Discount"].ToString()/*, picture: Utility.ByteArrayToImage((byte[])(dataTable.Rows[i]["Picture"]*/);
-                product_result_panel.Controls.Add(productInformation);  
+                // Handle potential null values for the picture
+                byte[] pictureBytes = dataTable.Rows[i]["Picture"] as byte[];
+                Image image = null;
+
+                if (pictureBytes != null && pictureBytes.Length > 0)
+                {
+                    image = Utility.ByteArrayToImage(pictureBytes);
+                }
+                else
+                {
+                    // Optionally set a default image if no picture is available
+                    image = Properties.Resources.hide; // Replace with your default image
+                }
+
+                // Create the product information object
+                ProductInformation productInformation = new ProductInformation
+                (
+                    shopOwner: true,
+                    shopID: this.shopID,
+                    id: dataTable.Rows[i]["ID"].ToString(),
+                    name: dataTable.Rows[i]["Company Name"].ToString(),
+                    price: dataTable.Rows[i]["Price"].ToString(),
+                    discount: dataTable.Rows[i]["Discount"].ToString(),
+                    picture: image
+                );
+
+                // Add the product information to the panel
+                product_result_panel.Controls.Add(productInformation);
             }
         }
 
@@ -60,11 +84,11 @@ namespace Mobile_Retail_Shop
             }
 
             string error;
-            string query = @"SELECT * FROM [Product Information] 
-                             WHERE [Shop ID] = @ShopID AND 
-                                   ([Company Name] LIKE @SearchText OR 
-                                   [Model] LIKE @SearchText OR 
-                                   CONCAT([Company Name], ' ', [Model]) LIKE @SearchText)";
+            string query = $@"SELECT * FROM [Product Information] 
+                             WHERE [Shop ID] = {this.shopID} AND 
+                                   ([Company Name] LIKE {search_tb.Text} OR 
+                                   [Model] LIKE {search_tb.Text} OR 
+                                   CONCAT([Company Name], ' ', [Model]) LIKE {search_tb.Text})";
 
             DataBase dataBase = new DataBase();
             DataTable dataTable = dataBase.DataAccess(query, out error);
@@ -78,7 +102,7 @@ namespace Mobile_Retail_Shop
 
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
-                ProductInformation productInformation = new ProductInformation(shopID: this.shopID, id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["Company Name"].ToString(), price: dataTable.Rows[i]["Price"].ToString(), discount: dataTable.Rows[i]["Discount"].ToString(), picture: Utility.ByteArrayToImage((byte[])(dataTable.Rows[i]["Picture"])));
+                ProductInformation productInformation = new ProductInformation(shopOwner: true, shopID: this.shopID, id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["Company Name"].ToString(), price: dataTable.Rows[i]["Price"].ToString(), discount: dataTable.Rows[i]["Discount"].ToString(), picture: Utility.ByteArrayToImage((byte[])(dataTable.Rows[i]["Picture"])));
                 product_result_panel.Controls.Add(productInformation);
             }
         }

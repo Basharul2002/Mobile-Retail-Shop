@@ -16,6 +16,8 @@ namespace Mobile_Retail_Shop
     {
         private bool newProduct;
         private string shopID, productID;
+        private int totalReviewer;
+        private decimal totalReview;
         public NewProduct()
         {
             InitializeComponent();
@@ -61,7 +63,7 @@ namespace Mobile_Retail_Shop
             }
 
 
-            //product_picture.Image = Utility.ByteArrayToImage((byte[])(dataTable.Rows[0]["Picture"]));
+            product_picture.Image = Utility.ByteArrayToImage((byte[])(dataTable.Rows[0]["Picture"]));
             compnay_name.Text = dataTable.Rows[0]["Company Name"].ToString();
             model.Text = dataTable.Rows[0]["Model"].ToString();
             sim.Text = $"SIM: {dataTable.Rows[0]["SIM"]}";
@@ -71,6 +73,22 @@ namespace Mobile_Retail_Shop
             price.Text = $"Price: {dataTable.Rows[0]["Price"]}";
             discount.Text = $"Discount: {dataTable.Rows[0]["Discount"]}";
 
+            // Convert Total Review to decimal and Total Reviewer to int
+            totalReview = Convert.ToDecimal(dataTable.Rows[0]["Total Review"]);
+            totalReviewer = Convert.ToInt32(dataTable.Rows[0]["Total Reviewer"]);
+
+            // Calculate the rating
+            decimal ratingValue;
+
+            if (totalReviewer > 0) // Ensure there are reviewers to avoid division by zero
+            {
+                ratingValue = (totalReview / totalReviewer) * 5; // Calculate the rating
+                rating.Text = $"Rating: {ratingValue:F1} Total Review: {totalReviewer}"; // Format rating to 1 decimal place
+            }
+            else
+                rating.Text = "Rating: N/A Total Review: 0"; // Handle case where there are no reviewers
+            
+
         }
 
 
@@ -79,10 +97,6 @@ namespace Mobile_Retail_Shop
             Utility.pictureUpload(product_image);
         }
 
-        private void submit_btn_Click(object sender, EventArgs e)
-        {
-            float rating = product_rating_star.Value;
-        }
 
         private void add_btn_Click(object sender, EventArgs e)
         {
@@ -154,28 +168,32 @@ namespace Mobile_Retail_Shop
 
             // Convert the image to a byte array
             byte[] picture;
+            Image image = null;
             if (product_picture.Image != null)
-                picture = Utility.ImageToByteArray(product_picture.Image, Utility.GetImageFormat(product_picture.Image));
-            
+                image = product_image.Image;
+
             else
-                picture = Utility.ImageToByteArray(Properties.Resources.show, Utility.GetImageFormat(Properties.Resources.show));
+                image = Properties.Resources.show;
+
+            picture = Utility.ImageToByteArray(image, Utility.GetImageFormat(image));
+
 
 
             // Define the query with placeholders for parameters
-            string query = $@"INSERT INTO [Product Information] 
-                     (Picture, [Company Name], [Model], SIM, RAM, ROM, Color, Price, Discount, [Total Review], [Total Reviewer], [Shop ID])
-                 VALUES
-                     (NULL, '{company_name_tb.Text}', '{model_tb.Text}', {SimNumber()}, '{ram_value.Text} {ram_size.Text}', '{rom_value.Text} {rom_size.Text}', '{color_tb.Text}', {price_tb.Text}, {discount_tb.Text}, {0}, {0}, '{this.shopID}')";
-
+            string query = $@"
+                            INSERT INTO [Product Information] 
+                                (Picture, [Company Name], [Model], SIM, RAM, ROM, Color, Price, Discount, [Total Review], [Total Reviewer], [Shop ID])
+                            VALUES
+                                ('{picture}', '{company_name_tb.Text}', '{model_tb.Text}', {SimNumber()}, '{ram_value.Text} {ram_size.Text}', '{rom_value.Text} {rom_size.Text}', '{color_tb.Text}', {decimal.Parse(price_tb.Text)},  {decimal.Parse(discount_tb.Text)},  {0},  {0},  '{this.shopID}')";
 
             DataBase dataBase = new DataBase();
             string error;
-            dataBase.DataInsert(query, out error);
+            dataBase.ExecuteNonQuery(query, out error);
 
             // Handle any errors
             if (!string.IsNullOrEmpty(error))
             {
-                MessageBox.Show($"Class: NewProduct Function: add_btn_Click  \nError: {error}");
+                MessageBox.Show($"Class: Product Function: add_btn_Click  \nError: {error}");
                 return;
             }
         }
