@@ -16,6 +16,7 @@ namespace Mobile_Retail_Shop
         private int totalReviewer;
         private double totalReview;
         private Dictionary<string, CartItem> cart;
+        private CartItem cartItem;
         public Product()
         {
             InitializeComponent();
@@ -26,8 +27,24 @@ namespace Mobile_Retail_Shop
             this.customerID = customerID;
             add_cart_btn.Tag = add_btn.Tag = remove_btn.Tag = this.productID = productID;
             this.cart = cart;
-            DataLoad(); 
+            DataLoad();
+            UpdateQuantityDisplay();
         }
+
+        private void UpdateQuantityDisplay()
+        {
+            if (this.cart.ContainsKey(this.productID))
+            {
+                cartItem = this.cart[this.productID];
+                quantity.Text = cartItem.Quantity.ToString();
+            }
+            else
+            {
+                // Handle the case where the productId is not in the cart
+                quantity.Text = "0";
+            }
+        }
+
 
         private void DataLoad()
         {
@@ -75,13 +92,18 @@ namespace Mobile_Retail_Shop
         {
             CartItem cartItem = new CartItem(productId: this.productID, productName: compnay_name.Text + " " + model.Text, shopId: this.shopID, quantity: 1, price: Convert.ToDouble(price.Text.Substring(7)));
             cartItem.AddToCart(cart, productID: this.productID, productName: compnay_name.Text + " " + model.Text, shopID: this.shopID, quantity: 1, price: Convert.ToDouble(price.Text.Substring(7)));
+            UpdateQuantityDisplay();
 
         }
 
         private void remove_btn_Click(object sender, EventArgs e)
         {
-            CartItem cartItem = new CartItem(productId: this.productID, productName: compnay_name.Text + " " + model.Text, shopId: this.shopID, quantity: -1, price: (-(Convert.ToDouble(price.Text.Substring(7)))));
-            cartItem.AddToCart(cart, productID: this.productID, productName: compnay_name.Text + " " + model.Text, shopID: this.shopID, quantity: -1, price: (-(Convert.ToDouble(price.Text.Substring(7)))));
+            if (Convert.ToInt32(this.cart[this.productID]) > 0)
+            {
+                CartItem cartItem = new CartItem(productId: this.productID, productName: compnay_name.Text + " " + model.Text, shopId: this.shopID, quantity: -1, price: (-(Convert.ToDouble(price.Text.Substring(7)))));
+                cartItem.AddToCart(cart, productID: this.productID, productName: compnay_name.Text + " " + model.Text, shopID: this.shopID, quantity: -1, price: (-(Convert.ToDouble(price.Text.Substring(7)))));
+            }
+            
         }
 
         private void add_cart_btn_Click(object sender, EventArgs e)

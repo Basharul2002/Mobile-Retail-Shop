@@ -47,14 +47,11 @@ namespace Mobile_Retail_Shop
                 Image image = null;
 
                 if (pictureBytes != null && pictureBytes.Length > 0)
-                {
                     image = Utility.ByteArrayToImage(pictureBytes);
-                }
-                else
-                {
-                    // Optionally set a default image if no picture is available
+
+                else  // Optionally set a default image if no picture is available
                     image = Properties.Resources.hide; // Replace with your default image
-                }
+                
 
                 // Create the product information object
                 ProductInformation productInformation = new ProductInformation

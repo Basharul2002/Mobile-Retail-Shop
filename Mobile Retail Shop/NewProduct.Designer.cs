@@ -57,7 +57,7 @@
             this.rating = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.discount = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.back_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.add_cart_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.delete_btn = new Guna.UI2.WinForms.Guna2Button();
             this.price = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.color = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.rom = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -66,8 +66,6 @@
             this.model = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.compnay_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.product_picture = new System.Windows.Forms.PictureBox();
-            this.remove_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.add_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.new_product_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.product_image)).BeginInit();
@@ -373,7 +371,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 825);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(313, 23);
+            this.guna2Panel2.Size = new System.Drawing.Size(296, 23);
             this.guna2Panel2.TabIndex = 23;
             // 
             // add_new_product_btn
@@ -433,7 +431,7 @@
             this.new_product_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.new_product_panel.Location = new System.Drawing.Point(0, 0);
             this.new_product_panel.Name = "new_product_panel";
-            this.new_product_panel.Size = new System.Drawing.Size(313, 848);
+            this.new_product_panel.Size = new System.Drawing.Size(296, 848);
             this.new_product_panel.TabIndex = 26;
             // 
             // product_image
@@ -450,9 +448,7 @@
             this.product_panel.Controls.Add(this.rating);
             this.product_panel.Controls.Add(this.discount);
             this.product_panel.Controls.Add(this.back_btn);
-            this.product_panel.Controls.Add(this.add_btn);
-            this.product_panel.Controls.Add(this.remove_btn);
-            this.product_panel.Controls.Add(this.add_cart_btn);
+            this.product_panel.Controls.Add(this.delete_btn);
             this.product_panel.Controls.Add(this.price);
             this.product_panel.Controls.Add(this.color);
             this.product_panel.Controls.Add(this.rom);
@@ -464,7 +460,7 @@
             this.product_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.product_panel.Location = new System.Drawing.Point(0, 848);
             this.product_panel.Name = "product_panel";
-            this.product_panel.Size = new System.Drawing.Size(313, 390);
+            this.product_panel.Size = new System.Drawing.Size(296, 390);
             this.product_panel.TabIndex = 27;
             // 
             // rating
@@ -498,21 +494,22 @@
             this.back_btn.Size = new System.Drawing.Size(80, 45);
             this.back_btn.TabIndex = 24;
             this.back_btn.Text = "Back";
+            this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
             // 
-            // add_cart_btn
+            // delete_btn
             // 
-            this.add_cart_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.add_cart_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.add_cart_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.add_cart_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.add_cart_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.add_cart_btn.ForeColor = System.Drawing.Color.White;
-            this.add_cart_btn.Location = new System.Drawing.Point(174, 222);
-            this.add_cart_btn.Name = "add_cart_btn";
-            this.add_cart_btn.Size = new System.Drawing.Size(78, 45);
-            this.add_cart_btn.TabIndex = 24;
-            this.add_cart_btn.Text = "Add to Cart";
-            this.add_cart_btn.Click += new System.EventHandler(this.add_cart_btn_Click);
+            this.delete_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.delete_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.delete_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.delete_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.delete_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.delete_btn.ForeColor = System.Drawing.Color.White;
+            this.delete_btn.Location = new System.Drawing.Point(174, 222);
+            this.delete_btn.Name = "delete_btn";
+            this.delete_btn.Size = new System.Drawing.Size(78, 45);
+            this.delete_btn.TabIndex = 24;
+            this.delete_btn.Text = "Delete";
+            this.delete_btn.Click += new System.EventHandler(this.delete_btn_Click);
             // 
             // price
             // 
@@ -585,38 +582,6 @@
             this.product_picture.TabIndex = 14;
             this.product_picture.TabStop = false;
             // 
-            // remove_btn
-            // 
-            this.remove_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.remove_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.remove_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.remove_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.remove_btn.FillColor = System.Drawing.Color.Transparent;
-            this.remove_btn.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.remove_btn.ForeColor = System.Drawing.Color.Black;
-            this.remove_btn.Location = new System.Drawing.Point(134, 222);
-            this.remove_btn.Name = "remove_btn";
-            this.remove_btn.Size = new System.Drawing.Size(40, 45);
-            this.remove_btn.TabIndex = 24;
-            this.remove_btn.Text = "-";
-            this.remove_btn.Click += new System.EventHandler(this.remove_btn_Click);
-            // 
-            // add_btn
-            // 
-            this.add_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.add_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.add_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.add_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.add_btn.FillColor = System.Drawing.Color.Transparent;
-            this.add_btn.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.add_btn.ForeColor = System.Drawing.Color.Black;
-            this.add_btn.Location = new System.Drawing.Point(252, 222);
-            this.add_btn.Name = "add_btn";
-            this.add_btn.Size = new System.Drawing.Size(40, 45);
-            this.add_btn.TabIndex = 24;
-            this.add_btn.Text = "+";
-            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
-            // 
             // NewProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -625,7 +590,7 @@
             this.Controls.Add(this.product_panel);
             this.Controls.Add(this.new_product_panel);
             this.Name = "NewProduct";
-            this.Size = new System.Drawing.Size(313, 469);
+            this.Size = new System.Drawing.Size(296, 469);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.new_product_panel.ResumeLayout(false);
@@ -673,11 +638,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel compnay_name;
         private System.Windows.Forms.PictureBox product_picture;
         private Guna.UI2.WinForms.Guna2HtmlLabel discount;
-        private Guna.UI2.WinForms.Guna2Button add_cart_btn;
+        private Guna.UI2.WinForms.Guna2Button delete_btn;
         private Guna.UI2.WinForms.Guna2PictureBox product_image;
         private Guna.UI2.WinForms.Guna2HtmlLabel rating;
         private Guna.UI2.WinForms.Guna2Button back_btn;
-        private Guna.UI2.WinForms.Guna2Button add_btn;
-        private Guna.UI2.WinForms.Guna2Button remove_btn;
     }
 }
