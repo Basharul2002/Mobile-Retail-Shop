@@ -16,16 +16,16 @@ namespace Mobile_Retail_Shop
         private string customerID, shopID, productID;
 
         private int totalReviewer;
-        private decimal totalReview;
+        private double totalReview;
         private CustomerDashBoardData form;
-        private List<CartItem> cart = new List<CartItem>();
+        private Dictionary<string, CartItem> cart = new Dictionary<string, CartItem>();
 
         public CustomerDashBoardData()
         {
             InitializeComponent();
         }
 
-        public CustomerDashBoardData(string customerID, string productID = null, CustomerDashBoardData form = null, List<CartItem> cart = null) : this()
+        public CustomerDashBoardData(string customerID, string productID = null, CustomerDashBoardData form = null, Dictionary<string, CartItem> cart = null) : this()
         {
             this.customerID = customerID;
             this.productID = productID;
@@ -102,11 +102,11 @@ namespace Mobile_Retail_Shop
             discount.Text = $"Discount: {dataTable.Rows[0]["Discount"]}";
 
             // Convert Total Review to decimal and Total Reviewer to int
-            totalReview = Convert.ToDecimal(dataTable.Rows[0]["Total Review"]);
+            totalReview = Convert.ToDouble(dataTable.Rows[0]["Total Review"]);
             totalReviewer = Convert.ToInt32(dataTable.Rows[0]["Total Reviewer"]);
 
             // Calculate the rating
-            decimal ratingValue;
+            double ratingValue;
 
             if (totalReviewer > 0) // Ensure there are reviewers to avoid division by zero
             {

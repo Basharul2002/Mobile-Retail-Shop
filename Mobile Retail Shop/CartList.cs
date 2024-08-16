@@ -23,7 +23,8 @@ namespace Mobile_Retail_Shop
             this.Tag = productID;
             name.Text = $"Name: {productName}";
             quantity.Text = $"Quantity: {productQuantity}";
-            price.Text = $"Price: {productPrice}";
+            price.Text = $"Price: {productPrice / productQuantity:F2}";
+            total_price.Text = $"Total Price: {productPrice:F2}";
         }
     }
 }

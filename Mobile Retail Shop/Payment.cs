@@ -13,13 +13,13 @@ namespace Mobile_Retail_Shop
     public partial class Payment : UserControl
     {
         private string customerID;
-        private List<CartItem> cartItems;
+        private Dictionary<string, CartItem> cartItems;
         public Payment()
         {
             InitializeComponent();
         }
 
-        public Payment(string customerID, List<CartItem> cartItems) : this() 
+        public Payment(string customerID, Dictionary<string, CartItem> cartItems) : this() 
         {
             this.customerID = customerID;
             this.cartItems = cartItems;

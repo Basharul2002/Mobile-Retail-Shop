@@ -16,7 +16,7 @@ namespace Mobile_Retail_Shop
         public static Customer obj;
         public Customer form;
         private string customerID, productID;
-        List<CartItem> cart = new List<CartItem>();
+        Dictionary<string, CartItem> cart = new Dictionary<string, CartItem>();
 
         public Customer()
         {
@@ -25,7 +25,7 @@ namespace Mobile_Retail_Shop
         }
 
 
-        public Customer(string customerID, string productID = null, Customer form = null, List<CartItem> cart = null) : this()
+        public Customer(string customerID, string productID = null, Customer form = null, Dictionary<string, CartItem> cart = null) : this()
         {
             this.customerID = customerID;
             this.productID = productID;
