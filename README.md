@@ -73,4 +73,4 @@ The **Mobile Retail Shop** is a comprehensive application designed to manage a m
 Contributions are welcome! Please submit a pull request or open an issue to discuss changes.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://github.com/hameem2003/Mobile-Retail-Shop?tab=MIT-1-ov-file).
