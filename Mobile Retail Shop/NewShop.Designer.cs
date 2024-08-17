@@ -34,8 +34,8 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.email_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.name_tb = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.shop_name_tb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.submit_btn = new Guna.UI2.WinForms.Guna2Button();
             this.clear_btn = new Guna.UI2.WinForms.Guna2Button();
             this.owner_cb = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -126,33 +126,33 @@
             this.guna2HtmlLabel1.TabIndex = 4;
             this.guna2HtmlLabel1.Text = "Email";
             // 
-            // guna2TextBox1
+            // shop_name_tb
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(52, 59);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(271, 36);
-            this.guna2TextBox1.TabIndex = 9;
+            this.shop_name_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.shop_name_tb.DefaultText = "";
+            this.shop_name_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.shop_name_tb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.shop_name_tb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.shop_name_tb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.shop_name_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.shop_name_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.shop_name_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.shop_name_tb.Location = new System.Drawing.Point(52, 59);
+            this.shop_name_tb.Name = "shop_name_tb";
+            this.shop_name_tb.PasswordChar = '\0';
+            this.shop_name_tb.PlaceholderText = "";
+            this.shop_name_tb.SelectedText = "";
+            this.shop_name_tb.Size = new System.Drawing.Size(271, 36);
+            this.shop_name_tb.TabIndex = 9;
             // 
-            // name_tb
+            // label
             // 
-            this.name_tb.BackColor = System.Drawing.Color.Transparent;
-            this.name_tb.Location = new System.Drawing.Point(52, 37);
-            this.name_tb.Name = "name_tb";
-            this.name_tb.Size = new System.Drawing.Size(31, 15);
-            this.name_tb.TabIndex = 5;
-            this.name_tb.Text = "Name";
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.label.Location = new System.Drawing.Point(52, 37);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(31, 15);
+            this.label.TabIndex = 5;
+            this.label.Text = "Name";
             // 
             // submit_btn
             // 
@@ -221,8 +221,8 @@
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.email_tb);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.name_tb);
+            this.Controls.Add(this.shop_name_tb);
+            this.Controls.Add(this.label);
             this.Name = "NewShop";
             this.Size = new System.Drawing.Size(420, 503);
             this.ResumeLayout(false);
@@ -238,8 +238,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2TextBox email_tb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel name_tb;
+        private Guna.UI2.WinForms.Guna2TextBox shop_name_tb;
+        private Guna.UI2.WinForms.Guna2HtmlLabel label;
         private Guna.UI2.WinForms.Guna2Button submit_btn;
         private Guna.UI2.WinForms.Guna2Button clear_btn;
         private Guna.UI2.WinForms.Guna2ComboBox owner_cb;

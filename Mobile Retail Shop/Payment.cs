@@ -90,5 +90,14 @@ namespace Mobile_Retail_Shop
             }
             
         }
+
+        private void Payment_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Check if the entered key is a digit or a control key (like backspace)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                 e.Handled = true; // Suppress the key press
+
+            
+        }
     }
 }

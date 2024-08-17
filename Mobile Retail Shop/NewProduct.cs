@@ -14,7 +14,7 @@ namespace Mobile_Retail_Shop
 {
     public partial class NewProduct : UserControl
     {
-        private bool newProduct;
+        private bool newProduct, admin;
         private string shopID, productID;
         private int totalReviewer;
         private double totalReview;
@@ -25,7 +25,7 @@ namespace Mobile_Retail_Shop
             InitializeComponent();
         }
 
-        public NewProduct(string shopID, bool newProduct = false, string productID = null, Dictionary<string, CartItem> cart = null) : this ()
+        public NewProduct(string shopID = null, bool admin = false, bool newProduct = false, string productID = null, Dictionary<string, CartItem> cart = null) : this ()
         {
             this.shopID = shopID;
             this.newProduct = newProduct;
@@ -46,6 +46,14 @@ namespace Mobile_Retail_Shop
             {
                 new_product_panel.Visible = false;
                 product_panel.Visible = true;
+                DataLoad();
+            }
+
+            else if (admin)
+            {
+                new_product_panel.Visible = false;
+                product_panel.Visible = true;
+                back_btn.Visible = false;
                 DataLoad();
             }
                 
@@ -76,7 +84,7 @@ namespace Mobile_Retail_Shop
             }
 
 
-            product_picture.Image = Utility.ByteArrayToImage((byte[])(dataTable.Rows[0]["Picture"]));
+           // product_picture.Image = Utility.ByteArrayToImage((byte[])(dataTable.Rows[0]["Picture"]));
             compnay_name.Text = dataTable.Rows[0]["Company Name"].ToString();
             model.Text = dataTable.Rows[0]["Model"].ToString();
             sim.Text = $"SIM: {dataTable.Rows[0]["SIM"]}";
@@ -225,6 +233,10 @@ namespace Mobile_Retail_Shop
             
         }
 
+        private void product_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void ProductDelete()
         {

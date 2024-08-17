@@ -40,8 +40,6 @@
             this.main_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.reset_password_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.reset_password_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.confirm_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.password_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
             this.confirm_password_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.password_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,7 +47,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.user_type_reset_password = new System.Windows.Forms.Label();
             this.name_reset_password = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.otp_verify_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.otp_code_tb = new Guna.UI2.WinForms.Guna2TextBox();
@@ -67,7 +64,6 @@
             this.email_radio_button = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
-            this.customer_icon_picture_box = new System.Windows.Forms.PictureBox();
             this.user_type = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.user_profile_showing_panel = new Guna.UI2.WinForms.Guna2Panel();
@@ -75,16 +71,21 @@
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.profile_showing_back_btn = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.reset_password_back_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.confirm_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.password_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.customer_icon_picture_box = new System.Windows.Forms.PictureBox();
             this.user_search_panel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.main_panel.SuspendLayout();
             this.reset_password_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.otp_verify_panel.SuspendLayout();
             this.otp_sending_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customer_icon_picture_box)).BeginInit();
             this.user_profile_showing_panel.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customer_icon_picture_box)).BeginInit();
             this.SuspendLayout();
             // 
             // user_search_panel
@@ -93,7 +94,7 @@
             this.user_search_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.user_search_panel.Location = new System.Drawing.Point(0, 0);
             this.user_search_panel.Name = "user_search_panel";
-            this.user_search_panel.Size = new System.Drawing.Size(598, 331);
+            this.user_search_panel.Size = new System.Drawing.Size(649, 331);
             this.user_search_panel.TabIndex = 2;
             // 
             // panel4
@@ -106,7 +107,7 @@
             this.panel4.Controls.Add(this.search_btn);
             this.panel4.Controls.Add(this.message);
             this.panel4.Controls.Add(this.title);
-            this.panel4.Location = new System.Drawing.Point(42, 33);
+            this.panel4.Location = new System.Drawing.Point(67, 33);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(514, 265);
             this.panel4.TabIndex = 4;
@@ -160,6 +161,7 @@
             this.cancel_btn.TabIndex = 3;
             this.cancel_btn.Text = "Cancel";
             this.cancel_btn.UseVisualStyleBackColor = false;
+            this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
             // 
             // search_btn
             // 
@@ -214,11 +216,12 @@
             this.main_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.main_panel.Location = new System.Drawing.Point(0, 0);
             this.main_panel.Name = "main_panel";
-            this.main_panel.Size = new System.Drawing.Size(615, 344);
+            this.main_panel.Size = new System.Drawing.Size(666, 344);
             this.main_panel.TabIndex = 4;
             // 
             // reset_password_panel
             // 
+            this.reset_password_panel.Controls.Add(this.reset_password_back_btn);
             this.reset_password_panel.Controls.Add(this.reset_password_btn);
             this.reset_password_panel.Controls.Add(this.confirm_toggle_btn);
             this.reset_password_panel.Controls.Add(this.password_toggle_btn);
@@ -232,9 +235,9 @@
             this.reset_password_panel.Controls.Add(this.pictureBox1);
             this.reset_password_panel.Controls.Add(this.label10);
             this.reset_password_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.reset_password_panel.Location = new System.Drawing.Point(0, 1541);
+            this.reset_password_panel.Location = new System.Drawing.Point(0, 1495);
             this.reset_password_panel.Name = "reset_password_panel";
-            this.reset_password_panel.Size = new System.Drawing.Size(598, 515);
+            this.reset_password_panel.Size = new System.Drawing.Size(649, 515);
             this.reset_password_panel.TabIndex = 6;
             this.reset_password_panel.Visible = false;
             // 
@@ -246,46 +249,12 @@
             this.reset_password_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.reset_password_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.reset_password_btn.ForeColor = System.Drawing.Color.White;
-            this.reset_password_btn.Location = new System.Drawing.Point(197, 386);
+            this.reset_password_btn.Location = new System.Drawing.Point(317, 387);
             this.reset_password_btn.Name = "reset_password_btn";
-            this.reset_password_btn.Size = new System.Drawing.Size(180, 45);
+            this.reset_password_btn.Size = new System.Drawing.Size(116, 45);
             this.reset_password_btn.TabIndex = 21;
             this.reset_password_btn.Text = "Reset Password";
             this.reset_password_btn.Click += new System.EventHandler(this.reset_password_btn_Click);
-            // 
-            // confirm_toggle_btn
-            // 
-            this.confirm_toggle_btn.Animated = true;
-            this.confirm_toggle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.confirm_toggle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.confirm_toggle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.confirm_toggle_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.confirm_toggle_btn.FillColor = System.Drawing.Color.Transparent;
-            this.confirm_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.confirm_toggle_btn.ForeColor = System.Drawing.Color.White;
-            this.confirm_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
-            this.confirm_toggle_btn.Location = new System.Drawing.Point(488, 324);
-            this.confirm_toggle_btn.Name = "confirm_toggle_btn";
-            this.confirm_toggle_btn.Size = new System.Drawing.Size(43, 31);
-            this.confirm_toggle_btn.TabIndex = 19;
-            this.confirm_toggle_btn.Click += new System.EventHandler(this.confirm_toggle_btn_Click);
-            // 
-            // password_toggle_btn
-            // 
-            this.password_toggle_btn.Animated = true;
-            this.password_toggle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.password_toggle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.password_toggle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.password_toggle_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.password_toggle_btn.FillColor = System.Drawing.Color.Transparent;
-            this.password_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.password_toggle_btn.ForeColor = System.Drawing.Color.White;
-            this.password_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
-            this.password_toggle_btn.Location = new System.Drawing.Point(483, 252);
-            this.password_toggle_btn.Name = "password_toggle_btn";
-            this.password_toggle_btn.Size = new System.Drawing.Size(43, 31);
-            this.password_toggle_btn.TabIndex = 20;
-            this.password_toggle_btn.Click += new System.EventHandler(this.password_toggle_btn_Click);
             // 
             // confirm_password_tb
             // 
@@ -335,7 +304,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(40, 301);
+            this.label6.Location = new System.Drawing.Point(65, 301);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(292, 20);
             this.label6.TabIndex = 6;
@@ -347,7 +316,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(40, 224);
+            this.label7.Location = new System.Drawing.Point(65, 224);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(187, 20);
             this.label7.TabIndex = 7;
@@ -359,7 +328,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(40, 187);
+            this.label8.Location = new System.Drawing.Point(65, 187);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(483, 20);
             this.label8.TabIndex = 8;
@@ -371,7 +340,7 @@
             this.user_type_reset_password.AutoSize = true;
             this.user_type_reset_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.user_type_reset_password.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.user_type_reset_password.Location = new System.Drawing.Point(129, 135);
+            this.user_type_reset_password.Location = new System.Drawing.Point(154, 135);
             this.user_type_reset_password.Name = "user_type_reset_password";
             this.user_type_reset_password.Size = new System.Drawing.Size(54, 20);
             this.user_type_reset_password.TabIndex = 9;
@@ -382,28 +351,18 @@
             this.name_reset_password.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.name_reset_password.AutoSize = true;
             this.name_reset_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_reset_password.Location = new System.Drawing.Point(129, 106);
+            this.name_reset_password.Location = new System.Drawing.Point(154, 106);
             this.name_reset_password.Name = "name_reset_password";
             this.name_reset_password.Size = new System.Drawing.Size(243, 20);
             this.name_reset_password.TabIndex = 10;
             this.name_reset_password.Text = "Basharul Alam Mazumder Rahad";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(44, 97);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(38, 50);
+            this.label10.Location = new System.Drawing.Point(63, 50);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(277, 31);
             this.label10.TabIndex = 3;
@@ -420,9 +379,9 @@
             this.otp_verify_panel.Controls.Add(this.titlel2);
             this.otp_verify_panel.Controls.Add(this.label4);
             this.otp_verify_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.otp_verify_panel.Location = new System.Drawing.Point(0, 1200);
+            this.otp_verify_panel.Location = new System.Drawing.Point(0, 1154);
             this.otp_verify_panel.Name = "otp_verify_panel";
-            this.otp_verify_panel.Size = new System.Drawing.Size(598, 341);
+            this.otp_verify_panel.Size = new System.Drawing.Size(649, 341);
             this.otp_verify_panel.TabIndex = 5;
             this.otp_verify_panel.Visible = false;
             // 
@@ -453,12 +412,13 @@
             this.otp_verify_back_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.otp_verify_back_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otp_verify_back_btn.ForeColor = System.Drawing.Color.Red;
-            this.otp_verify_back_btn.Location = new System.Drawing.Point(247, 249);
+            this.otp_verify_back_btn.Location = new System.Drawing.Point(272, 249);
             this.otp_verify_back_btn.Name = "otp_verify_back_btn";
             this.otp_verify_back_btn.Size = new System.Drawing.Size(75, 36);
             this.otp_verify_back_btn.TabIndex = 12;
-            this.otp_verify_back_btn.Text = "Resend";
+            this.otp_verify_back_btn.Text = "Back";
             this.otp_verify_back_btn.UseVisualStyleBackColor = false;
+            this.otp_verify_back_btn.Click += new System.EventHandler(this.otp_verify_back_btn_Click);
             // 
             // otp_resend_button
             // 
@@ -468,7 +428,7 @@
             this.otp_resend_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.otp_resend_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otp_resend_button.ForeColor = System.Drawing.Color.Red;
-            this.otp_resend_button.Location = new System.Drawing.Point(344, 249);
+            this.otp_resend_button.Location = new System.Drawing.Point(369, 249);
             this.otp_resend_button.Name = "otp_resend_button";
             this.otp_resend_button.Size = new System.Drawing.Size(75, 36);
             this.otp_resend_button.TabIndex = 12;
@@ -484,7 +444,7 @@
             this.otp_verify_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.otp_verify_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otp_verify_btn.ForeColor = System.Drawing.Color.Red;
-            this.otp_verify_btn.Location = new System.Drawing.Point(445, 249);
+            this.otp_verify_btn.Location = new System.Drawing.Point(470, 249);
             this.otp_verify_btn.Name = "otp_verify_btn";
             this.otp_verify_btn.Size = new System.Drawing.Size(75, 36);
             this.otp_verify_btn.TabIndex = 13;
@@ -497,7 +457,7 @@
             this.timer_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.timer_label.AutoSize = true;
             this.timer_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timer_label.Location = new System.Drawing.Point(53, 165);
+            this.timer_label.Location = new System.Drawing.Point(78, 165);
             this.timer_label.Name = "timer_label";
             this.timer_label.Size = new System.Drawing.Size(278, 20);
             this.timer_label.TabIndex = 9;
@@ -508,7 +468,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(81, 129);
+            this.label3.Location = new System.Drawing.Point(106, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(465, 20);
             this.label3.TabIndex = 10;
@@ -519,7 +479,7 @@
             this.titlel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.titlel2.AutoSize = true;
             this.titlel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titlel2.Location = new System.Drawing.Point(81, 109);
+            this.titlel2.Location = new System.Drawing.Point(106, 109);
             this.titlel2.Name = "titlel2";
             this.titlel2.Size = new System.Drawing.Size(455, 20);
             this.titlel2.TabIndex = 11;
@@ -530,7 +490,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 29F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(124, 55);
+            this.label4.Location = new System.Drawing.Point(149, 55);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(365, 44);
             this.label4.TabIndex = 8;
@@ -548,9 +508,9 @@
             this.otp_sending_panel.Controls.Add(this.user_type);
             this.otp_sending_panel.Controls.Add(this.label1);
             this.otp_sending_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.otp_sending_panel.Location = new System.Drawing.Point(0, 816);
+            this.otp_sending_panel.Location = new System.Drawing.Point(0, 770);
             this.otp_sending_panel.Name = "otp_sending_panel";
-            this.otp_sending_panel.Size = new System.Drawing.Size(598, 384);
+            this.otp_sending_panel.Size = new System.Drawing.Size(649, 384);
             this.otp_sending_panel.TabIndex = 4;
             this.otp_sending_panel.Visible = false;
             // 
@@ -562,12 +522,13 @@
             this.back_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.back_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_button.ForeColor = System.Drawing.Color.Red;
-            this.back_button.Location = new System.Drawing.Point(196, 324);
+            this.back_button.Location = new System.Drawing.Point(221, 324);
             this.back_button.Name = "back_button";
             this.back_button.Size = new System.Drawing.Size(75, 36);
             this.back_button.TabIndex = 14;
             this.back_button.Text = "Back";
             this.back_button.UseVisualStyleBackColor = false;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
             // 
             // otp_sending_next_btn
             // 
@@ -577,7 +538,7 @@
             this.otp_sending_next_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.otp_sending_next_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otp_sending_next_btn.ForeColor = System.Drawing.Color.Red;
-            this.otp_sending_next_btn.Location = new System.Drawing.Point(302, 324);
+            this.otp_sending_next_btn.Location = new System.Drawing.Point(327, 324);
             this.otp_sending_next_btn.Name = "otp_sending_next_btn";
             this.otp_sending_next_btn.Size = new System.Drawing.Size(75, 36);
             this.otp_sending_next_btn.TabIndex = 15;
@@ -590,7 +551,7 @@
             this.text_radio_button.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.text_radio_button.AutoSize = true;
             this.text_radio_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_radio_button.Location = new System.Drawing.Point(44, 226);
+            this.text_radio_button.Location = new System.Drawing.Point(69, 226);
             this.text_radio_button.Name = "text_radio_button";
             this.text_radio_button.Size = new System.Drawing.Size(333, 24);
             this.text_radio_button.TabIndex = 12;
@@ -603,7 +564,7 @@
             this.email_radio_button.AutoSize = true;
             this.email_radio_button.Checked = true;
             this.email_radio_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email_radio_button.Location = new System.Drawing.Point(44, 196);
+            this.email_radio_button.Location = new System.Drawing.Point(69, 196);
             this.email_radio_button.Name = "email_radio_button";
             this.email_radio_button.Size = new System.Drawing.Size(146, 24);
             this.email_radio_button.TabIndex = 13;
@@ -616,7 +577,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(41, 165);
+            this.label2.Location = new System.Drawing.Point(66, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(392, 18);
             this.label2.TabIndex = 11;
@@ -627,28 +588,18 @@
             this.name.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.name.AutoSize = true;
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name.Location = new System.Drawing.Point(135, 84);
+            this.name.Location = new System.Drawing.Point(160, 84);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(166, 25);
             this.name.TabIndex = 9;
             this.name.Text = "Mustafa Hameem";
-            // 
-            // customer_icon_picture_box
-            // 
-            this.customer_icon_picture_box.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.customer_icon_picture_box.Location = new System.Drawing.Point(44, 77);
-            this.customer_icon_picture_box.Name = "customer_icon_picture_box";
-            this.customer_icon_picture_box.Size = new System.Drawing.Size(74, 71);
-            this.customer_icon_picture_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.customer_icon_picture_box.TabIndex = 8;
-            this.customer_icon_picture_box.TabStop = false;
             // 
             // user_type
             // 
             this.user_type.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.user_type.AutoSize = true;
             this.user_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user_type.Location = new System.Drawing.Point(135, 119);
+            this.user_type.Location = new System.Drawing.Point(160, 119);
             this.user_type.Name = "user_type";
             this.user_type.Size = new System.Drawing.Size(47, 17);
             this.user_type.TabIndex = 10;
@@ -659,7 +610,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 14);
+            this.label1.Location = new System.Drawing.Point(61, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(536, 32);
             this.label1.TabIndex = 7;
@@ -672,25 +623,25 @@
             this.user_profile_showing_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.user_profile_showing_panel.Location = new System.Drawing.Point(0, 331);
             this.user_profile_showing_panel.Name = "user_profile_showing_panel";
-            this.user_profile_showing_panel.Size = new System.Drawing.Size(598, 485);
+            this.user_profile_showing_panel.Size = new System.Drawing.Size(649, 439);
             this.user_profile_showing_panel.TabIndex = 0;
             this.user_profile_showing_panel.Visible = false;
             // 
             // user_show_panel
             // 
-            this.user_show_panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.user_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.user_show_panel.Location = new System.Drawing.Point(0, 0);
             this.user_show_panel.Name = "user_show_panel";
-            this.user_show_panel.Size = new System.Drawing.Size(598, 362);
+            this.user_show_panel.Size = new System.Drawing.Size(649, 368);
             this.user_show_panel.TabIndex = 4;
             // 
             // guna2Panel4
             // 
             this.guna2Panel4.Controls.Add(this.profile_showing_back_btn);
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel4.Location = new System.Drawing.Point(0, 361);
+            this.guna2Panel4.Location = new System.Drawing.Point(0, 368);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(598, 124);
+            this.guna2Panel4.Size = new System.Drawing.Size(649, 71);
             this.guna2Panel4.TabIndex = 5;
             // 
             // profile_showing_back_btn
@@ -701,22 +652,92 @@
             this.profile_showing_back_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.profile_showing_back_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.profile_showing_back_btn.ForeColor = System.Drawing.Color.White;
-            this.profile_showing_back_btn.Location = new System.Drawing.Point(338, 28);
+            this.profile_showing_back_btn.Location = new System.Drawing.Point(197, 6);
             this.profile_showing_back_btn.Name = "profile_showing_back_btn";
             this.profile_showing_back_btn.Size = new System.Drawing.Size(180, 45);
             this.profile_showing_back_btn.TabIndex = 0;
             this.profile_showing_back_btn.Text = "Back";
+            this.profile_showing_back_btn.Click += new System.EventHandler(this.profile_showing_back_btn_Click);
             // 
             // timer1
             // 
             this.timer1.Interval = 7;
+            // 
+            // reset_password_back_btn
+            // 
+            this.reset_password_back_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.reset_password_back_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.reset_password_back_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.reset_password_back_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.reset_password_back_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.reset_password_back_btn.ForeColor = System.Drawing.Color.White;
+            this.reset_password_back_btn.Location = new System.Drawing.Point(132, 388);
+            this.reset_password_back_btn.Name = "reset_password_back_btn";
+            this.reset_password_back_btn.Size = new System.Drawing.Size(116, 45);
+            this.reset_password_back_btn.TabIndex = 21;
+            this.reset_password_back_btn.Text = "Back";
+            this.reset_password_back_btn.Click += new System.EventHandler(this.reset_password_back_btn_Click);
+            // 
+            // confirm_toggle_btn
+            // 
+            this.confirm_toggle_btn.Animated = true;
+            this.confirm_toggle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.confirm_toggle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.confirm_toggle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.confirm_toggle_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.confirm_toggle_btn.FillColor = System.Drawing.Color.Transparent;
+            this.confirm_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.confirm_toggle_btn.ForeColor = System.Drawing.Color.White;
+            this.confirm_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
+            this.confirm_toggle_btn.Location = new System.Drawing.Point(488, 324);
+            this.confirm_toggle_btn.Name = "confirm_toggle_btn";
+            this.confirm_toggle_btn.Size = new System.Drawing.Size(43, 31);
+            this.confirm_toggle_btn.TabIndex = 19;
+            this.confirm_toggle_btn.Click += new System.EventHandler(this.confirm_toggle_btn_Click);
+            // 
+            // password_toggle_btn
+            // 
+            this.password_toggle_btn.Animated = true;
+            this.password_toggle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.password_toggle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.password_toggle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.password_toggle_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.password_toggle_btn.FillColor = System.Drawing.Color.Transparent;
+            this.password_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.password_toggle_btn.ForeColor = System.Drawing.Color.White;
+            this.password_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
+            this.password_toggle_btn.Location = new System.Drawing.Point(483, 252);
+            this.password_toggle_btn.Name = "password_toggle_btn";
+            this.password_toggle_btn.Size = new System.Drawing.Size(43, 31);
+            this.password_toggle_btn.TabIndex = 20;
+            this.password_toggle_btn.Click += new System.EventHandler(this.password_toggle_btn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(69, 97);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // customer_icon_picture_box
+            // 
+            this.customer_icon_picture_box.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.customer_icon_picture_box.Location = new System.Drawing.Point(69, 77);
+            this.customer_icon_picture_box.Name = "customer_icon_picture_box";
+            this.customer_icon_picture_box.Size = new System.Drawing.Size(74, 71);
+            this.customer_icon_picture_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.customer_icon_picture_box.TabIndex = 8;
+            this.customer_icon_picture_box.TabStop = false;
             // 
             // ForgetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(632, 331);
+            this.ClientSize = new System.Drawing.Size(683, 331);
             this.Controls.Add(this.main_panel);
             this.MaximizeBox = false;
             this.Name = "ForgetPassword";
@@ -728,14 +749,14 @@
             this.main_panel.ResumeLayout(false);
             this.reset_password_panel.ResumeLayout(false);
             this.reset_password_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.otp_verify_panel.ResumeLayout(false);
             this.otp_verify_panel.PerformLayout();
             this.otp_sending_panel.ResumeLayout(false);
             this.otp_sending_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customer_icon_picture_box)).EndInit();
             this.user_profile_showing_panel.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customer_icon_picture_box)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -788,5 +809,6 @@
         private Guna.UI2.WinForms.Guna2TextBox confirm_password_tb;
         private Guna.UI2.WinForms.Guna2TextBox password_tb;
         private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2Button reset_password_back_btn;
     }
 }

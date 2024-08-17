@@ -87,6 +87,7 @@
             this.cvv_tb.SelectedText = "";
             this.cvv_tb.Size = new System.Drawing.Size(79, 36);
             this.cvv_tb.TabIndex = 46;
+            this.cvv_tb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Payment_KeyPress);
             // 
             // expiry_date_tb
             // 
@@ -185,6 +186,7 @@
             this.card_number_tb.Size = new System.Drawing.Size(247, 36);
             this.card_number_tb.TabIndex = 49;
             this.card_number_tb.TextChanged += new System.EventHandler(this.card_number_tb_TextChanged);
+            this.card_number_tb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Payment_KeyPress);
             // 
             // guna2HtmlLabel2
             // 

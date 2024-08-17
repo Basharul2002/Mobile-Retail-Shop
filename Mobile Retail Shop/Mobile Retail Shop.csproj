@@ -175,6 +175,24 @@
     <Compile Include="Shop.Designer.cs">
       <DependentUpon>Shop.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShopAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShopAdmin.Designer.cs">
+      <DependentUpon>ShopAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopInfoDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShopInfoDashboard.Designer.cs">
+      <DependentUpon>ShopInfoDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShopInformation.Designer.cs">
+      <DependentUpon>ShopInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShopOwner.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +204,12 @@
     </Compile>
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="Users.cs">
       <SubType>UserControl</SubType>
@@ -255,11 +279,23 @@
     <EmbeddedResource Include="Shop.resx">
       <DependentUpon>Shop.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShopAdmin.resx">
+      <DependentUpon>ShopAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopInfoDashboard.resx">
+      <DependentUpon>ShopInfoDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopInformation.resx">
+      <DependentUpon>ShopInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShopOwner.resx">
       <DependentUpon>ShopOwner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.cs</DependentUpon>

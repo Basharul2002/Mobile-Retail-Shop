@@ -371,7 +371,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 825);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(296, 23);
+            this.guna2Panel2.Size = new System.Drawing.Size(279, 23);
             this.guna2Panel2.TabIndex = 23;
             // 
             // add_new_product_btn
@@ -431,7 +431,7 @@
             this.new_product_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.new_product_panel.Location = new System.Drawing.Point(0, 0);
             this.new_product_panel.Name = "new_product_panel";
-            this.new_product_panel.Size = new System.Drawing.Size(296, 848);
+            this.new_product_panel.Size = new System.Drawing.Size(279, 848);
             this.new_product_panel.TabIndex = 26;
             // 
             // product_image
@@ -460,8 +460,9 @@
             this.product_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.product_panel.Location = new System.Drawing.Point(0, 848);
             this.product_panel.Name = "product_panel";
-            this.product_panel.Size = new System.Drawing.Size(296, 390);
+            this.product_panel.Size = new System.Drawing.Size(279, 390);
             this.product_panel.TabIndex = 27;
+            this.product_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.product_panel_Paint);
             // 
             // rating
             // 
@@ -590,7 +591,7 @@
             this.Controls.Add(this.product_panel);
             this.Controls.Add(this.new_product_panel);
             this.Name = "NewProduct";
-            this.Size = new System.Drawing.Size(296, 469);
+            this.Size = new System.Drawing.Size(279, 469);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.new_product_panel.ResumeLayout(false);

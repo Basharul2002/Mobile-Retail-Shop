@@ -123,12 +123,14 @@
             this.phone_number_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.phone_number_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phone_number_tb.Location = new System.Drawing.Point(41, 231);
+            this.phone_number_tb.MaxLength = 11;
             this.phone_number_tb.Name = "phone_number_tb";
             this.phone_number_tb.PasswordChar = '\0';
             this.phone_number_tb.PlaceholderText = "";
             this.phone_number_tb.SelectedText = "";
             this.phone_number_tb.Size = new System.Drawing.Size(271, 36);
             this.phone_number_tb.TabIndex = 1;
+            this.phone_number_tb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_number_tb_KeyPress);
             // 
             // guna2HtmlLabel3
             // 

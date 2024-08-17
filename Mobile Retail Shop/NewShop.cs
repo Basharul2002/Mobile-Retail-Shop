@@ -53,10 +53,10 @@ namespace Mobile_Retail_Shop
 
         private void submit_btn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(name_tb.Text))
+            if (string.IsNullOrWhiteSpace(shop_name_tb.Text))
             {
                 MessageBox.Show("Fill up the name");
-                name_tb.Focus();
+                label.Focus();
                 return;
             }
 
@@ -92,7 +92,7 @@ namespace Mobile_Retail_Shop
 
             string error;
             string query = $@"INSERT INTO [Shop Information] (Name, Email, [Phone Number], City, [User ID])
-                              VALUES ('{name_tb.Text}', '{email_tb.Text}', '{phone_number_tb.Text}', '{city_tb.Text}', {ownerId})";
+                              VALUES ('{shop_name_tb.Text}', '{email_tb.Text}', '{phone_number_tb.Text}', '{city_tb.Text}', {ownerId})";
 
             DataBase dataBase = new DataBase();
             DataTable dataTable = dataBase.DataAccess(query, out error);
