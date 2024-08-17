@@ -34,8 +34,9 @@
             this.customer_sign_in_btn = new Guna.UI2.WinForms.Guna2Button();
             this.password_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.forgot_password = new System.Windows.Forms.LinkLabel();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,10 +50,10 @@
             this.login_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.login_btn.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.login_btn.ForeColor = System.Drawing.Color.White;
-            this.login_btn.Location = new System.Drawing.Point(63, 243);
-            this.login_btn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.login_btn.Location = new System.Drawing.Point(47, 213);
+            this.login_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.login_btn.Name = "login_btn";
-            this.login_btn.Size = new System.Drawing.Size(320, 68);
+            this.login_btn.Size = new System.Drawing.Size(240, 55);
             this.login_btn.TabIndex = 5;
             this.login_btn.Text = "Log in";
             this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
@@ -68,14 +69,14 @@
             this.password_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.password_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.password_tb.Location = new System.Drawing.Point(27, 168);
-            this.password_tb.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.password_tb.Location = new System.Drawing.Point(20, 136);
+            this.password_tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.password_tb.Name = "password_tb";
             this.password_tb.PasswordChar = '●';
             this.password_tb.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.password_tb.PlaceholderText = "Password";
             this.password_tb.SelectedText = "";
-            this.password_tb.Size = new System.Drawing.Size(356, 54);
+            this.password_tb.Size = new System.Drawing.Size(267, 44);
             this.password_tb.TabIndex = 4;
             // 
             // email_tb
@@ -90,14 +91,14 @@
             this.email_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.email_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.email_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.email_tb.Location = new System.Drawing.Point(27, 92);
-            this.email_tb.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.email_tb.Location = new System.Drawing.Point(20, 75);
+            this.email_tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.email_tb.Name = "email_tb";
             this.email_tb.PasswordChar = '\0';
             this.email_tb.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.email_tb.PlaceholderText = "Email";
             this.email_tb.SelectedText = "";
-            this.email_tb.Size = new System.Drawing.Size(356, 54);
+            this.email_tb.Size = new System.Drawing.Size(267, 44);
             this.email_tb.TabIndex = 3;
             // 
             // customer_sign_in_btn
@@ -111,10 +112,10 @@
             this.customer_sign_in_btn.FillColor = System.Drawing.Color.LimeGreen;
             this.customer_sign_in_btn.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.customer_sign_in_btn.ForeColor = System.Drawing.Color.White;
-            this.customer_sign_in_btn.Location = new System.Drawing.Point(63, 382);
-            this.customer_sign_in_btn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.customer_sign_in_btn.Location = new System.Drawing.Point(47, 310);
+            this.customer_sign_in_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.customer_sign_in_btn.Name = "customer_sign_in_btn";
-            this.customer_sign_in_btn.Size = new System.Drawing.Size(320, 68);
+            this.customer_sign_in_btn.Size = new System.Drawing.Size(240, 55);
             this.customer_sign_in_btn.TabIndex = 5;
             this.customer_sign_in_btn.Text = "Create new account";
             this.customer_sign_in_btn.Click += new System.EventHandler(this.customer_sign_in_btn_Click);
@@ -130,16 +131,16 @@
             this.password_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.password_toggle_btn.ForeColor = System.Drawing.Color.White;
             this.password_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
-            this.password_toggle_btn.Location = new System.Drawing.Point(372, 172);
-            this.password_toggle_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.password_toggle_btn.Location = new System.Drawing.Point(279, 140);
             this.password_toggle_btn.Name = "password_toggle_btn";
-            this.password_toggle_btn.Size = new System.Drawing.Size(57, 50);
+            this.password_toggle_btn.Size = new System.Drawing.Size(43, 41);
             this.password_toggle_btn.TabIndex = 17;
             this.password_toggle_btn.Click += new System.EventHandler(this.password_toggle_btn_Click);
             // 
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.forgot_password);
             this.guna2ShadowPanel1.Controls.Add(this.label2);
             this.guna2ShadowPanel1.Controls.Add(this.label1);
             this.guna2ShadowPanel1.Controls.Add(this.password_tb);
@@ -148,42 +149,56 @@
             this.guna2ShadowPanel1.Controls.Add(this.login_btn);
             this.guna2ShadowPanel1.Controls.Add(this.password_toggle_btn);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(578, 42);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(434, 34);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 10;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(429, 465);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(322, 378);
             this.guna2ShadowPanel1.TabIndex = 18;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 349);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(399, 16);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "---------------------------------------------------------------------------------" +
-    "-----------------";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightBlue;
-            this.label2.Location = new System.Drawing.Point(108, 30);
+            this.label2.Location = new System.Drawing.Point(81, 24);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(209, 29);
+            this.label2.Size = new System.Drawing.Size(166, 25);
             this.label2.TabIndex = 19;
             this.label2.Text = "Welcome back. ";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 284);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(301, 13);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "---------------------------------------------------------------------------------" +
+    "-----------------";
+            // 
+            // forgot_password
+            // 
+            this.forgot_password.AutoSize = true;
+            this.forgot_password.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.forgot_password.Location = new System.Drawing.Point(195, 186);
+            this.forgot_password.Name = "forgot_password";
+            this.forgot_password.Size = new System.Drawing.Size(92, 13);
+            this.forgot_password.TabIndex = 20;
+            this.forgot_password.TabStop = true;
+            this.forgot_password.Text = "Forgot Password?";
+            this.forgot_password.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.forgot_password_LinkClicked);
+            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -204,6 +219,7 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel forgot_password;
     }
 }
 
