@@ -72,6 +72,11 @@ namespace Mobile_Retail_Shop
             Instance.panelContainer.Controls.Add(newShop);
         }
 
+        private void data_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void CustomerDashboardDataLoad()
         {
             Instance.panelContainer.Controls.Clear();
