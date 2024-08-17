@@ -25,6 +25,14 @@ namespace Mobile_Retail_Shop
 
 
         // User search
+
+        private void cancel_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
+
         private void search_btn_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(search_box_tb.Text))
@@ -87,6 +95,12 @@ namespace Mobile_Retail_Shop
 
 
         // User Profile Show
+        private void profile_showing_back_btn_Click(object sender, EventArgs e)
+        {
+            user_profile_showing_panel.Visible = false;
+            user_search_panel.Visible = true;
+        }
+
         public void ResetPasswordOTPSendingOption(string userID, string userName, string userEmail, string userPhoneNumber, int userType)
         {
             user_profile_showing_panel.Visible = false;
@@ -108,6 +122,14 @@ namespace Mobile_Retail_Shop
 
 
         // OTP sending option
+
+        private void back_button_Click(object sender, EventArgs e)
+        {
+            user_profile_showing_panel.Visible = true;
+            otp_sending_panel.Visible = false;
+
+        }
+
         private void next_btn_Click(object sender, EventArgs e)
         {
             if (email_radio_button.Checked == false && text_radio_button.Checked == false)
@@ -195,6 +217,12 @@ namespace Mobile_Retail_Shop
             
         }
 
+        private void otp_verify_back_btn_Click(object sender, EventArgs e)
+        {
+            otp_verify_back_btn.Visible = false;
+            user_profile_showing_panel.Visible = true;
+        }
+
 
         private void otp_verify_btn_Click(object sender, EventArgs e)
         {
@@ -240,6 +268,12 @@ namespace Mobile_Retail_Shop
         private void confirm_toggle_btn_Click(object sender, EventArgs e)
         {
             Utility.TogglePasswordVisibility(confirm_password_tb, confirm_toggle_btn);
+        }
+
+        private void reset_password_back_btn_Click(object sender, EventArgs e)
+        {
+            reset_password_panel.Visible = false;
+            user_profile_showing_panel.Visible = true;
         }
 
         private void reset_password_btn_Click(object sender, EventArgs e)

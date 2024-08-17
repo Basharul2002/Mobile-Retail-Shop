@@ -142,5 +142,13 @@ namespace Mobile_Retail_Shop
         {
             Utility.TogglePasswordVisibility(confirm_password_tb, confirm_toggle_btn);
         }
+
+        private void phone_number_tb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Check if the entered key is a digit or a control key (like backspace)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true; // Suppress the key press
+
+        }
     }
 }

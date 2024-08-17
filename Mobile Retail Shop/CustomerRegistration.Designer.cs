@@ -71,7 +71,7 @@
             this.data_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_panel.Location = new System.Drawing.Point(0, 0);
             this.data_panel.Name = "data_panel";
-            this.data_panel.Size = new System.Drawing.Size(604, 603);
+            this.data_panel.Size = new System.Drawing.Size(385, 603);
             this.data_panel.TabIndex = 0;
             // 
             // confirm_toggle_btn
@@ -85,7 +85,7 @@
             this.confirm_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.confirm_toggle_btn.ForeColor = System.Drawing.Color.White;
             this.confirm_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
-            this.confirm_toggle_btn.Location = new System.Drawing.Point(429, 441);
+            this.confirm_toggle_btn.Location = new System.Drawing.Point(312, 453);
             this.confirm_toggle_btn.Name = "confirm_toggle_btn";
             this.confirm_toggle_btn.Size = new System.Drawing.Size(43, 31);
             this.confirm_toggle_btn.TabIndex = 15;
@@ -102,7 +102,7 @@
             this.password_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.password_toggle_btn.ForeColor = System.Drawing.Color.White;
             this.password_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
-            this.password_toggle_btn.Location = new System.Drawing.Point(429, 364);
+            this.password_toggle_btn.Location = new System.Drawing.Point(312, 376);
             this.password_toggle_btn.Name = "password_toggle_btn";
             this.password_toggle_btn.Size = new System.Drawing.Size(43, 31);
             this.password_toggle_btn.TabIndex = 16;
@@ -116,9 +116,9 @@
             this.submit_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.submit_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.submit_btn.ForeColor = System.Drawing.Color.White;
-            this.submit_btn.Location = new System.Drawing.Point(429, 514);
+            this.submit_btn.Location = new System.Drawing.Point(271, 521);
             this.submit_btn.Name = "submit_btn";
-            this.submit_btn.Size = new System.Drawing.Size(128, 47);
+            this.submit_btn.Size = new System.Drawing.Size(80, 47);
             this.submit_btn.TabIndex = 17;
             this.submit_btn.Text = "Submit";
             this.submit_btn.Click += new System.EventHandler(this.submit_btn_Click);
@@ -131,9 +131,9 @@
             this.back_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.back_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.back_btn.ForeColor = System.Drawing.Color.White;
-            this.back_btn.Location = new System.Drawing.Point(73, 514);
+            this.back_btn.Location = new System.Drawing.Point(26, 521);
             this.back_btn.Name = "back_btn";
-            this.back_btn.Size = new System.Drawing.Size(128, 47);
+            this.back_btn.Size = new System.Drawing.Size(80, 47);
             this.back_btn.TabIndex = 18;
             this.back_btn.Text = "Back";
             this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
@@ -146,9 +146,9 @@
             this.clear_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.clear_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.clear_btn.ForeColor = System.Drawing.Color.White;
-            this.clear_btn.Location = new System.Drawing.Point(249, 514);
+            this.clear_btn.Location = new System.Drawing.Point(149, 521);
             this.clear_btn.Name = "clear_btn";
-            this.clear_btn.Size = new System.Drawing.Size(128, 47);
+            this.clear_btn.Size = new System.Drawing.Size(80, 47);
             this.clear_btn.TabIndex = 18;
             this.clear_btn.Text = "Clear";
             // 
@@ -165,7 +165,7 @@
             this.confirm_password_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.confirm_password_tb.ForeColor = System.Drawing.Color.Black;
             this.confirm_password_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.confirm_password_tb.Location = new System.Drawing.Point(152, 441);
+            this.confirm_password_tb.Location = new System.Drawing.Point(35, 453);
             this.confirm_password_tb.Name = "confirm_password_tb";
             this.confirm_password_tb.PasswordChar = '●';
             this.confirm_password_tb.PlaceholderText = "";
@@ -176,7 +176,7 @@
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(152, 419);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(35, 431);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(87, 15);
             this.guna2HtmlLabel4.TabIndex = 3;
@@ -195,7 +195,7 @@
             this.password_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.password_tb.ForeColor = System.Drawing.Color.Black;
             this.password_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.password_tb.Location = new System.Drawing.Point(152, 361);
+            this.password_tb.Location = new System.Drawing.Point(35, 373);
             this.password_tb.Name = "password_tb";
             this.password_tb.PasswordChar = '●';
             this.password_tb.PlaceholderText = "";
@@ -206,7 +206,7 @@
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(152, 339);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(35, 351);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(49, 15);
             this.guna2HtmlLabel3.TabIndex = 4;
@@ -225,7 +225,7 @@
             this.city_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.city_tb.ForeColor = System.Drawing.Color.Black;
             this.city_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.city_tb.Location = new System.Drawing.Point(152, 287);
+            this.city_tb.Location = new System.Drawing.Point(35, 299);
             this.city_tb.Name = "city_tb";
             this.city_tb.PasswordChar = '\0';
             this.city_tb.PlaceholderText = "";
@@ -236,7 +236,7 @@
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(152, 265);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(35, 277);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(20, 15);
             this.guna2HtmlLabel5.TabIndex = 5;
@@ -255,18 +255,19 @@
             this.phone_number_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.phone_number_tb.ForeColor = System.Drawing.Color.Black;
             this.phone_number_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.phone_number_tb.Location = new System.Drawing.Point(152, 210);
+            this.phone_number_tb.Location = new System.Drawing.Point(35, 222);
             this.phone_number_tb.Name = "phone_number_tb";
             this.phone_number_tb.PasswordChar = '\0';
             this.phone_number_tb.PlaceholderText = "";
             this.phone_number_tb.SelectedText = "";
             this.phone_number_tb.Size = new System.Drawing.Size(271, 36);
             this.phone_number_tb.TabIndex = 12;
+            this.phone_number_tb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_number_tb_KeyPress);
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(152, 188);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(35, 200);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(74, 15);
             this.guna2HtmlLabel2.TabIndex = 6;
@@ -285,7 +286,7 @@
             this.email_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.email_tb.ForeColor = System.Drawing.Color.Black;
             this.email_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.email_tb.Location = new System.Drawing.Point(152, 129);
+            this.email_tb.Location = new System.Drawing.Point(35, 141);
             this.email_tb.Name = "email_tb";
             this.email_tb.PasswordChar = '\0';
             this.email_tb.PlaceholderText = "";
@@ -296,7 +297,7 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(152, 107);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(35, 119);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(28, 15);
             this.guna2HtmlLabel1.TabIndex = 7;
@@ -315,7 +316,7 @@
             this.name_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.name_tb.ForeColor = System.Drawing.Color.Black;
             this.name_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.name_tb.Location = new System.Drawing.Point(152, 58);
+            this.name_tb.Location = new System.Drawing.Point(35, 70);
             this.name_tb.Name = "name_tb";
             this.name_tb.PasswordChar = '\0';
             this.name_tb.PlaceholderText = "";
@@ -326,7 +327,7 @@
             // label54210
             // 
             this.label54210.BackColor = System.Drawing.Color.Transparent;
-            this.label54210.Location = new System.Drawing.Point(152, 36);
+            this.label54210.Location = new System.Drawing.Point(35, 48);
             this.label54210.Name = "label54210";
             this.label54210.Size = new System.Drawing.Size(31, 15);
             this.label54210.TabIndex = 8;
@@ -336,7 +337,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 603);
+            this.ClientSize = new System.Drawing.Size(385, 603);
             this.Controls.Add(this.data_panel);
             this.MaximizeBox = false;
             this.Name = "CustomerRegistration";

@@ -144,7 +144,10 @@ namespace Mobile_Retail_Shop
 
         private void all_shop_btn_Click(object sender, EventArgs e)
         {
-            
+            Instance.panelContainer.Controls.Clear();
+            ShopInformation shop = new ShopInformation();
+            shop.Dock = DockStyle.Fill;
+            Instance.panelContainer.Controls.Add(shop);
         }
 
 
