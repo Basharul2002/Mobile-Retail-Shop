@@ -92,5 +92,12 @@ namespace Mobile_Retail_Shop
             CustomerRegistration customerRegistration = new CustomerRegistration();
             customerRegistration.Show();
         }
+
+        private void forgot_password_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            ForgetPassword forgetPassword = new ForgetPassword();
+            forgetPassword.Show();
+        }
     }
 }

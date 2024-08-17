@@ -144,3 +144,5 @@ D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Sho
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile Retail Shop.pdb
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CustomerDashboard.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.CustomerDashboard.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ForgetPassword.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.SearchUser.resources

@@ -123,7 +123,7 @@ namespace Mobile_Retail_Shop
 
             if (!string.IsNullOrEmpty(error))
             {
-                MessageBox.Show($"Class Name: ResistrationForm Function: DataStore 2 \nError: {error}", "Phone Number");
+                MessageBox.Show($"Class Name: ResistrationForm Function: DataStore 2 \nError: {error}", "Exicution");
                 return;
             }
 
@@ -140,6 +140,13 @@ namespace Mobile_Retail_Shop
         private void confirm_toggle_btn_Click(object sender, EventArgs e)
         {
             Utility.TogglePasswordVisibility(confirm_password_tb, confirm_toggle_btn);
+        }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
     }
 }

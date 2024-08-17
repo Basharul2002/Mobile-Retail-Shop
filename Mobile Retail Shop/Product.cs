@@ -107,7 +107,11 @@ namespace Mobile_Retail_Shop
             }
 
             if (Convert.ToInt32(this.cart[this.productID].Quantity) == 0)
+            {
+                this.cart.Remove(this.productID);
                 remove_btn.Enabled = false;
+            }
+               
 
 
         }

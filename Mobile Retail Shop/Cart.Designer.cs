@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.total_price = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.payment_btn = new Guna.UI2.WinForms.Guna2Button();
             this.zero_iteam_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.iteam_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.cart_list_panel = new System.Windows.Forms.FlowLayoutPanel();
-            this.total_price = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             this.zero_iteam_panel.SuspendLayout();
             this.iteam_panel.SuspendLayout();
@@ -47,8 +47,19 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 328);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(769, 107);
+            this.guna2Panel1.Size = new System.Drawing.Size(407, 107);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // total_price
+            // 
+            this.total_price.BackColor = System.Drawing.Color.Transparent;
+            this.total_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_price.Location = new System.Drawing.Point(115, 17);
+            this.total_price.Name = "total_price";
+            this.total_price.Size = new System.Drawing.Size(37, 18);
+            this.total_price.TabIndex = 1;
+            this.total_price.Text = "Total: ";
+            this.total_price.Click += new System.EventHandler(this.total_Click);
             // 
             // payment_btn
             // 
@@ -58,7 +69,7 @@
             this.payment_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.payment_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.payment_btn.ForeColor = System.Drawing.Color.White;
-            this.payment_btn.Location = new System.Drawing.Point(274, 52);
+            this.payment_btn.Location = new System.Drawing.Point(115, 50);
             this.payment_btn.Name = "payment_btn";
             this.payment_btn.Size = new System.Drawing.Size(180, 45);
             this.payment_btn.TabIndex = 0;
@@ -71,7 +82,7 @@
             this.zero_iteam_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.zero_iteam_panel.Location = new System.Drawing.Point(0, 0);
             this.zero_iteam_panel.Name = "zero_iteam_panel";
-            this.zero_iteam_panel.Size = new System.Drawing.Size(769, 435);
+            this.zero_iteam_panel.Size = new System.Drawing.Size(407, 435);
             this.zero_iteam_panel.TabIndex = 2;
             // 
             // label1
@@ -91,7 +102,7 @@
             this.iteam_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.iteam_panel.Location = new System.Drawing.Point(0, 0);
             this.iteam_panel.Name = "iteam_panel";
-            this.iteam_panel.Size = new System.Drawing.Size(769, 435);
+            this.iteam_panel.Size = new System.Drawing.Size(407, 435);
             this.iteam_panel.TabIndex = 3;
             // 
             // cart_list_panel
@@ -100,25 +111,14 @@
             this.cart_list_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cart_list_panel.Location = new System.Drawing.Point(0, 0);
             this.cart_list_panel.Name = "cart_list_panel";
-            this.cart_list_panel.Size = new System.Drawing.Size(769, 328);
+            this.cart_list_panel.Size = new System.Drawing.Size(407, 328);
             this.cart_list_panel.TabIndex = 1;
-            // 
-            // total_price
-            // 
-            this.total_price.BackColor = System.Drawing.Color.Transparent;
-            this.total_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.total_price.Location = new System.Drawing.Point(258, 6);
-            this.total_price.Name = "total_price";
-            this.total_price.Size = new System.Drawing.Size(37, 18);
-            this.total_price.TabIndex = 1;
-            this.total_price.Text = "Total: ";
-            this.total_price.Click += new System.EventHandler(this.total_Click);
             // 
             // Cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 435);
+            this.ClientSize = new System.Drawing.Size(407, 435);
             this.Controls.Add(this.iteam_panel);
             this.Controls.Add(this.zero_iteam_panel);
             this.MaximizeBox = false;
