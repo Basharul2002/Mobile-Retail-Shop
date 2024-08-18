@@ -199,6 +199,12 @@
     <Compile Include="ShopOwner.Designer.cs">
       <DependentUpon>ShopOwner.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShopOwnerInfoDashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShopOwnerInfoDashBoard.Designer.cs">
+      <DependentUpon>ShopOwnerInfoDashBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -290,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ShopOwner.resx">
       <DependentUpon>ShopOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopOwnerInfoDashBoard.resx">
+      <DependentUpon>ShopOwnerInfoDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>

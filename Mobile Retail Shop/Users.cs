@@ -57,7 +57,7 @@ namespace Mobile_Retail_Shop
             name_tb.Text = this.userName = userName;
             email_tb.Text = this.userEmail = userEmail;
             phone_number_tb.Text = this.userPhoneNumber = userPhoneNumber;
-            city_tb.Text = this.userCity;
+            city_tb.Text = this.userCity = userCity;
             password_tb.Text = this.userPassword = userPassword;
             this.userId = userId;
         }

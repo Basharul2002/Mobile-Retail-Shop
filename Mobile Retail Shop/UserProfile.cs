@@ -107,16 +107,30 @@ namespace Mobile_Retail_Shop
 
             query = "UPDATE [User Information] SET ";
             if (this.name != name_tb.Text)
-                query += $"Name = {name_tb.Text}, ";
+            {
+                query += $"Name = '{name_tb.Text}', ";
+                this.name = name_tb.Text;
+            }
+                
             if (this.email != this.email_tb.Text)
-                query += $"Email = {email_tb.Text}, ";
+            {
+                query += $"Email = '{email_tb.Text}', ";
+                this.email = email_tb.Text;
+            }
+                
             if (this.phoneNumber != phone_number_tb.Text)
-                query += $"[Phone Number] = {phone_number_tb.Text}, ";
+            {
+                query += $"[Phone Number] = '{phone_number_tb.Text}', ";
+                this.phoneNumber = phone_number_tb.Text;
+            }
+                
             if (this.city != city_tb.Text)
-                query += $"City = {city_tb.Text}, ";
+            {
+                query += $"City = '{city_tb.Text}', ";
+                this.city = city_tb.Text;
+            }
 
-
-            query = $"{ query.Substring(0, query.Length - 2) } WHERE ID = {this.userID}";
+            query = $"{query.Substring(0, query.Length - 2)} WHERE ID = {this.userID}";
             DataBase dataBase = new DataBase();
             dataBase.ExecuteNonQuery(query, out error);
 
@@ -128,6 +142,7 @@ namespace Mobile_Retail_Shop
             }
 
             MessageBox.Show($"Your profile successfully updated");
+            update_btn.Enabled = false;
         }
 
 

@@ -153,7 +153,10 @@ namespace Mobile_Retail_Shop
 
         private void customer_btn_Click(object sender, EventArgs e)
         {
-
+            Instance.panelContainer.Controls.Clear();
+            Users user = new Users(3);
+            user.Dock = DockStyle.Fill;
+            Instance.panelContainer.Controls.Add(user);
         }
     }
     

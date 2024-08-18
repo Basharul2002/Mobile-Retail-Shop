@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace Mobile_Retail_Shop
 {
     public partial class ShopInfoDashboard : UserControl
     {
+        private string ownerID, shopID;
         public ShopInfoDashboard()
         {
             InitializeComponent();
@@ -20,12 +22,13 @@ namespace Mobile_Retail_Shop
 
         public ShopInfoDashboard(string shopID) : this()
         {
-            DataLoad(shopID);
+            this.shopID = shopID;
+            DataLoad();
         }
 
-        private void DataLoad(string shopID)
+        private void DataLoad()
         {
-            string ownerID, error, query;
+            string error, query;
 
             // Shop and owner information
             query = $@"SELECT 
@@ -43,7 +46,7 @@ namespace Mobile_Retail_Shop
                         [User Information] UI
                         ON SI.[User ID] = UI.ID
                     WHERE 
-                        SI.ID = {shopID}";
+                        SI.ID = {this.shopID}";
 
             DataBase dataBase = new DataBase();
             DataTable dataTable = dataBase.DataAccess(query, out error);
@@ -57,10 +60,10 @@ namespace Mobile_Retail_Shop
             
             
 
-            ownerID = dataTable.Rows[0]["Owner ID"].ToString();
+            this.ownerID = dataTable.Rows[0]["Owner ID"].ToString();
 
             owner_name.Text = $"Name: {dataTable.Rows[0]["Owner Name"]}";
-            owner_email.Text = $"Email: {dataTable.Rows[0]["Owner Name"]}";
+            owner_email.Text = $"Email: {dataTable.Rows[0]["Owner Email"]}";
             owner_phone_number.Text = $"Phone Number: {dataTable.Rows[0]["Owner Phone Number"]}";
 
             shop_name.Text = $"Name: {dataTable.Rows[0]["Shop Name"]}";
@@ -72,7 +75,7 @@ namespace Mobile_Retail_Shop
 
 
             // Query for find number of shop for this user
-            query = $"SELECT COUNT(ID) AS [Number of Shop] FROM [Shop Information] WHERE [User ID] = '{ownerID}'";
+            query = $"SELECT COUNT(ID) AS [Number of Shop] FROM [Shop Information] WHERE [User ID] = '{this.ownerID}'";
             dataTable = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
@@ -95,7 +98,7 @@ namespace Mobile_Retail_Shop
                 MessageBox.Show($"Class ShopInfoDashboard Function DataLoad \nError: {error}", "number of product");
                 return;
             }
-            total_product.Text = dataTable.Rows[0]["Number of Product"].ToString();
+            total_product.Text = $"Total Product: {dataTable.Rows[0]["Number of Product"].ToString()}";
 
 
             if (dataTable.Rows.Count == 0)
@@ -127,6 +130,92 @@ namespace Mobile_Retail_Shop
             }
 
 
+        }
+
+        // Delete all product
+        private void delete_all_product_btn_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show
+                                        (
+                                            "N.B.: Deleting all products is a permanent action and cannot be undone. All associated data will be lost.\n\nAre you sure you want to proceed?",
+                                            "Confirm Deletion",
+                                            MessageBoxButtons.YesNo,
+                                            MessageBoxIcon.Warning
+                                        );
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                // Proceed with product deletion
+                bool flag = DeleteAllProduct();
+
+                if (flag)
+                    MessageBox.Show("All products have been deleted successfully.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
+                
+            }
+        }
+
+
+        private bool DeleteAllProduct()
+        {
+            string query, error;
+            query = $"DELETE FROM [Product Information] WHERE [Shop ID] = {this.shopID}";
+
+            DataBase dataBase = new DataBase();
+            dataBase.ExecuteNonQuery(query, out error);
+
+            if (string.IsNullOrEmpty(error))
+            {
+                MessageBox.Show($"Class: ShopInfoDashboard Function DeleteAllProduct \nError: {error}");
+                return false;
+            }
+
+            delete_all_product_btn.Enabled = false;
+            return true;    
+        }
+
+        private bool DeleteShop()
+        {
+            string query, error;
+            query = $"DELETE FROM [Shop Information] WHERE [D] = {this.shopID}";
+
+            DataBase dataBase = new DataBase();
+            dataBase.ExecuteNonQuery(query, out error);
+
+            if (string.IsNullOrEmpty(error))
+            {
+                MessageBox.Show($"Class: ShopInfoDashboard Function DeleteAllProduct \nError: {error}");
+                return false;
+            }
+
+            delete_shop_btn.Enabled = false;
+            return true;
+        }
+
+
+        private void delete_shop_btn_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show
+                                        (
+                                            "N.B.: If the shop is deleted, all products associated with this shop will also be deleted. \n\nAre you sure you want to proceed?",
+                                            "Confirm Deletion",
+                                            MessageBoxButtons.YesNo,
+                                            MessageBoxIcon.Warning
+                                        );
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                // Proceed with shop deletion and cascading product deletion
+                bool flag = DeleteAllProduct();
+
+                if (flag)
+                {
+                    flag = DeleteShop();
+                    MessageBox.Show("Shop Successfully deleted");
+
+                }
+
+            }
         }
     }
 }

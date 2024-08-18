@@ -28,6 +28,7 @@ namespace Mobile_Retail_Shop
         public NewProduct(string shopID = null, bool admin = false, bool newProduct = false, string productID = null, Dictionary<string, CartItem> cart = null) : this ()
         {
             this.shopID = shopID;
+            this.admin = admin;
             this.newProduct = newProduct;
             delete_btn.Tag = this.productID = productID;
             this.cart = cart;
@@ -233,10 +234,29 @@ namespace Mobile_Retail_Shop
             
         }
 
-        private void product_panel_Paint(object sender, PaintEventArgs e)
+        private void NewProduct_Load(object sender, EventArgs e)
         {
+            if (newProduct)
+            {
+                new_product_panel.Visible = true;
+                product_panel.Visible = false;
+            }
+            else if (productID != null)
+            {
+                new_product_panel.Visible = false;
+                product_panel.Visible = true;
+                DataLoad();
+            }
 
+            else if (admin)
+            {
+                new_product_panel.Visible = false;
+                product_panel.Visible = true;
+                back_btn.Visible = false;
+                DataLoad();
+            }
         }
+
 
         private void ProductDelete()
         {
@@ -251,6 +271,7 @@ namespace Mobile_Retail_Shop
                 MessageBox.Show($"Class: NewProduct Function: ProductDelete \nError: {error}");
                 return;
             }
+
 
             MessageBox.Show("Product Successfully deleted");
 
