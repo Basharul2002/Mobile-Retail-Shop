@@ -21,9 +21,44 @@ namespace Mobile_Retail_Shop
         private void CustomerRegistration_Load(object sender, EventArgs e)
         {
         }
+        private bool ValidateEmail()
+        {
+            // Get the text from the email text box
+            string email = email_tb.Text;
+
+            // Check if the email ends with "@gmail.com"
+            bool isValid = email.EndsWith("@gmail.com");
+
+            // Ensure "@gmail.com" appears only once
+            if (isValid && email.IndexOf("@gmail.com") == email.LastIndexOf("@gmail.com"))
+            {
+                return true; // Email is valid
+            }
+            else
+            {
+                MessageBox.Show("Please enter a valid email address that ends with '@gmail.com' and appears only once.", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false; // Email is not valid
+            }
+        }
+
+        private void email_tb_Leave(object sender, EventArgs e)
+        {
+            ValidateEmail();
+        }
 
         private void submit_btn_Click(object sender, EventArgs e)
         {
+            // Check if all fields are empty
+            if (string.IsNullOrWhiteSpace(name_tb.Text) &&
+                string.IsNullOrWhiteSpace(email_tb.Text) &&
+                string.IsNullOrWhiteSpace(phone_number_tb.Text) &&
+                string.IsNullOrWhiteSpace(city_tb.Text) &&
+                string.IsNullOrWhiteSpace(password_tb.Text) &&
+                string.IsNullOrWhiteSpace(confirm_password_tb.Text))
+            {
+                MessageBox.Show("All field values must be entered!", "Empty Fields", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (string.IsNullOrWhiteSpace(name_tb.Text))
             {
                 MessageBox.Show("Fill up the name");
@@ -38,14 +73,19 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-
-            if (string.IsNullOrWhiteSpace(phone_number_tb.Text))
+            // Validate the email before proceeding
+            if (!ValidateEmail())
             {
-                MessageBox.Show("Fill up the phone Numvber");
-                phone_number_tb.Focus();
+                email_tb.Focus();
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(phone_number_tb.Text))
+            {
+                MessageBox.Show("Fill up the phone Number");
+                phone_number_tb.Focus();
+                return;
+            }
 
             if (string.IsNullOrWhiteSpace(city_tb.Text))
             {
@@ -75,55 +115,52 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-
-
             // Check the email exists
             DataBase dataBase = new DataBase();
             string query, error;
             DataTable dataTable;
 
-            // Here check have any account input email
+            // Check if the email is already registered
             query = $"SELECT TOP 1 * FROM [User Information] WHERE [Email] = '{email_tb.Text}'";
             dataTable = dataBase.DataAccess(query, out error);
             if (!string.IsNullOrEmpty(error))
             {
-                MessageBox.Show($"Class Name: ResistrationForm Function: DataStore 1 \nError: {error}", "Email");
+                MessageBox.Show($"Class Name: RegistrationForm Function: DataStore 1 \nError: {error}", "Email");
                 return;
             }
 
             if (dataTable.Rows.Count > 0)
             {
-                MessageBox.Show("This EMAIL is already resistered");
+                MessageBox.Show("This EMAIL is already registered");
                 email_tb.Focus();
                 return;
             }
 
-
-            // Check the phone number is register or not
+            // Check if the phone number is already registered
             query = $"SELECT TOP 1 * FROM [User Information] WHERE [Phone Number] = '{phone_number_tb.Text}' AND [User Type] = {3}";
             dataTable = dataBase.DataAccess(query, out error);
             if (!string.IsNullOrEmpty(error))
             {
-                MessageBox.Show($"Class Name: ResistrationForm Function: DataStore 2 \nError: {error}", "Phone Number");
+                MessageBox.Show($"Class Name: RegistrationForm Function: DataStore 2 \nError: {error}", "Phone Number");
                 return;
             }
 
             if (dataTable.Rows.Count > 0)
             {
-                MessageBox.Show("This PHONE NUMBER is already resistered");
+                MessageBox.Show("This PHONE NUMBER is already registered");
                 phone_number_tb.Focus();
                 return;
             }
 
-            // Here register the information as a new account
+            // Register the information as a new account
             query = $@"INSERT INTO [User Information] (Name, Email, [Phone Number], City, Password, [User Type])
-                              VALUES('{name_tb.Text}', '{email_tb.Text}', '{phone_number_tb.Text}', '{city_tb.Text}', '{password_tb.Text}', {3})";
+              VALUES('{name_tb.Text}', '{email_tb.Text}', '{phone_number_tb.Text}', '{city_tb.Text}', '{password_tb.Text}', {3})";
 
             dataBase.ExecuteNonQuery(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
-                MessageBox.Show($"Class Name: ResistrationForm Function: DataStore 2 \nError: {error}", "Exicution");
+                MessageBox.Show($"Class Name: RegistrationForm Function: DataStore 3 \nError: {error}", "Execution");
                 return;
             }
 
@@ -131,6 +168,7 @@ namespace Mobile_Retail_Shop
             Login login = new Login();
             login.Show();
         }
+
 
         private void password_toggle_btn_Click(object sender, EventArgs e)
         {
@@ -154,6 +192,16 @@ namespace Mobile_Retail_Shop
             // Check if the entered key is a digit or a control key (like backspace)
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
                 e.Handled = true; // Suppress the key press
+
+        }
+
+        private void email_tb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
