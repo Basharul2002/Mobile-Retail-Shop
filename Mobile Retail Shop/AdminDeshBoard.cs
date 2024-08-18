@@ -19,9 +19,10 @@ namespace Mobile_Retail_Shop
         {
             InitializeComponent();
         }
-        public AdminDeshBoard(string id ):this()
+        public AdminDeshBoard(string id, string name):this()
         {
-            this.id = id;
+            admin_name.Tag = admin_picture.Tag = this.id = id;
+            admin_name.Text = name;
         }
 
         private void AdminDeshBoard_Load(object sender, EventArgs e)
@@ -157,6 +158,12 @@ namespace Mobile_Retail_Shop
             Users user = new Users(3);
             user.Dock = DockStyle.Fill;
             Instance.panelContainer.Controls.Add(user);
+        }
+
+        private void admin_profile_Click(object sender, EventArgs e)
+        {
+            UserProfile userProfile = new UserProfile(this.id);
+            userProfile.ShowDialog();
         }
     }
     
