@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.search_tb = new Guna.UI2.WinForms.Guna2TextBox();
-            this.search_btn = new Guna.UI2.WinForms.Guna2Button();
             this.result_panel = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.search_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.search_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +47,15 @@
             this.panel1.Size = new System.Drawing.Size(469, 430);
             this.panel1.TabIndex = 0;
             // 
+            // result_panel
+            // 
+            this.result_panel.AutoScroll = true;
+            this.result_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.result_panel.Location = new System.Drawing.Point(0, 67);
+            this.result_panel.Name = "result_panel";
+            this.result_panel.Size = new System.Drawing.Size(469, 363);
+            this.result_panel.TabIndex = 1;
+            // 
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.search_btn);
@@ -56,6 +65,21 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(469, 67);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // search_btn
+            // 
+            this.search_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.search_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.search_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.search_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.search_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.search_btn.ForeColor = System.Drawing.Color.White;
+            this.search_btn.Location = new System.Drawing.Point(320, 16);
+            this.search_btn.Name = "search_btn";
+            this.search_btn.Size = new System.Drawing.Size(71, 36);
+            this.search_btn.TabIndex = 1;
+            this.search_btn.Text = "Search";
+            this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
             // 
             // search_tb
             // 
@@ -75,29 +99,6 @@
             this.search_tb.SelectedText = "";
             this.search_tb.Size = new System.Drawing.Size(269, 36);
             this.search_tb.TabIndex = 0;
-            // 
-            // search_btn
-            // 
-            this.search_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.search_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.search_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.search_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.search_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.search_btn.ForeColor = System.Drawing.Color.White;
-            this.search_btn.Location = new System.Drawing.Point(320, 16);
-            this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(71, 36);
-            this.search_btn.TabIndex = 1;
-            this.search_btn.Text = "Search";
-            // 
-            // result_panel
-            // 
-            this.result_panel.AutoScroll = true;
-            this.result_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.result_panel.Location = new System.Drawing.Point(0, 67);
-            this.result_panel.Name = "result_panel";
-            this.result_panel.Size = new System.Drawing.Size(469, 363);
-            this.result_panel.TabIndex = 1;
             // 
             // ShopInformation
             // 

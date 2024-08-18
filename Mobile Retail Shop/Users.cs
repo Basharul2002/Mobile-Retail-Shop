@@ -23,13 +23,19 @@ namespace Mobile_Retail_Shop
 
         public Users(int userType) : this()
         {
+            this.userType = userType;
             user_info_panel.Visible = true;
-            DataLoad(userType);
+            search_tb.PlaceholderText = "Name, Email, Phone Number";
+
+            DataLoad();
         }
 
-        private void DataLoad(int userType)
+        private void DataLoad(bool search = false)
         {
-            string error, query = $"SELECT * FROM [User Information] WHERE [User Type] = {userType}";
+            string error, query = $"SELECT * FROM [User Information] WHERE [User Type] = {this.userType}";
+
+            if (search)
+                query += $" AND (Name = '{search_tb.Text}' OR Email = '{search_tb.Text}' OR [Phone Number] = '{search_tb.Text}')";
 
             DataBase dataBase = new DataBase();
             DataTable dataTable = dataBase.DataAccess(query, out error);
@@ -40,6 +46,8 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
+            if (dataTable.Rows.Count == 0)
+                return;
 
             foreach (DataRow row in dataTable.Rows)
             {
@@ -82,6 +90,11 @@ namespace Mobile_Retail_Shop
             }
 
             update_btn.Enabled = true;
+        }
+
+        private void search_btn_Click(object sender, EventArgs e)
+        {
+            DataLoad(search: true);
         }
 
         private void phone_number_tb_TextChanged(object sender, EventArgs e)
