@@ -39,7 +39,10 @@
             this.title = new System.Windows.Forms.Label();
             this.main_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.reset_password_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.reset_password_back_btn = new Guna.UI2.WinForms.Guna2Button();
             this.reset_password_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.confirm_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.password_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
             this.confirm_password_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.password_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,6 +50,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.user_type_reset_password = new System.Windows.Forms.Label();
             this.name_reset_password = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.otp_verify_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.otp_code_tb = new Guna.UI2.WinForms.Guna2TextBox();
@@ -64,6 +68,7 @@
             this.email_radio_button = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
+            this.customer_icon_picture_box = new System.Windows.Forms.PictureBox();
             this.user_type = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.user_profile_showing_panel = new Guna.UI2.WinForms.Guna2Panel();
@@ -71,21 +76,16 @@
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.profile_showing_back_btn = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.reset_password_back_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.confirm_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.password_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.customer_icon_picture_box = new System.Windows.Forms.PictureBox();
             this.user_search_panel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.main_panel.SuspendLayout();
             this.reset_password_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.otp_verify_panel.SuspendLayout();
             this.otp_sending_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customer_icon_picture_box)).BeginInit();
             this.user_profile_showing_panel.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customer_icon_picture_box)).BeginInit();
             this.SuspendLayout();
             // 
             // user_search_panel
@@ -241,6 +241,21 @@
             this.reset_password_panel.TabIndex = 6;
             this.reset_password_panel.Visible = false;
             // 
+            // reset_password_back_btn
+            // 
+            this.reset_password_back_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.reset_password_back_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.reset_password_back_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.reset_password_back_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.reset_password_back_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.reset_password_back_btn.ForeColor = System.Drawing.Color.White;
+            this.reset_password_back_btn.Location = new System.Drawing.Point(132, 388);
+            this.reset_password_back_btn.Name = "reset_password_back_btn";
+            this.reset_password_back_btn.Size = new System.Drawing.Size(116, 45);
+            this.reset_password_back_btn.TabIndex = 21;
+            this.reset_password_back_btn.Text = "Back";
+            this.reset_password_back_btn.Click += new System.EventHandler(this.reset_password_back_btn_Click);
+            // 
             // reset_password_btn
             // 
             this.reset_password_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -255,6 +270,40 @@
             this.reset_password_btn.TabIndex = 21;
             this.reset_password_btn.Text = "Reset Password";
             this.reset_password_btn.Click += new System.EventHandler(this.reset_password_btn_Click);
+            // 
+            // confirm_toggle_btn
+            // 
+            this.confirm_toggle_btn.Animated = true;
+            this.confirm_toggle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.confirm_toggle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.confirm_toggle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.confirm_toggle_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.confirm_toggle_btn.FillColor = System.Drawing.Color.Transparent;
+            this.confirm_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.confirm_toggle_btn.ForeColor = System.Drawing.Color.White;
+            this.confirm_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
+            this.confirm_toggle_btn.Location = new System.Drawing.Point(488, 324);
+            this.confirm_toggle_btn.Name = "confirm_toggle_btn";
+            this.confirm_toggle_btn.Size = new System.Drawing.Size(43, 31);
+            this.confirm_toggle_btn.TabIndex = 19;
+            this.confirm_toggle_btn.Click += new System.EventHandler(this.confirm_toggle_btn_Click);
+            // 
+            // password_toggle_btn
+            // 
+            this.password_toggle_btn.Animated = true;
+            this.password_toggle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.password_toggle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.password_toggle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.password_toggle_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.password_toggle_btn.FillColor = System.Drawing.Color.Transparent;
+            this.password_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.password_toggle_btn.ForeColor = System.Drawing.Color.White;
+            this.password_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
+            this.password_toggle_btn.Location = new System.Drawing.Point(483, 252);
+            this.password_toggle_btn.Name = "password_toggle_btn";
+            this.password_toggle_btn.Size = new System.Drawing.Size(43, 31);
+            this.password_toggle_btn.TabIndex = 20;
+            this.password_toggle_btn.Click += new System.EventHandler(this.password_toggle_btn_Click);
             // 
             // confirm_password_tb
             // 
@@ -356,6 +405,16 @@
             this.name_reset_password.Size = new System.Drawing.Size(243, 20);
             this.name_reset_password.TabIndex = 10;
             this.name_reset_password.Text = "Basharul Alam Mazumder Rahad";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(69, 97);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // label10
             // 
@@ -594,6 +653,16 @@
             this.name.TabIndex = 9;
             this.name.Text = "Mustafa Hameem";
             // 
+            // customer_icon_picture_box
+            // 
+            this.customer_icon_picture_box.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.customer_icon_picture_box.Location = new System.Drawing.Point(69, 77);
+            this.customer_icon_picture_box.Name = "customer_icon_picture_box";
+            this.customer_icon_picture_box.Size = new System.Drawing.Size(74, 71);
+            this.customer_icon_picture_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.customer_icon_picture_box.TabIndex = 8;
+            this.customer_icon_picture_box.TabStop = false;
+            // 
             // user_type
             // 
             this.user_type.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -663,75 +732,6 @@
             // 
             this.timer1.Interval = 7;
             // 
-            // reset_password_back_btn
-            // 
-            this.reset_password_back_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.reset_password_back_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.reset_password_back_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.reset_password_back_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.reset_password_back_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.reset_password_back_btn.ForeColor = System.Drawing.Color.White;
-            this.reset_password_back_btn.Location = new System.Drawing.Point(132, 388);
-            this.reset_password_back_btn.Name = "reset_password_back_btn";
-            this.reset_password_back_btn.Size = new System.Drawing.Size(116, 45);
-            this.reset_password_back_btn.TabIndex = 21;
-            this.reset_password_back_btn.Text = "Back";
-            this.reset_password_back_btn.Click += new System.EventHandler(this.reset_password_back_btn_Click);
-            // 
-            // confirm_toggle_btn
-            // 
-            this.confirm_toggle_btn.Animated = true;
-            this.confirm_toggle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.confirm_toggle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.confirm_toggle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.confirm_toggle_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.confirm_toggle_btn.FillColor = System.Drawing.Color.Transparent;
-            this.confirm_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.confirm_toggle_btn.ForeColor = System.Drawing.Color.White;
-            this.confirm_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
-            this.confirm_toggle_btn.Location = new System.Drawing.Point(488, 324);
-            this.confirm_toggle_btn.Name = "confirm_toggle_btn";
-            this.confirm_toggle_btn.Size = new System.Drawing.Size(43, 31);
-            this.confirm_toggle_btn.TabIndex = 19;
-            this.confirm_toggle_btn.Click += new System.EventHandler(this.confirm_toggle_btn_Click);
-            // 
-            // password_toggle_btn
-            // 
-            this.password_toggle_btn.Animated = true;
-            this.password_toggle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.password_toggle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.password_toggle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.password_toggle_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.password_toggle_btn.FillColor = System.Drawing.Color.Transparent;
-            this.password_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.password_toggle_btn.ForeColor = System.Drawing.Color.White;
-            this.password_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
-            this.password_toggle_btn.Location = new System.Drawing.Point(483, 252);
-            this.password_toggle_btn.Name = "password_toggle_btn";
-            this.password_toggle_btn.Size = new System.Drawing.Size(43, 31);
-            this.password_toggle_btn.TabIndex = 20;
-            this.password_toggle_btn.Click += new System.EventHandler(this.password_toggle_btn_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(69, 97);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // customer_icon_picture_box
-            // 
-            this.customer_icon_picture_box.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.customer_icon_picture_box.Location = new System.Drawing.Point(69, 77);
-            this.customer_icon_picture_box.Name = "customer_icon_picture_box";
-            this.customer_icon_picture_box.Size = new System.Drawing.Size(74, 71);
-            this.customer_icon_picture_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.customer_icon_picture_box.TabIndex = 8;
-            this.customer_icon_picture_box.TabStop = false;
-            // 
             // ForgetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -749,14 +749,14 @@
             this.main_panel.ResumeLayout(false);
             this.reset_password_panel.ResumeLayout(false);
             this.reset_password_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.otp_verify_panel.ResumeLayout(false);
             this.otp_verify_panel.PerformLayout();
             this.otp_sending_panel.ResumeLayout(false);
             this.otp_sending_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customer_icon_picture_box)).EndInit();
             this.user_profile_showing_panel.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customer_icon_picture_box)).EndInit();
             this.ResumeLayout(false);
 
         }

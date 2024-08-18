@@ -29,9 +29,16 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.no_product_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.data_result = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.delete_all_product_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.delete_shop_btn = new Guna.UI2.WinForms.Guna2Button();
             this.number_of_shop = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.total_product = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.shop_address = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.shop_phone_number = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.owner_phone_number = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.shop_email = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -40,18 +47,11 @@
             this.owner_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.shop_address = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.total_product = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.delete_owner_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.delete_shop_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.delete_all_product_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.no_product_panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            this.guna2CustomGradientPanel1.SuspendLayout();
             this.no_product_panel.SuspendLayout();
+            this.guna2CustomGradientPanel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -67,19 +67,61 @@
             this.guna2Panel1.Size = new System.Drawing.Size(410, 294);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // no_product_panel
+            // 
+            this.no_product_panel.Controls.Add(this.guna2HtmlLabel4);
+            this.no_product_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.no_product_panel.Location = new System.Drawing.Point(0, 315);
+            this.no_product_panel.Name = "no_product_panel";
+            this.no_product_panel.Size = new System.Drawing.Size(393, 0);
+            this.no_product_panel.TabIndex = 0;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(74, 33);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(236, 40);
+            this.guna2HtmlLabel4.TabIndex = 1;
+            this.guna2HtmlLabel4.Text = "NO PRODUCT";
+            // 
             // data_result
             // 
             this.data_result.AutoScroll = true;
-            this.data_result.Dock = System.Windows.Forms.DockStyle.Top;
-            this.data_result.Location = new System.Drawing.Point(0, 301);
+            this.data_result.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.data_result.Location = new System.Drawing.Point(0, 315);
             this.data_result.Name = "data_result";
-            this.data_result.Size = new System.Drawing.Size(393, 139);
+            this.data_result.Size = new System.Drawing.Size(393, 0);
             this.data_result.TabIndex = 3;
+            // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.delete_all_product_btn);
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 315);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(393, 55);
+            this.guna2CustomGradientPanel1.TabIndex = 5;
+            // 
+            // delete_all_product_btn
+            // 
+            this.delete_all_product_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.delete_all_product_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.delete_all_product_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.delete_all_product_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.delete_all_product_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.delete_all_product_btn.ForeColor = System.Drawing.Color.White;
+            this.delete_all_product_btn.Location = new System.Drawing.Point(141, 0);
+            this.delete_all_product_btn.Name = "delete_all_product_btn";
+            this.delete_all_product_btn.Size = new System.Drawing.Size(122, 45);
+            this.delete_all_product_btn.TabIndex = 2;
+            this.delete_all_product_btn.Text = "Delete All Product";
+            this.delete_all_product_btn.Click += new System.EventHandler(this.delete_all_product_btn_Click);
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.Controls.Add(this.delete_shop_btn);
-            this.guna2Panel2.Controls.Add(this.delete_owner_btn);
             this.guna2Panel2.Controls.Add(this.number_of_shop);
             this.guna2Panel2.Controls.Add(this.total_product);
             this.guna2Panel2.Controls.Add(this.shop_address);
@@ -89,13 +131,29 @@
             this.guna2Panel2.Controls.Add(this.owner_email);
             this.guna2Panel2.Controls.Add(this.shop_name);
             this.guna2Panel2.Controls.Add(this.owner_name);
+            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(393, 301);
+            this.guna2Panel2.Size = new System.Drawing.Size(393, 315);
             this.guna2Panel2.TabIndex = 2;
+            // 
+            // delete_shop_btn
+            // 
+            this.delete_shop_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.delete_shop_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.delete_shop_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.delete_shop_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.delete_shop_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.delete_shop_btn.ForeColor = System.Drawing.Color.White;
+            this.delete_shop_btn.Location = new System.Drawing.Point(256, 203);
+            this.delete_shop_btn.Name = "delete_shop_btn";
+            this.delete_shop_btn.Size = new System.Drawing.Size(122, 45);
+            this.delete_shop_btn.TabIndex = 2;
+            this.delete_shop_btn.Text = "Delete Shop";
+            this.delete_shop_btn.Click += new System.EventHandler(this.delete_shop_btn_Click);
             // 
             // number_of_shop
             // 
@@ -105,6 +163,24 @@
             this.number_of_shop.Size = new System.Drawing.Size(83, 15);
             this.number_of_shop.TabIndex = 1;
             this.number_of_shop.Text = "Number of Shop:";
+            // 
+            // total_product
+            // 
+            this.total_product.BackColor = System.Drawing.Color.Transparent;
+            this.total_product.Location = new System.Drawing.Point(13, 266);
+            this.total_product.Name = "total_product";
+            this.total_product.Size = new System.Drawing.Size(70, 15);
+            this.total_product.TabIndex = 1;
+            this.total_product.Text = "Total Product:";
+            // 
+            // shop_address
+            // 
+            this.shop_address.BackColor = System.Drawing.Color.Transparent;
+            this.shop_address.Location = new System.Drawing.Point(13, 245);
+            this.shop_address.Name = "shop_address";
+            this.shop_address.Size = new System.Drawing.Size(44, 15);
+            this.shop_address.TabIndex = 1;
+            this.shop_address.Text = "Address:";
             // 
             // shop_phone_number
             // 
@@ -180,93 +256,15 @@
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Owner Information";
             // 
-            // shop_address
+            // guna2HtmlLabel3
             // 
-            this.shop_address.BackColor = System.Drawing.Color.Transparent;
-            this.shop_address.Location = new System.Drawing.Point(13, 245);
-            this.shop_address.Name = "shop_address";
-            this.shop_address.Size = new System.Drawing.Size(44, 15);
-            this.shop_address.TabIndex = 1;
-            this.shop_address.Text = "Address:";
-            // 
-            // total_product
-            // 
-            this.total_product.BackColor = System.Drawing.Color.Transparent;
-            this.total_product.Location = new System.Drawing.Point(13, 266);
-            this.total_product.Name = "total_product";
-            this.total_product.Size = new System.Drawing.Size(70, 15);
-            this.total_product.TabIndex = 1;
-            this.total_product.Text = "Total Product:";
-            // 
-            // delete_owner_btn
-            // 
-            this.delete_owner_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.delete_owner_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.delete_owner_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.delete_owner_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.delete_owner_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.delete_owner_btn.ForeColor = System.Drawing.Color.White;
-            this.delete_owner_btn.Location = new System.Drawing.Point(256, 60);
-            this.delete_owner_btn.Name = "delete_owner_btn";
-            this.delete_owner_btn.Size = new System.Drawing.Size(122, 45);
-            this.delete_owner_btn.TabIndex = 2;
-            this.delete_owner_btn.Text = "Delete Owner";
-            // 
-            // delete_shop_btn
-            // 
-            this.delete_shop_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.delete_shop_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.delete_shop_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.delete_shop_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.delete_shop_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.delete_shop_btn.ForeColor = System.Drawing.Color.White;
-            this.delete_shop_btn.Location = new System.Drawing.Point(256, 203);
-            this.delete_shop_btn.Name = "delete_shop_btn";
-            this.delete_shop_btn.Size = new System.Drawing.Size(122, 45);
-            this.delete_shop_btn.TabIndex = 2;
-            this.delete_shop_btn.Text = "Delete Shop";
-            // 
-            // guna2CustomGradientPanel1
-            // 
-            this.guna2CustomGradientPanel1.Controls.Add(this.delete_all_product_btn);
-            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 540);
-            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(393, 55);
-            this.guna2CustomGradientPanel1.TabIndex = 5;
-            // 
-            // delete_all_product_btn
-            // 
-            this.delete_all_product_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.delete_all_product_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.delete_all_product_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.delete_all_product_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.delete_all_product_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.delete_all_product_btn.ForeColor = System.Drawing.Color.White;
-            this.delete_all_product_btn.Location = new System.Drawing.Point(141, 0);
-            this.delete_all_product_btn.Name = "delete_all_product_btn";
-            this.delete_all_product_btn.Size = new System.Drawing.Size(122, 45);
-            this.delete_all_product_btn.TabIndex = 2;
-            this.delete_all_product_btn.Text = "Delete All Product";
-            // 
-            // no_product_panel
-            // 
-            this.no_product_panel.Controls.Add(this.guna2HtmlLabel4);
-            this.no_product_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.no_product_panel.Location = new System.Drawing.Point(0, 440);
-            this.no_product_panel.Name = "no_product_panel";
-            this.no_product_panel.Size = new System.Drawing.Size(393, 100);
-            this.no_product_panel.TabIndex = 0;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(74, 33);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(236, 40);
-            this.guna2HtmlLabel4.TabIndex = 1;
-            this.guna2HtmlLabel4.Text = "NO PRODUCT";
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(13, 287);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(171, 27);
+            this.guna2HtmlLabel3.TabIndex = 0;
+            this.guna2HtmlLabel3.Text = "Product Information";
             // 
             // ShopInfoDashboard
             // 
@@ -277,11 +275,11 @@
             this.Name = "ShopInfoDashboard";
             this.Size = new System.Drawing.Size(410, 294);
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
-            this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.no_product_panel.ResumeLayout(false);
             this.no_product_panel.PerformLayout();
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -305,8 +303,8 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2Button delete_all_product_btn;
         private Guna.UI2.WinForms.Guna2Button delete_shop_btn;
-        private Guna.UI2.WinForms.Guna2Button delete_owner_btn;
         private Guna.UI2.WinForms.Guna2Panel no_product_panel;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
     }
 }

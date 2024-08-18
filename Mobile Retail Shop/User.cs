@@ -29,13 +29,22 @@ namespace Mobile_Retail_Shop
             this.Click += new System.EventHandler(this.user_btn_Click);
         }
 
-
-        // string userId, string userName, string userEmail, string userPhoneNumber, string password, int userType)
-
         private void user_btn_Click(object sender, EventArgs e)
         {
             UserInfo tag = (UserInfo)this.Tag;
+
+            if (tag.UserType == 2)
+            {
+                AdminDeshBoard.Instance.panelContainer.Controls.Clear();
+                ShopOwnerInfoDashBoard shopOwnerInfoDashBoard = new ShopOwnerInfoDashBoard(shopOwnerID: tag.Id, shopOwnerName: tag.Name, shopOwnerEmail: tag.Email, shopOwnerPhoneNumber: tag.PhoneNumber, shopOwnerCity: tag.City, shopOwnerPassword: tag.Password, this.users);
+                shopOwnerInfoDashBoard.Dock = DockStyle.Fill;
+                AdminDeshBoard.Instance.panelContainer.Controls.Add(shopOwnerInfoDashBoard);
+                shopOwnerInfoDashBoard.BringToFront();
+                return;
+            }
+
             users.profile(userId: tag.Id, userName: tag.Name, userEmail: tag.Email, userPhoneNumber: tag.PhoneNumber, userCity: tag.City, userPassword: tag.Password, userType: tag.UserType);
+            users.BringToFront();
         }
     }
 }

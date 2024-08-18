@@ -63,7 +63,7 @@ namespace Mobile_Retail_Shop
             // User Type 1 mean user is admin
             if (dataTable.Rows[0]["User Type"].ToString() == "1")
             {
-                AdminDeshBoard adminDeshBoard = new AdminDeshBoard(dataTable.Rows[0]["ID"].ToString());
+                AdminDeshBoard adminDeshBoard = new AdminDeshBoard(id: dataTable.Rows[0]["ID"].ToString(), name: dataTable.Rows[0]["Name"].ToString());
                 this.Hide();
                 adminDeshBoard.Show();
 

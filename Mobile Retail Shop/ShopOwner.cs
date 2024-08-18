@@ -91,6 +91,13 @@ namespace Mobile_Retail_Shop
             obj = this;
         }
 
+
+        private void shop_owner_profile_Click(object sender, EventArgs e)
+        {
+            UserProfile userProfile = new UserProfile(this.showOwnerID);
+            userProfile.ShowDialog();
+        }
+
         private void log_out_btn_Click(object sender, EventArgs e)
         {
             this.Hide();    

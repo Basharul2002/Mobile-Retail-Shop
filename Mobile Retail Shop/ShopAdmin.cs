@@ -19,13 +19,18 @@ namespace Mobile_Retail_Shop
             InitializeComponent();
         }
 
-        public ShopAdmin(ShopInformation shopInformation, string shopID, string shopName, string shopOwnerName, string totalProduct) : this()
+        public ShopAdmin(ShopInformation shopInformation = null, string shopID = null, string shopName = null, string shopEmail = null, string shopOwnerName = null, string totalProduct = null) : this()
         {
             this.shopInformation = shopInformation;
             this.Tag = details_btn.Tag = delete_btn.Tag = shopID;
             shop_name.Text = $"Shop Name: {shopName}";
-            shop_owner_name.Text = $"Owner Name: {shopOwnerName}";
+            
             total_product.Text = $"Total Product: {totalProduct}";
+
+            if (shopOwnerName != null)
+                shop_owner_name.Text = $"Owner Name: {shopOwnerName}";
+            else
+                shop_owner_name.Text = $"Email: {shopEmail}";
         }
 
         private void delete_btn_Click(object sender, EventArgs e)
@@ -68,10 +73,17 @@ namespace Mobile_Retail_Shop
 
         private void details_btn_Click(object sender, EventArgs e)
         {
-            AdminDeshBoard.Instance.panelContainer.Controls.Clear();
-            ShopInfoDashboard shopInfoDashboard = new ShopInfoDashboard(details_btn.Tag.ToString());
-            shopInfoDashboard.Dock = DockStyle.Fill;
-            AdminDeshBoard.Instance.panelContainer.Controls.Add(shopInformation);
+            if (!AdminDeshBoard.Instance.panelContainer.Controls.ContainsKey("ShopInfoDashboard"))
+            {
+                AdminDeshBoard.Instance.panelContainer.Controls.Clear();
+                ShopInfoDashboard shopInfoDashboard = new ShopInfoDashboard(details_btn.Tag.ToString());
+                shopInfoDashboard.Name = "ShopInfoDashboard"; // Set the name so it can be identified later
+                shopInfoDashboard.Dock = DockStyle.Fill;
+                AdminDeshBoard.Instance.panelContainer.Controls.Add(shopInfoDashboard); // Correctly add shopInfoDashboard
+                shopInfoDashboard.BringToFront(); // Ensure it's displayed on top
+            }
+
+
         }
     }
 }

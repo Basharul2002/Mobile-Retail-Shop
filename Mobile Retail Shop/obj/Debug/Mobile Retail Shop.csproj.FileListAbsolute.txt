@@ -150,9 +150,13 @@ D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Reta
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopInformation.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopInfoDashboard.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.UserProfile.resources
+<<<<<<< HEAD
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopOwnerInfoDashBoard.resources
+=======
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ForgetPassword.resources
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.SearchUser.resources
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopAdmin.resources
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopInfoDashboard.resources
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopInformation.resources
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.UserProfile.resources
+>>>>>>> b3a3441958f6486cf0d04901e4f860467ec28fe3
