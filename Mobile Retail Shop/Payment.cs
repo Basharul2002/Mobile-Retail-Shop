@@ -53,7 +53,7 @@ namespace Mobile_Retail_Shop
 
         private void card_holder_tb_TextChanged(object sender, EventArgs e)
         {
-            card_holder_name.Text = card_holder_tb.Text;
+            card_holder_name.Text = card_holder_name_tb.Text;
         }
 
 
@@ -81,13 +81,34 @@ namespace Mobile_Retail_Shop
 
         private void payment_btn_Click(object sender, EventArgs e)
         {
-            if (!CustomerDashboard.Instance.panelContainer.Controls.ContainsKey("CustomerDashboardData"))
+            if (card_number_tb.Text.Length != 19 || string.IsNullOrWhiteSpace(card_number_tb.Text))
             {
-                CustomerDashboard.Instance.panelContainer.Controls.Clear();
-                CustomerDashBoardData customerDashBoard = new CustomerDashBoardData(customerID: this.customerID);
-                customerDashBoard.Dock = DockStyle.Fill;
-                CustomerDashboard.Instance.panelContainer.Controls.Add(customerDashBoard);
+                MessageBox.Show("Invalid Card Number");
+                return;
             }
+
+            if (string.IsNullOrWhiteSpace(card_holder_name_tb.Text))
+            {
+                MessageBox.Show("Enter card holder name");
+                return;
+            }
+
+            if (expiry_date_tb.Text.Length != 5)
+            {
+                MessageBox.Show("Invalid Expire date");
+                return;
+            }
+
+            if (cvv_tb.Text.Length != 4)
+            {
+                MessageBox.Show("Invalid CVV Number");
+                return;
+            }
+
+
+            this.Hide();
+            CustomerDashboard customerDashboard = new CustomerDashboard(this.customerID);
+            customerDashboard.Show();
             
         }
 
