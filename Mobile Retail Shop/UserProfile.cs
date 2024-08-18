@@ -103,6 +103,18 @@ namespace Mobile_Retail_Shop
 
         private void update_btn_Click(object sender, EventArgs e)
         {
+            if (!Utility.Validity.IsEmailValid(email_tb.Text))
+            {
+                MessageBox.Show("Invalid Email", "Warning");
+                return;
+            }
+
+            if (!Utility.Validity.IsPhoneNumberValid(phone_number_tb.Text))
+            {
+                MessageBox.Show("Invalid Phone Number", "Warning");
+                return;
+            }
+
             string query, error;
 
             query = "UPDATE [User Information] SET ";
