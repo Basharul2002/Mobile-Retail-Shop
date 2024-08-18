@@ -72,7 +72,7 @@ namespace Mobile_Retail_Shop
             // User Type 2 mean user is shop owner
             if (dataTable.Rows[0]["User Type"].ToString() == "2")
             {
-                ShopOwner shopOwner = new ShopOwner(dataTable.Rows[0]["ID"].ToString());
+                ShopOwner shopOwner = new ShopOwner(showOwnerID: dataTable.Rows[0]["ID"].ToString(), password: password_tb.Text);
                 this.Hide();
                 shopOwner.Show();
             }

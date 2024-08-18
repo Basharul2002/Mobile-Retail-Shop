@@ -39,10 +39,9 @@ namespace Mobile_Retail_Shop
                 quantity.Text = cartItem.Quantity.ToString();
             }
             else
-            {
                 // Handle the case where the productId is not in the cart
                 quantity.Text = "0";
-            }
+            
         }
 
 

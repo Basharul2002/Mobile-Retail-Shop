@@ -67,7 +67,7 @@ namespace Mobile_Retail_Shop
         private void CustomerDashboardLoad()
         {
             Instance.panelContainer.Controls.Clear();
-            CustomerDashBoardData newShop = new CustomerDashBoardData(customerID: this.customerID);
+            CustomerDashBoardData newShop = new CustomerDashBoardData(customerID: this.customerID); 
             newShop.Dock = DockStyle.Fill;
             Instance.panelContainer.Controls.Add(newShop);
         }

@@ -31,14 +31,12 @@ namespace Mobile_Retail_Shop
 
             // Ensure "@gmail.com" appears only once
             if (isValid && email.IndexOf("@gmail.com") == email.LastIndexOf("@gmail.com"))
-            {
                 return true; // Email is valid
-            }
+            
             else
-            {
                 MessageBox.Show("Please enter a valid email address that ends with '@gmail.com' and appears only once.", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false; // Email is not valid
-            }
+            
         }
 
         private void email_tb_Leave(object sender, EventArgs e)

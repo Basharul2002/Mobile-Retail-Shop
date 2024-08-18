@@ -31,11 +31,13 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.all_product_btn = new Guna.UI2.WinForms.Guna2Button();
             this.new_product_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.balance_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.balance_btn);
             this.guna2Panel1.Controls.Add(this.all_product_btn);
             this.guna2Panel1.Controls.Add(this.new_product_btn);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -52,7 +54,7 @@
             this.all_product_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.all_product_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.all_product_btn.ForeColor = System.Drawing.Color.White;
-            this.all_product_btn.Location = new System.Drawing.Point(301, 27);
+            this.all_product_btn.Location = new System.Drawing.Point(222, 27);
             this.all_product_btn.Name = "all_product_btn";
             this.all_product_btn.Size = new System.Drawing.Size(99, 45);
             this.all_product_btn.TabIndex = 0;
@@ -67,12 +69,27 @@
             this.new_product_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.new_product_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.new_product_btn.ForeColor = System.Drawing.Color.White;
-            this.new_product_btn.Location = new System.Drawing.Point(127, 27);
+            this.new_product_btn.Location = new System.Drawing.Point(80, 27);
             this.new_product_btn.Name = "new_product_btn";
             this.new_product_btn.Size = new System.Drawing.Size(99, 45);
             this.new_product_btn.TabIndex = 0;
             this.new_product_btn.Text = "New Product";
             this.new_product_btn.Click += new System.EventHandler(this.new_product_btn_Click);
+            // 
+            // balance_btn
+            // 
+            this.balance_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.balance_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.balance_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.balance_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.balance_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.balance_btn.ForeColor = System.Drawing.Color.White;
+            this.balance_btn.Location = new System.Drawing.Point(355, 27);
+            this.balance_btn.Name = "balance_btn";
+            this.balance_btn.Size = new System.Drawing.Size(99, 45);
+            this.balance_btn.TabIndex = 0;
+            this.balance_btn.Text = "Balance";
+            this.balance_btn.Click += new System.EventHandler(this.balance_btn_Click);
             // 
             // Shop
             // 
@@ -91,5 +108,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button all_product_btn;
         private Guna.UI2.WinForms.Guna2Button new_product_btn;
+        private Guna.UI2.WinForms.Guna2Button balance_btn;
     }
 }

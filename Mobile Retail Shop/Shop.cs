@@ -12,15 +12,16 @@ namespace Mobile_Retail_Shop
 {
     public partial class Shop : UserControl
     {
-        private string shopID;
+        private string shopID, password;
         public Shop()
         {
             InitializeComponent();
         }
 
-        public Shop(string shopID) : this() 
+        public Shop(string shopID, string password = null) : this() 
         {
             this.shopID = shopID;
+            this.password = password;
         }
 
         private void new_product_btn_Click(object sender, EventArgs e)
@@ -46,6 +47,15 @@ namespace Mobile_Retail_Shop
             }
         }
 
-
+        private void balance_btn_Click(object sender, EventArgs e)
+        {
+            if (!ShopOwner.Instance.panelContainer.Controls.ContainsKey("Balance"))
+            {
+                ShopOwner.Instance.panelContainer.Controls.Clear();
+                Balance balance = new Balance(this.shopID, this.password);
+                balance.Dock = DockStyle.Fill;
+                ShopOwner.Instance.panelContainer.Controls.Add(balance);
+            }
+        }
     }
 }
