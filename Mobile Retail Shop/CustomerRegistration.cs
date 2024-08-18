@@ -115,6 +115,19 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
+            if (!Utility.Validity.IsEmailValid(email_tb.Text))
+            {
+                MessageBox.Show("Invalid Email", "Warning");
+                return;
+            }
+
+            if (!Utility.Validity.IsPhoneNumberValid(phone_number_tb.Text))
+            {
+                MessageBox.Show("Invalid Phone Number", "Warning");
+                return;
+            }
+
+
             // Check the email exists
             DataBase dataBase = new DataBase();
             string query, error;

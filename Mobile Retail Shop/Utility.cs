@@ -215,5 +215,33 @@ namespace Mobile_Retail_Shop
 
         }
 
+        public class Validity
+        {
+            public static bool IsPhoneNumberValid(string phn_num)
+            {
+                if (phn_num.Length == 11)
+                {
+                    // Use Regex pattern matching to validate phone number format
+                    string phnNumPattern = @"^\d{11}$";
+
+                    // Validate phone number and email format
+                    // If phone number is valied then return true otherwise false
+                    return Regex.IsMatch(phn_num, phnNumPattern);
+                }
+
+                return false;
+            }
+
+            public static bool IsEmailValid(string email)
+            {
+                // Use Regex pattern matching to validate email format
+                string emailFormatPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+
+                // Validate email format
+                // If email is valied then return true otherwise false
+                return Regex.IsMatch(email, emailFormatPattern);
+            }
+        }
+
     }
 }
