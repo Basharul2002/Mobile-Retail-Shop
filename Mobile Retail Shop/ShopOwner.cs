@@ -14,15 +14,16 @@ namespace Mobile_Retail_Shop
     public partial class ShopOwner : Form
     {
         static ShopOwner obj;
-        private string showOwnerID;
+        private string showOwnerID, password;
         public ShopOwner()
         {
             InitializeComponent();
         }
 
-        public ShopOwner(string showOwnerID) : this()
+        public ShopOwner(string showOwnerID, string password = null) : this()
         {
             this.showOwnerID = showOwnerID;
+            this.password = password;
             LoadShops();
         }
 
@@ -80,7 +81,7 @@ namespace Mobile_Retail_Shop
                  shopId = shopButton.Tag.ToString();
 
             Instance.panelContainer.Controls.Clear();
-            Shop shop = new Shop(shopId);
+            Shop shop = new Shop(shopId, this.password);
             shop.Dock = DockStyle.Fill;
             Instance.panelContainer.Controls.Add(shop);
 

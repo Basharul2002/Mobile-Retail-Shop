@@ -62,7 +62,7 @@ namespace Mobile_Retail_Shop
             if (!CustomerDashboard.Instance.Controls.ContainsKey("Payment"))
             {
                 CustomerDashboard.Instance.Controls.Clear();
-                Payment payment = new Payment(customerID: this.customerID, cartItems: this.cartItems);
+                Payment payment = new Payment(customerID: this.customerID, cartItems: this.cartItems, totalPrice: this.totalPrice);
                 payment.Dock = DockStyle.Fill;
                 CustomerDashboard.Instance.Controls.Add(payment);
                 this.Hide();

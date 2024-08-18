@@ -79,6 +79,18 @@
     <Compile Include="AllProduct.Designer.cs">
       <DependentUpon>AllProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Balance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Balance.Designer.cs">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BalanceWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BalanceWithdraw.Designer.cs">
+      <DependentUpon>BalanceWithdraw.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +241,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllProduct.resx">
       <DependentUpon>AllProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balance.resx">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BalanceWithdraw.resx">
+      <DependentUpon>BalanceWithdraw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cart.resx">
       <DependentUpon>Cart.cs</DependentUpon>

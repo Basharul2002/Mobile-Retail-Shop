@@ -107,13 +107,23 @@ namespace Mobile_Retail_Shop
                               VALUES ('{shop_name_tb.Text}', '{email_tb.Text}', '{phone_number_tb.Text}', '{city_tb.Text}', {ownerId})";
 
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            int newShopID = dataBase.ExecuteScalarQuery(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
                 MessageBox.Show($"Class name: NewShop Function: submit_btn_Click \nError: {error}");
                 return;
             }
+
+            query = $@"INSERT INTO [Shop Accounts] ([Shop ID], [Current Balance], [Total Withdraw]) VALUES ({newShopID}, 0, 0)";
+            dataBase.ExecuteNonQuery(query, out error);
+
+            if (!string.IsNullOrEmpty(error))
+            {
+                MessageBox.Show($"Class name: NewShop Function: submit_btn_Click \nError: {error}");
+                return;
+            }
+
 
             MessageBox.Show("Shop information inserted successfully.");
         }

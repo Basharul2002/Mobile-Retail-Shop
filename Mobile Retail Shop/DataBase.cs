@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -63,5 +64,29 @@ namespace Mobile_Retail_Shop
                 return false;
             }
         }
+
+        public int ExecuteScalarQuery(string query, out string error)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(DataBaseConnection.connectionString))
+                {
+                    connection.Open();
+
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        object result = cmd.ExecuteScalar();
+                        error = string.Empty;
+                        return Convert.ToInt32(result);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+                return -1;
+            }
+        }
+
     }
 }
