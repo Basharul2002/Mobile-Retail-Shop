@@ -33,7 +33,7 @@
             this.cvv_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.expiry_date_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.cvv = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.card_holder_tb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.card_holder_name_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.payment_btn = new Guna.UI2.WinForms.Guna2Button();
             this.card_number_tb = new Guna.UI2.WinForms.Guna2TextBox();
@@ -52,7 +52,7 @@
             this.guna2Panel1.Controls.Add(this.cvv_tb);
             this.guna2Panel1.Controls.Add(this.expiry_date_tb);
             this.guna2Panel1.Controls.Add(this.cvv);
-            this.guna2Panel1.Controls.Add(this.card_holder_tb);
+            this.guna2Panel1.Controls.Add(this.card_holder_name_tb);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel1.Controls.Add(this.payment_btn);
             this.guna2Panel1.Controls.Add(this.card_number_tb);
@@ -120,26 +120,26 @@
             this.cvv.TabIndex = 39;
             this.cvv.Text = "CVV";
             // 
-            // card_holder_tb
+            // card_holder_name_tb
             // 
-            this.card_holder_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.card_holder_tb.DefaultText = "";
-            this.card_holder_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.card_holder_tb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.card_holder_tb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.card_holder_tb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.card_holder_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.card_holder_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.card_holder_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.card_holder_tb.Location = new System.Drawing.Point(59, 155);
-            this.card_holder_tb.MaxLength = 30;
-            this.card_holder_tb.Name = "card_holder_tb";
-            this.card_holder_tb.PasswordChar = '\0';
-            this.card_holder_tb.PlaceholderText = "Mustafa Hameem";
-            this.card_holder_tb.SelectedText = "";
-            this.card_holder_tb.Size = new System.Drawing.Size(247, 36);
-            this.card_holder_tb.TabIndex = 48;
-            this.card_holder_tb.TextChanged += new System.EventHandler(this.card_holder_tb_TextChanged);
+            this.card_holder_name_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.card_holder_name_tb.DefaultText = "";
+            this.card_holder_name_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.card_holder_name_tb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.card_holder_name_tb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.card_holder_name_tb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.card_holder_name_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.card_holder_name_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.card_holder_name_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.card_holder_name_tb.Location = new System.Drawing.Point(59, 155);
+            this.card_holder_name_tb.MaxLength = 30;
+            this.card_holder_name_tb.Name = "card_holder_name_tb";
+            this.card_holder_name_tb.PasswordChar = '\0';
+            this.card_holder_name_tb.PlaceholderText = "Mustafa Hameem";
+            this.card_holder_name_tb.SelectedText = "";
+            this.card_holder_name_tb.Size = new System.Drawing.Size(247, 36);
+            this.card_holder_name_tb.TabIndex = 48;
+            this.card_holder_name_tb.TextChanged += new System.EventHandler(this.card_holder_tb_TextChanged);
             // 
             // guna2HtmlLabel3
             // 
@@ -269,7 +269,7 @@
         private Guna.UI2.WinForms.Guna2TextBox cvv_tb;
         private Guna.UI2.WinForms.Guna2TextBox expiry_date_tb;
         private Guna.UI2.WinForms.Guna2HtmlLabel cvv;
-        private Guna.UI2.WinForms.Guna2TextBox card_holder_tb;
+        private Guna.UI2.WinForms.Guna2TextBox card_holder_name_tb;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2Button payment_btn;
         private Guna.UI2.WinForms.Guna2TextBox card_number_tb;

@@ -131,8 +131,7 @@ namespace Mobile_Retail_Shop
 
         private void log_out_btn_Click(object sender, EventArgs e)
         {
-           
-
+          
             this.Hide();
             Login login = new Login();
             login.Show();

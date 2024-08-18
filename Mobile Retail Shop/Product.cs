@@ -118,10 +118,11 @@ namespace Mobile_Retail_Shop
 
         private void add_cart_btn_Click(object sender, EventArgs e)
         {
-            CustomerDashboard.Instance.panelContainer.Controls.Clear();
-            CustomerDashBoardData customerDashBoardData = new CustomerDashBoardData(customerID: this.customerID, cart: this.cart);
-            customerDashBoardData.Dock = DockStyle.Fill;
-            CustomerDashboard.Instance.panelContainer.Controls.Add(customerDashBoardData);
+            Cart cart = new Cart(customerID: this.customerID, cartItems: this.cart);
+            DialogResult dialogResult = cart.ShowDialog();
+
+            if (dialogResult == DialogResult.OK)
+                cart.Hide();
         }
 
         private void back_btn_Click(object sender, EventArgs e)
