@@ -93,8 +93,9 @@
             this.user_search_panel.Controls.Add(this.panel4);
             this.user_search_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.user_search_panel.Location = new System.Drawing.Point(0, 0);
+            this.user_search_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.user_search_panel.Name = "user_search_panel";
-            this.user_search_panel.Size = new System.Drawing.Size(649, 331);
+            this.user_search_panel.Size = new System.Drawing.Size(869, 407);
             this.user_search_panel.TabIndex = 2;
             // 
             // panel4
@@ -107,9 +108,10 @@
             this.panel4.Controls.Add(this.search_btn);
             this.panel4.Controls.Add(this.message);
             this.panel4.Controls.Add(this.title);
-            this.panel4.Location = new System.Drawing.Point(67, 33);
+            this.panel4.Location = new System.Drawing.Point(91, 41);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(514, 265);
+            this.panel4.Size = new System.Drawing.Size(685, 326);
             this.panel4.TabIndex = 4;
             // 
             // search_box_tb
@@ -126,13 +128,14 @@
             this.search_box_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.search_box_tb.ForeColor = System.Drawing.Color.Transparent;
             this.search_box_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.search_box_tb.Location = new System.Drawing.Point(44, 159);
+            this.search_box_tb.Location = new System.Drawing.Point(59, 196);
+            this.search_box_tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.search_box_tb.Name = "search_box_tb";
             this.search_box_tb.PasswordChar = '\0';
             this.search_box_tb.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.search_box_tb.PlaceholderText = "Email address or Phone Number";
             this.search_box_tb.SelectedText = "";
-            this.search_box_tb.Size = new System.Drawing.Size(408, 36);
+            this.search_box_tb.Size = new System.Drawing.Size(544, 44);
             this.search_box_tb.TabIndex = 5;
             // 
             // warning_message
@@ -141,10 +144,11 @@
             this.warning_message.BackColor = System.Drawing.Color.SkyBlue;
             this.warning_message.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.warning_message.ForeColor = System.Drawing.Color.White;
-            this.warning_message.Location = new System.Drawing.Point(44, 68);
+            this.warning_message.Location = new System.Drawing.Point(59, 84);
+            this.warning_message.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.warning_message.Multiline = true;
             this.warning_message.Name = "warning_message";
-            this.warning_message.Size = new System.Drawing.Size(354, 39);
+            this.warning_message.Size = new System.Drawing.Size(471, 47);
             this.warning_message.TabIndex = 4;
             this.warning_message.Text = "Please fill in at least one field\r\nFill in at least one field to search for your " +
     "account";
@@ -155,9 +159,10 @@
             this.cancel_btn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cancel_btn.BackColor = System.Drawing.Color.White;
             this.cancel_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel_btn.Location = new System.Drawing.Point(254, 210);
+            this.cancel_btn.Location = new System.Drawing.Point(339, 258);
+            this.cancel_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cancel_btn.Name = "cancel_btn";
-            this.cancel_btn.Size = new System.Drawing.Size(75, 36);
+            this.cancel_btn.Size = new System.Drawing.Size(100, 44);
             this.cancel_btn.TabIndex = 3;
             this.cancel_btn.Text = "Cancel";
             this.cancel_btn.UseVisualStyleBackColor = false;
@@ -171,9 +176,10 @@
             this.search_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.search_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_btn.ForeColor = System.Drawing.Color.Red;
-            this.search_btn.Location = new System.Drawing.Point(360, 210);
+            this.search_btn.Location = new System.Drawing.Point(480, 258);
+            this.search_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(75, 36);
+            this.search_btn.Size = new System.Drawing.Size(100, 44);
             this.search_btn.TabIndex = 3;
             this.search_btn.Text = "Search";
             this.search_btn.UseVisualStyleBackColor = false;
@@ -184,11 +190,12 @@
             this.message.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.message.AutoSize = true;
             this.message.BackColor = System.Drawing.Color.Transparent;
-            this.message.Font = new System.Drawing.Font("Montserrat", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.message.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.message.ForeColor = System.Drawing.Color.White;
-            this.message.Location = new System.Drawing.Point(41, 119);
+            this.message.Location = new System.Drawing.Point(55, 146);
+            this.message.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.message.Name = "message";
-            this.message.Size = new System.Drawing.Size(441, 36);
+            this.message.Size = new System.Drawing.Size(524, 40);
             this.message.TabIndex = 1;
             this.message.Text = "Please enter your email address or mobile number to search \r\nfor your account";
             // 
@@ -197,11 +204,12 @@
             this.title.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.title.AutoSize = true;
             this.title.BackColor = System.Drawing.Color.Transparent;
-            this.title.Font = new System.Drawing.Font("Montserrat", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.title.ForeColor = System.Drawing.Color.White;
-            this.title.Location = new System.Drawing.Point(37, 23);
+            this.title.Location = new System.Drawing.Point(49, 28);
+            this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(398, 42);
+            this.title.Size = new System.Drawing.Size(485, 48);
             this.title.TabIndex = 1;
             this.title.Text = "FIND YOUR ACCOUNT";
             // 
@@ -215,8 +223,9 @@
             this.main_panel.Controls.Add(this.user_search_panel);
             this.main_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.main_panel.Location = new System.Drawing.Point(0, 0);
+            this.main_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.main_panel.Name = "main_panel";
-            this.main_panel.Size = new System.Drawing.Size(666, 344);
+            this.main_panel.Size = new System.Drawing.Size(890, 423);
             this.main_panel.TabIndex = 4;
             // 
             // reset_password_panel
@@ -235,9 +244,10 @@
             this.reset_password_panel.Controls.Add(this.pictureBox1);
             this.reset_password_panel.Controls.Add(this.label10);
             this.reset_password_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.reset_password_panel.Location = new System.Drawing.Point(0, 1495);
+            this.reset_password_panel.Location = new System.Drawing.Point(0, 1840);
+            this.reset_password_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.reset_password_panel.Name = "reset_password_panel";
-            this.reset_password_panel.Size = new System.Drawing.Size(649, 515);
+            this.reset_password_panel.Size = new System.Drawing.Size(869, 634);
             this.reset_password_panel.TabIndex = 6;
             this.reset_password_panel.Visible = false;
             // 
@@ -249,9 +259,10 @@
             this.reset_password_back_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.reset_password_back_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.reset_password_back_btn.ForeColor = System.Drawing.Color.White;
-            this.reset_password_back_btn.Location = new System.Drawing.Point(132, 388);
+            this.reset_password_back_btn.Location = new System.Drawing.Point(176, 478);
+            this.reset_password_back_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.reset_password_back_btn.Name = "reset_password_back_btn";
-            this.reset_password_back_btn.Size = new System.Drawing.Size(116, 45);
+            this.reset_password_back_btn.Size = new System.Drawing.Size(155, 55);
             this.reset_password_back_btn.TabIndex = 21;
             this.reset_password_back_btn.Text = "Back";
             this.reset_password_back_btn.Click += new System.EventHandler(this.reset_password_back_btn_Click);
@@ -264,9 +275,10 @@
             this.reset_password_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.reset_password_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.reset_password_btn.ForeColor = System.Drawing.Color.White;
-            this.reset_password_btn.Location = new System.Drawing.Point(317, 387);
+            this.reset_password_btn.Location = new System.Drawing.Point(423, 476);
+            this.reset_password_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.reset_password_btn.Name = "reset_password_btn";
-            this.reset_password_btn.Size = new System.Drawing.Size(116, 45);
+            this.reset_password_btn.Size = new System.Drawing.Size(155, 55);
             this.reset_password_btn.TabIndex = 21;
             this.reset_password_btn.Text = "Reset Password";
             this.reset_password_btn.Click += new System.EventHandler(this.reset_password_btn_Click);
@@ -282,9 +294,10 @@
             this.confirm_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.confirm_toggle_btn.ForeColor = System.Drawing.Color.White;
             this.confirm_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
-            this.confirm_toggle_btn.Location = new System.Drawing.Point(488, 324);
+            this.confirm_toggle_btn.Location = new System.Drawing.Point(651, 399);
+            this.confirm_toggle_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.confirm_toggle_btn.Name = "confirm_toggle_btn";
-            this.confirm_toggle_btn.Size = new System.Drawing.Size(43, 31);
+            this.confirm_toggle_btn.Size = new System.Drawing.Size(57, 38);
             this.confirm_toggle_btn.TabIndex = 19;
             this.confirm_toggle_btn.Click += new System.EventHandler(this.confirm_toggle_btn_Click);
             // 
@@ -299,9 +312,10 @@
             this.password_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.password_toggle_btn.ForeColor = System.Drawing.Color.White;
             this.password_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
-            this.password_toggle_btn.Location = new System.Drawing.Point(483, 252);
+            this.password_toggle_btn.Location = new System.Drawing.Point(644, 310);
+            this.password_toggle_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.password_toggle_btn.Name = "password_toggle_btn";
-            this.password_toggle_btn.Size = new System.Drawing.Size(43, 31);
+            this.password_toggle_btn.Size = new System.Drawing.Size(57, 38);
             this.password_toggle_btn.TabIndex = 20;
             this.password_toggle_btn.Click += new System.EventHandler(this.password_toggle_btn_Click);
             // 
@@ -318,12 +332,13 @@
             this.confirm_password_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.confirm_password_tb.ForeColor = System.Drawing.Color.Black;
             this.confirm_password_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.confirm_password_tb.Location = new System.Drawing.Point(44, 324);
+            this.confirm_password_tb.Location = new System.Drawing.Point(59, 399);
+            this.confirm_password_tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.confirm_password_tb.Name = "confirm_password_tb";
             this.confirm_password_tb.PasswordChar = '●';
             this.confirm_password_tb.PlaceholderText = "";
             this.confirm_password_tb.SelectedText = "";
-            this.confirm_password_tb.Size = new System.Drawing.Size(435, 36);
+            this.confirm_password_tb.Size = new System.Drawing.Size(580, 44);
             this.confirm_password_tb.TabIndex = 17;
             // 
             // password_tb
@@ -339,12 +354,13 @@
             this.password_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.password_tb.ForeColor = System.Drawing.Color.Black;
             this.password_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.password_tb.Location = new System.Drawing.Point(47, 247);
+            this.password_tb.Location = new System.Drawing.Point(63, 304);
+            this.password_tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.password_tb.Name = "password_tb";
             this.password_tb.PasswordChar = '●';
             this.password_tb.PlaceholderText = "";
             this.password_tb.SelectedText = "";
-            this.password_tb.Size = new System.Drawing.Size(433, 36);
+            this.password_tb.Size = new System.Drawing.Size(577, 44);
             this.password_tb.TabIndex = 18;
             // 
             // label6
@@ -353,9 +369,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(65, 301);
+            this.label6.Location = new System.Drawing.Point(89, 370);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(292, 20);
+            this.label6.Size = new System.Drawing.Size(359, 25);
             this.label6.TabIndex = 6;
             this.label6.Text = "Enter your new password one more time";
             // 
@@ -365,9 +382,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(65, 224);
+            this.label7.Location = new System.Drawing.Point(89, 276);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 20);
+            this.label7.Size = new System.Drawing.Size(231, 25);
             this.label7.TabIndex = 7;
             this.label7.Text = "Enter your new password";
             // 
@@ -377,9 +395,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(65, 187);
+            this.label8.Location = new System.Drawing.Point(89, 230);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(483, 20);
+            this.label8.Size = new System.Drawing.Size(591, 25);
             this.label8.TabIndex = 8;
             this.label8.Text = "Strong passwords include numbers, letters, and punctuation marks.";
             // 
@@ -389,9 +408,10 @@
             this.user_type_reset_password.AutoSize = true;
             this.user_type_reset_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.user_type_reset_password.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.user_type_reset_password.Location = new System.Drawing.Point(154, 135);
+            this.user_type_reset_password.Location = new System.Drawing.Point(207, 166);
+            this.user_type_reset_password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.user_type_reset_password.Name = "user_type_reset_password";
-            this.user_type_reset_password.Size = new System.Drawing.Size(54, 20);
+            this.user_type_reset_password.Size = new System.Drawing.Size(68, 25);
             this.user_type_reset_password.TabIndex = 9;
             this.user_type_reset_password.Text = "Admin";
             // 
@@ -400,18 +420,20 @@
             this.name_reset_password.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.name_reset_password.AutoSize = true;
             this.name_reset_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_reset_password.Location = new System.Drawing.Point(154, 106);
+            this.name_reset_password.Location = new System.Drawing.Point(207, 130);
+            this.name_reset_password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name_reset_password.Name = "name_reset_password";
-            this.name_reset_password.Size = new System.Drawing.Size(243, 20);
+            this.name_reset_password.Size = new System.Drawing.Size(299, 25);
             this.name_reset_password.TabIndex = 10;
             this.name_reset_password.Text = "Basharul Alam Mazumder Rahad";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(69, 97);
+            this.pictureBox1.Location = new System.Drawing.Point(94, 119);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 68);
+            this.pictureBox1.Size = new System.Drawing.Size(105, 84);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -421,9 +443,10 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(63, 50);
+            this.label10.Location = new System.Drawing.Point(86, 62);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(277, 31);
+            this.label10.Size = new System.Drawing.Size(345, 39);
             this.label10.TabIndex = 3;
             this.label10.Text = "Reset Your Password";
             // 
@@ -438,9 +461,10 @@
             this.otp_verify_panel.Controls.Add(this.titlel2);
             this.otp_verify_panel.Controls.Add(this.label4);
             this.otp_verify_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.otp_verify_panel.Location = new System.Drawing.Point(0, 1154);
+            this.otp_verify_panel.Location = new System.Drawing.Point(0, 1420);
+            this.otp_verify_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.otp_verify_panel.Name = "otp_verify_panel";
-            this.otp_verify_panel.Size = new System.Drawing.Size(649, 341);
+            this.otp_verify_panel.Size = new System.Drawing.Size(869, 420);
             this.otp_verify_panel.TabIndex = 5;
             this.otp_verify_panel.Visible = false;
             // 
@@ -455,12 +479,13 @@
             this.otp_code_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.otp_code_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.otp_code_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.otp_code_tb.Location = new System.Drawing.Point(57, 188);
+            this.otp_code_tb.Location = new System.Drawing.Point(76, 231);
+            this.otp_code_tb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.otp_code_tb.Name = "otp_code_tb";
             this.otp_code_tb.PasswordChar = '\0';
             this.otp_code_tb.PlaceholderText = "";
             this.otp_code_tb.SelectedText = "";
-            this.otp_code_tb.Size = new System.Drawing.Size(489, 36);
+            this.otp_code_tb.Size = new System.Drawing.Size(652, 44);
             this.otp_code_tb.TabIndex = 14;
             // 
             // otp_verify_back_btn
@@ -471,9 +496,10 @@
             this.otp_verify_back_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.otp_verify_back_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otp_verify_back_btn.ForeColor = System.Drawing.Color.Red;
-            this.otp_verify_back_btn.Location = new System.Drawing.Point(272, 249);
+            this.otp_verify_back_btn.Location = new System.Drawing.Point(365, 306);
+            this.otp_verify_back_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.otp_verify_back_btn.Name = "otp_verify_back_btn";
-            this.otp_verify_back_btn.Size = new System.Drawing.Size(75, 36);
+            this.otp_verify_back_btn.Size = new System.Drawing.Size(100, 44);
             this.otp_verify_back_btn.TabIndex = 12;
             this.otp_verify_back_btn.Text = "Back";
             this.otp_verify_back_btn.UseVisualStyleBackColor = false;
@@ -487,9 +513,10 @@
             this.otp_resend_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.otp_resend_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otp_resend_button.ForeColor = System.Drawing.Color.Red;
-            this.otp_resend_button.Location = new System.Drawing.Point(369, 249);
+            this.otp_resend_button.Location = new System.Drawing.Point(494, 306);
+            this.otp_resend_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.otp_resend_button.Name = "otp_resend_button";
-            this.otp_resend_button.Size = new System.Drawing.Size(75, 36);
+            this.otp_resend_button.Size = new System.Drawing.Size(100, 44);
             this.otp_resend_button.TabIndex = 12;
             this.otp_resend_button.Text = "Resend";
             this.otp_resend_button.UseVisualStyleBackColor = false;
@@ -503,9 +530,10 @@
             this.otp_verify_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.otp_verify_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otp_verify_btn.ForeColor = System.Drawing.Color.Red;
-            this.otp_verify_btn.Location = new System.Drawing.Point(470, 249);
+            this.otp_verify_btn.Location = new System.Drawing.Point(629, 306);
+            this.otp_verify_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.otp_verify_btn.Name = "otp_verify_btn";
-            this.otp_verify_btn.Size = new System.Drawing.Size(75, 36);
+            this.otp_verify_btn.Size = new System.Drawing.Size(100, 44);
             this.otp_verify_btn.TabIndex = 13;
             this.otp_verify_btn.Text = "Next";
             this.otp_verify_btn.UseVisualStyleBackColor = false;
@@ -516,9 +544,10 @@
             this.timer_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.timer_label.AutoSize = true;
             this.timer_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timer_label.Location = new System.Drawing.Point(78, 165);
+            this.timer_label.Location = new System.Drawing.Point(106, 203);
+            this.timer_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.timer_label.Name = "timer_label";
-            this.timer_label.Size = new System.Drawing.Size(278, 20);
+            this.timer_label.Size = new System.Drawing.Size(343, 25);
             this.timer_label.TabIndex = 9;
             this.timer_label.Text = "Please enter the code with in 00:00:00";
             // 
@@ -527,9 +556,10 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(106, 129);
+            this.label3.Location = new System.Drawing.Point(143, 159);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(465, 20);
+            this.label3.Size = new System.Drawing.Size(568, 25);
             this.label3.TabIndex = 10;
             this.label3.Text = "request a new code, go back and reselect a confirmation method";
             // 
@@ -538,9 +568,10 @@
             this.titlel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.titlel2.AutoSize = true;
             this.titlel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titlel2.Location = new System.Drawing.Point(106, 109);
+            this.titlel2.Location = new System.Drawing.Point(143, 134);
+            this.titlel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titlel2.Name = "titlel2";
-            this.titlel2.Size = new System.Drawing.Size(455, 20);
+            this.titlel2.Size = new System.Drawing.Size(558, 25);
             this.titlel2.TabIndex = 11;
             this.titlel2.Text = "Check your phone to get your confirmation code. If you need to ";
             // 
@@ -549,9 +580,10 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 29F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(149, 55);
+            this.label4.Location = new System.Drawing.Point(201, 68);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(365, 44);
+            this.label4.Size = new System.Drawing.Size(455, 57);
             this.label4.TabIndex = 8;
             this.label4.Text = "We sent you a code";
             // 
@@ -567,9 +599,10 @@
             this.otp_sending_panel.Controls.Add(this.user_type);
             this.otp_sending_panel.Controls.Add(this.label1);
             this.otp_sending_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.otp_sending_panel.Location = new System.Drawing.Point(0, 770);
+            this.otp_sending_panel.Location = new System.Drawing.Point(0, 947);
+            this.otp_sending_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.otp_sending_panel.Name = "otp_sending_panel";
-            this.otp_sending_panel.Size = new System.Drawing.Size(649, 384);
+            this.otp_sending_panel.Size = new System.Drawing.Size(869, 473);
             this.otp_sending_panel.TabIndex = 4;
             this.otp_sending_panel.Visible = false;
             // 
@@ -581,9 +614,10 @@
             this.back_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.back_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_button.ForeColor = System.Drawing.Color.Red;
-            this.back_button.Location = new System.Drawing.Point(221, 324);
+            this.back_button.Location = new System.Drawing.Point(297, 399);
+            this.back_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.back_button.Name = "back_button";
-            this.back_button.Size = new System.Drawing.Size(75, 36);
+            this.back_button.Size = new System.Drawing.Size(100, 44);
             this.back_button.TabIndex = 14;
             this.back_button.Text = "Back";
             this.back_button.UseVisualStyleBackColor = false;
@@ -597,9 +631,10 @@
             this.otp_sending_next_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.otp_sending_next_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otp_sending_next_btn.ForeColor = System.Drawing.Color.Red;
-            this.otp_sending_next_btn.Location = new System.Drawing.Point(327, 324);
+            this.otp_sending_next_btn.Location = new System.Drawing.Point(438, 399);
+            this.otp_sending_next_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.otp_sending_next_btn.Name = "otp_sending_next_btn";
-            this.otp_sending_next_btn.Size = new System.Drawing.Size(75, 36);
+            this.otp_sending_next_btn.Size = new System.Drawing.Size(100, 44);
             this.otp_sending_next_btn.TabIndex = 15;
             this.otp_sending_next_btn.Text = "Next";
             this.otp_sending_next_btn.UseVisualStyleBackColor = false;
@@ -610,9 +645,10 @@
             this.text_radio_button.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.text_radio_button.AutoSize = true;
             this.text_radio_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_radio_button.Location = new System.Drawing.Point(69, 226);
+            this.text_radio_button.Location = new System.Drawing.Point(94, 278);
+            this.text_radio_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.text_radio_button.Name = "text_radio_button";
-            this.text_radio_button.Size = new System.Drawing.Size(333, 24);
+            this.text_radio_button.Size = new System.Drawing.Size(409, 29);
             this.text_radio_button.TabIndex = 12;
             this.text_radio_button.Text = "Text a code to the phone number ending in ";
             this.text_radio_button.UseVisualStyleBackColor = true;
@@ -623,9 +659,10 @@
             this.email_radio_button.AutoSize = true;
             this.email_radio_button.Checked = true;
             this.email_radio_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email_radio_button.Location = new System.Drawing.Point(69, 196);
+            this.email_radio_button.Location = new System.Drawing.Point(94, 241);
+            this.email_radio_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.email_radio_button.Name = "email_radio_button";
-            this.email_radio_button.Size = new System.Drawing.Size(146, 24);
+            this.email_radio_button.Size = new System.Drawing.Size(179, 29);
             this.email_radio_button.TabIndex = 13;
             this.email_radio_button.TabStop = true;
             this.email_radio_button.Text = "Send an email to";
@@ -636,9 +673,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(66, 165);
+            this.label2.Location = new System.Drawing.Point(90, 203);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(392, 18);
+            this.label2.Size = new System.Drawing.Size(495, 24);
             this.label2.TabIndex = 11;
             this.label2.Text = "You can use the information associated with your account.";
             // 
@@ -647,18 +685,20 @@
             this.name.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.name.AutoSize = true;
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name.Location = new System.Drawing.Point(160, 84);
+            this.name.Location = new System.Drawing.Point(215, 103);
+            this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(166, 25);
+            this.name.Size = new System.Drawing.Size(214, 29);
             this.name.TabIndex = 9;
             this.name.Text = "Mustafa Hameem";
             // 
             // customer_icon_picture_box
             // 
             this.customer_icon_picture_box.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.customer_icon_picture_box.Location = new System.Drawing.Point(69, 77);
+            this.customer_icon_picture_box.Location = new System.Drawing.Point(94, 95);
+            this.customer_icon_picture_box.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.customer_icon_picture_box.Name = "customer_icon_picture_box";
-            this.customer_icon_picture_box.Size = new System.Drawing.Size(74, 71);
+            this.customer_icon_picture_box.Size = new System.Drawing.Size(99, 87);
             this.customer_icon_picture_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.customer_icon_picture_box.TabIndex = 8;
             this.customer_icon_picture_box.TabStop = false;
@@ -668,9 +708,10 @@
             this.user_type.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.user_type.AutoSize = true;
             this.user_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user_type.Location = new System.Drawing.Point(160, 119);
+            this.user_type.Location = new System.Drawing.Point(215, 146);
+            this.user_type.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.user_type.Name = "user_type";
-            this.user_type.Size = new System.Drawing.Size(47, 17);
+            this.user_type.Size = new System.Drawing.Size(56, 20);
             this.user_type.TabIndex = 10;
             this.user_type.Text = "Admin";
             // 
@@ -679,9 +720,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(61, 14);
+            this.label1.Location = new System.Drawing.Point(83, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(536, 32);
+            this.label1.Size = new System.Drawing.Size(659, 39);
             this.label1.TabIndex = 7;
             this.label1.Text = "How do you want to reset your password?";
             // 
@@ -690,9 +732,10 @@
             this.user_profile_showing_panel.Controls.Add(this.user_show_panel);
             this.user_profile_showing_panel.Controls.Add(this.guna2Panel4);
             this.user_profile_showing_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.user_profile_showing_panel.Location = new System.Drawing.Point(0, 331);
+            this.user_profile_showing_panel.Location = new System.Drawing.Point(0, 407);
+            this.user_profile_showing_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.user_profile_showing_panel.Name = "user_profile_showing_panel";
-            this.user_profile_showing_panel.Size = new System.Drawing.Size(649, 439);
+            this.user_profile_showing_panel.Size = new System.Drawing.Size(869, 540);
             this.user_profile_showing_panel.TabIndex = 0;
             this.user_profile_showing_panel.Visible = false;
             // 
@@ -700,17 +743,19 @@
             // 
             this.user_show_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.user_show_panel.Location = new System.Drawing.Point(0, 0);
+            this.user_show_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.user_show_panel.Name = "user_show_panel";
-            this.user_show_panel.Size = new System.Drawing.Size(649, 368);
+            this.user_show_panel.Size = new System.Drawing.Size(869, 453);
             this.user_show_panel.TabIndex = 4;
             // 
             // guna2Panel4
             // 
             this.guna2Panel4.Controls.Add(this.profile_showing_back_btn);
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel4.Location = new System.Drawing.Point(0, 368);
+            this.guna2Panel4.Location = new System.Drawing.Point(0, 453);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(649, 71);
+            this.guna2Panel4.Size = new System.Drawing.Size(869, 87);
             this.guna2Panel4.TabIndex = 5;
             // 
             // profile_showing_back_btn
@@ -721,9 +766,10 @@
             this.profile_showing_back_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.profile_showing_back_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.profile_showing_back_btn.ForeColor = System.Drawing.Color.White;
-            this.profile_showing_back_btn.Location = new System.Drawing.Point(197, 6);
+            this.profile_showing_back_btn.Location = new System.Drawing.Point(263, 7);
+            this.profile_showing_back_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.profile_showing_back_btn.Name = "profile_showing_back_btn";
-            this.profile_showing_back_btn.Size = new System.Drawing.Size(180, 45);
+            this.profile_showing_back_btn.Size = new System.Drawing.Size(240, 55);
             this.profile_showing_back_btn.TabIndex = 0;
             this.profile_showing_back_btn.Text = "Back";
             this.profile_showing_back_btn.Click += new System.EventHandler(this.profile_showing_back_btn_Click);
@@ -734,11 +780,12 @@
             // 
             // ForgetPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(683, 331);
+            this.ClientSize = new System.Drawing.Size(911, 407);
             this.Controls.Add(this.main_panel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "ForgetPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

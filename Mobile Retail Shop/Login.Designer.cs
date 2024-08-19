@@ -52,7 +52,7 @@
             this.login_btn.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.login_btn.ForeColor = System.Drawing.Color.White;
             this.login_btn.Location = new System.Drawing.Point(54, 262);
-            this.login_btn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.login_btn.Margin = new System.Windows.Forms.Padding(5);
             this.login_btn.Name = "login_btn";
             this.login_btn.Size = new System.Drawing.Size(320, 68);
             this.login_btn.TabIndex = 5;
@@ -69,6 +69,7 @@
             this.password_tb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.password_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.password_tb.ForeColor = System.Drawing.Color.Black;
             this.password_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.password_tb.Location = new System.Drawing.Point(27, 167);
             this.password_tb.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -91,6 +92,7 @@
             this.email_tb.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.email_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.email_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.email_tb.ForeColor = System.Drawing.Color.Black;
             this.email_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.email_tb.Location = new System.Drawing.Point(27, 92);
             this.email_tb.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -114,7 +116,7 @@
             this.customer_sign_in_btn.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.customer_sign_in_btn.ForeColor = System.Drawing.Color.White;
             this.customer_sign_in_btn.Location = new System.Drawing.Point(57, 382);
-            this.customer_sign_in_btn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.customer_sign_in_btn.Margin = new System.Windows.Forms.Padding(5);
             this.customer_sign_in_btn.Name = "customer_sign_in_btn";
             this.customer_sign_in_btn.Size = new System.Drawing.Size(320, 68);
             this.customer_sign_in_btn.TabIndex = 5;
@@ -133,7 +135,7 @@
             this.password_toggle_btn.ForeColor = System.Drawing.Color.White;
             this.password_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
             this.password_toggle_btn.Location = new System.Drawing.Point(372, 172);
-            this.password_toggle_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.password_toggle_btn.Margin = new System.Windows.Forms.Padding(4);
             this.password_toggle_btn.Name = "password_toggle_btn";
             this.password_toggle_btn.Size = new System.Drawing.Size(57, 50);
             this.password_toggle_btn.TabIndex = 17;
@@ -210,7 +212,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

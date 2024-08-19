@@ -158,15 +158,49 @@ namespace Mobile_Retail_Shop
         }
 
 
-        private void change_pasword_btn_Click(object sender, EventArgs e)
+        /*private void change_pasword_btn_Click(object sender, EventArgs e)
+        {
+            profile_panel.Visible = false;
+            password_update_panel.Visible = true;
+        }*/
+
+        private void UserProfile_Load(object sender, EventArgs e)
+        {
+            update_btn.Enabled = false;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
         {
             profile_panel.Visible = false;
             password_update_panel.Visible = true;
         }
 
-        private void UserProfile_Load(object sender, EventArgs e)
+        private void guna2ShadowPanel2_Paint(object sender, PaintEventArgs e)
         {
-            update_btn.Enabled = false;
+            
+        }
+
+        private void guna2ShadowPanel3_Paint(object sender, PaintEventArgs e)
+        {
+            // If the user clicks on guna2ShadowPanel3, show a message box
+            guna2ShadowPanel3.Click += (s, args) =>
+            {
+                MessageBox.Show("This feature is not available right now", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            };
+        }
+
+        private void guna2PictureBox3_Click(object sender, EventArgs e)
+        {
+            // If the user clicks on guna2ShadowPanel3, show a message box
+            guna2ShadowPanel3.Click += (s, args) =>
+            {
+                MessageBox.Show("This feature is not available right now", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            };
         }
 
         private void current_password_toggle_btn_Click(object sender, EventArgs e)
@@ -244,5 +278,6 @@ namespace Mobile_Retail_Shop
             password_update_panel.Visible = false;
             profile_panel.Visible = true;
         }
+       
     }
 }

@@ -162,3 +162,6 @@ D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Sho
 >>>>>>> b3a3441958f6486cf0d04901e4f860467ec28fe3
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Balance.resources
 D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.BalanceWithdraw.resources
+D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Balance.resources
+D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.BalanceWithdraw.resources
+D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopOwnerInfoDashBoard.resources
