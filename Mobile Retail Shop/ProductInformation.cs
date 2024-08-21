@@ -92,7 +92,7 @@ namespace Mobile_Retail_Shop
         {
             string error, query = $"SELECT * FROM [Product Information] WHERE ID = '{product_buy_btn.Tag.ToString()}'";
             DataBase dataBase = new DataBase() ;
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             if (!string .IsNullOrEmpty(error))
             {
@@ -101,8 +101,8 @@ namespace Mobile_Retail_Shop
             }
 
 
-            CartItem cartItem = new CartItem(productId: dataTable.Rows[0]["ID"].ToString(), productName: dataTable.Rows[0]["Company Name"].ToString() + " " + dataTable.Rows[0]["Model"].ToString(), shopId: dataTable.Rows[0]["Shop ID"].ToString(), quantity: 1, price: Convert.ToDouble(dataTable.Rows[0]["Price"]), discount: Convert.ToDouble(dataTable.Rows[0]["Discount"]));
-            cartItem.AddToCart(cart, productID: dataTable.Rows[0]["ID"].ToString(), productName: dataTable.Rows[0]["Company Name"].ToString() +" " + dataTable.Rows[0]["Model"].ToString(), shopID: dataTable.Rows[0]["Shop ID"].ToString(), quantity: 1, price: Convert.ToDouble(dataTable.Rows[0]["Price"]), discount: Convert.ToDouble(dataTable.Rows[0]["Discount"]));
+            CartItem cartItem = new CartItem(productId: dataSet.Tables[0].Rows[0]["ID"].ToString(), productName: dataSet.Tables[0].Rows[0]["Company Name"].ToString() + " " + dataSet.Tables[0].Rows[0]["Model"].ToString(), shopId: dataSet.Tables[0].Rows[0]["Shop ID"].ToString(), quantity: 1, price: Convert.ToDouble(dataSet.Tables[0].Rows[0]["Price"]), discount: Convert.ToDouble(dataSet.Tables[0].Rows[0]["Discount"]));
+            cartItem.AddToCart(cart, productID: dataSet.Tables[0].Rows[0]["ID"].ToString(), productName: dataSet.Tables[0].Rows[0]["Company Name"].ToString() +" " + dataSet.Tables[0].Rows[0]["Model"].ToString(), shopID: dataSet.Tables[0].Rows[0]["Shop ID"].ToString(), quantity: 1, price: Convert.ToDouble(dataSet.Tables[0].Rows[0]["Price"]), discount: Convert.ToDouble(dataSet.Tables[0].Rows[0]["Discount"]));
 
         }
 

@@ -55,7 +55,7 @@ namespace Mobile_Retail_Shop
                                 UI.[Phone Number]";
 
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -63,7 +63,7 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            foreach (DataRow row in dataTable.Rows)
+            foreach (DataRow row in dataSet.Tables[0].Rows)
             {
                 // (ShopInformation shopInformation, string shopID, string shopName, string shopOwnerName, string totalProduct
                 ShopAdmin shopAdmin = new ShopAdmin(shopInformation: this, shopID: row["Shop ID"].ToString(), shopName: row["Shop Name"].ToString(), shopOwnerName: row["Owner Name"].ToString(), totalProduct: row["Total Product"].ToString());
@@ -115,7 +115,7 @@ namespace Mobile_Retail_Shop
 
 
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -123,10 +123,10 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            if (dataTable.Rows.Count == 0) 
+            if (dataSet.Tables[0].Rows.Count == 0) 
                 return;
 
-            foreach (DataRow row in dataTable.Rows)
+            foreach (DataRow row in dataSet.Tables[0].Rows)
             {
                 result_panel.Controls.Clear();
                 ShopAdmin shopAdmin = new ShopAdmin(shopInformation: this, shopID: row["Shop ID"].ToString(), shopName: row["Shop Name"].ToString(), shopOwnerName: row["Owner Name"].ToString(), totalProduct: row["Total Product"].ToString());

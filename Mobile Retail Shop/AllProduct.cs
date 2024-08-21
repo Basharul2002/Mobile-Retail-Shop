@@ -31,7 +31,7 @@ namespace Mobile_Retail_Shop
         {
             string error, query = $"SELECT * FROM [Product Information] WHERE [Shop ID] = {this.shopID}";
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -40,10 +40,10 @@ namespace Mobile_Retail_Shop
             }
 
             // Iterate through each product in the DataTable
-            for (int i = 0; i < dataTable.Rows.Count; i++)
+            for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
             {
                 // Handle potential null values for the picture
-                byte[] pictureBytes = dataTable.Rows[i]["Picture"] as byte[];
+                byte[] pictureBytes = dataSet.Tables[0].Rows[i]["Picture"] as byte[];
                 Image image = null;
 
                 if (pictureBytes != null && pictureBytes.Length > 0)
@@ -58,10 +58,10 @@ namespace Mobile_Retail_Shop
                 (
                     shopOwner: true,
                     shopID: this.shopID,
-                    id: dataTable.Rows[i]["ID"].ToString(),
-                    name: dataTable.Rows[i]["Company Name"].ToString(),
-                    price: dataTable.Rows[i]["Price"].ToString(),
-                    discount: dataTable.Rows[i]["Discount"].ToString(),
+                    id: dataSet.Tables[0].Rows[i]["ID"].ToString(),
+                    name: dataSet.Tables[0].Rows[i]["Company Name"].ToString(),
+                    price: dataSet.Tables[0].Rows[i]["Price"].ToString(),
+                    discount: dataSet.Tables[0].Rows[i]["Discount"].ToString(),
                     picture: image
                 );
 
@@ -88,7 +88,7 @@ namespace Mobile_Retail_Shop
                                    CONCAT([Company Name], ' ', [Model]) LIKE {search_tb.Text})";
 
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -97,9 +97,9 @@ namespace Mobile_Retail_Shop
             }
 
 
-            for (int i = 0; i < dataTable.Rows.Count; i++)
+            for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
             {
-                ProductInformation productInformation = new ProductInformation(shopOwner: true, shopID: this.shopID, id: dataTable.Rows[i]["ID"].ToString(), name: dataTable.Rows[i]["Company Name"].ToString(), price: dataTable.Rows[i]["Price"].ToString(), discount: dataTable.Rows[i]["Discount"].ToString(), picture: Utility.ByteArrayToImage((byte[])(dataTable.Rows[i]["Picture"])));
+                ProductInformation productInformation = new ProductInformation(shopOwner: true, shopID: this.shopID, id: dataSet.Tables[0].Rows[i]["ID"].ToString(), name: dataSet.Tables[0].Rows[i]["Company Name"].ToString(), price: dataSet.Tables[0].Rows[i]["Price"].ToString(), discount: dataSet.Tables[0].Rows[i]["Discount"].ToString(), picture: Utility.ByteArrayToImage((byte[])(dataSet.Tables[0].Rows[i]["Picture"])));
                 product_result_panel.Controls.Add(productInformation);
             }
         }

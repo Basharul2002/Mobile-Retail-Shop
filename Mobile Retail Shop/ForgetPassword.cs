@@ -44,7 +44,7 @@ namespace Mobile_Retail_Shop
 
             DataBase dataBase = new DataBase();
             string error, query = $"SELECT TOP 1 * FROM [User Information] WHERE Email = '{search_box_tb.Text}' OR [Phone Number] = '{search_box_tb.Text}'";
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -52,7 +52,7 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            if (dataTable.Rows.Count == 0)
+            if (dataSet.Tables[0].Rows.Count == 0)
             {
                 MessageBox.Show("User not found", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -63,7 +63,7 @@ namespace Mobile_Retail_Shop
             user_profile_showing_panel.Visible = true;
             //         public SearchUser(ForgotPasswordUserSearch forgotPasswordUserSearchForm, string userID,  string userName, string userType) : this()
 
-            foreach (DataRow row in dataTable.Rows)
+            foreach (DataRow row in dataSet.Tables[0].Rows)
             {
                 SearchUser searchUser = new SearchUser(forgetPasswordForm: this, userID: row["ID"].ToString(), userName: row["Name"].ToString(), userType: UserType(row["User Type"].ToString()));
                 searchUser.Tag = new UserInfo { Id = row["ID"].ToString(), Name = row["Name"].ToString(), Email = row["Email"].ToString(), PhoneNumber = row["Phone Number"].ToString(),  UserType = Convert.ToInt32(row["User Type"])};

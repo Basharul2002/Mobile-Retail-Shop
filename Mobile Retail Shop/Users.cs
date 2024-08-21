@@ -38,7 +38,7 @@ namespace Mobile_Retail_Shop
                 query += $" AND (Name = '{search_tb.Text}' OR Email = '{search_tb.Text}' OR [Phone Number] = '{search_tb.Text}')";
 
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -46,10 +46,10 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            if (dataTable.Rows.Count == 0)
+            if (dataSet.Tables[0].Rows.Count == 0)
                 return;
 
-            foreach (DataRow row in dataTable.Rows)
+            foreach (DataRow row in dataSet.Tables[0].Rows)
             {
                 User user = new User(userId: row["ID"].ToString(), userName: row["Name"].ToString(), userEmail: row["Email"].ToString(), userPhoneNumber: row["Phone Number"].ToString(), city: row["City"].ToString(), password: row["Password"].ToString(), userType: userType, users: this) ;
                 result_panel.Controls.Add(user);

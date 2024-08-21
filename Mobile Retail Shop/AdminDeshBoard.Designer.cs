@@ -43,10 +43,11 @@
             this.admin_information_btn = new Guna.UI2.WinForms.Guna2Button();
             this.new_admin_btn = new Guna.UI2.WinForms.Guna2Button();
             this.admin_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.data_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.admin_picture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.admin_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.admin_picture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.data_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.admin_dashboard_btn = new Guna.UI2.WinForms.Guna2Button();
             this.left_panel.SuspendLayout();
             this.shop_panel.SuspendLayout();
             this.show_owner_panel.SuspendLayout();
@@ -65,6 +66,7 @@
             this.left_panel.Controls.Add(this.shop_owner_info_btn);
             this.left_panel.Controls.Add(this.admin_panel);
             this.left_panel.Controls.Add(this.admin_btn);
+            this.left_panel.Controls.Add(this.admin_dashboard_btn);
             this.left_panel.Controls.Add(this.guna2Panel1);
             this.left_panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.left_panel.Location = new System.Drawing.Point(0, 0);
@@ -99,7 +101,7 @@
             this.customer_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.customer_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.customer_btn.ForeColor = System.Drawing.Color.White;
-            this.customer_btn.Location = new System.Drawing.Point(0, 412);
+            this.customer_btn.Location = new System.Drawing.Point(0, 442);
             this.customer_btn.Name = "customer_btn";
             this.customer_btn.Size = new System.Drawing.Size(155, 31);
             this.customer_btn.TabIndex = 6;
@@ -111,7 +113,7 @@
             this.shop_panel.Controls.Add(this.all_shop_btn);
             this.shop_panel.Controls.Add(this.new_shop_btn);
             this.shop_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shop_panel.Location = new System.Drawing.Point(0, 344);
+            this.shop_panel.Location = new System.Drawing.Point(0, 374);
             this.shop_panel.Name = "shop_panel";
             this.shop_panel.Size = new System.Drawing.Size(155, 68);
             this.shop_panel.TabIndex = 5;
@@ -160,7 +162,7 @@
             this.shop_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.shop_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.shop_btn.ForeColor = System.Drawing.Color.White;
-            this.shop_btn.Location = new System.Drawing.Point(0, 313);
+            this.shop_btn.Location = new System.Drawing.Point(0, 343);
             this.shop_btn.Name = "shop_btn";
             this.shop_btn.Size = new System.Drawing.Size(155, 31);
             this.shop_btn.TabIndex = 4;
@@ -172,7 +174,7 @@
             this.show_owner_panel.Controls.Add(this.all_owner_info_btn);
             this.show_owner_panel.Controls.Add(this.new_owner_btn);
             this.show_owner_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.show_owner_panel.Location = new System.Drawing.Point(0, 246);
+            this.show_owner_panel.Location = new System.Drawing.Point(0, 276);
             this.show_owner_panel.Name = "show_owner_panel";
             this.show_owner_panel.Size = new System.Drawing.Size(155, 67);
             this.show_owner_panel.TabIndex = 3;
@@ -221,7 +223,7 @@
             this.shop_owner_info_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.shop_owner_info_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.shop_owner_info_btn.ForeColor = System.Drawing.Color.White;
-            this.shop_owner_info_btn.Location = new System.Drawing.Point(0, 215);
+            this.shop_owner_info_btn.Location = new System.Drawing.Point(0, 245);
             this.shop_owner_info_btn.Name = "shop_owner_info_btn";
             this.shop_owner_info_btn.Size = new System.Drawing.Size(155, 31);
             this.shop_owner_info_btn.TabIndex = 2;
@@ -233,7 +235,7 @@
             this.admin_panel.Controls.Add(this.admin_information_btn);
             this.admin_panel.Controls.Add(this.new_admin_btn);
             this.admin_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.admin_panel.Location = new System.Drawing.Point(0, 154);
+            this.admin_panel.Location = new System.Drawing.Point(0, 184);
             this.admin_panel.Name = "admin_panel";
             this.admin_panel.Size = new System.Drawing.Size(155, 61);
             this.admin_panel.TabIndex = 1;
@@ -288,21 +290,12 @@
             this.admin_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.admin_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.admin_btn.ForeColor = System.Drawing.Color.White;
-            this.admin_btn.Location = new System.Drawing.Point(0, 124);
+            this.admin_btn.Location = new System.Drawing.Point(0, 154);
             this.admin_btn.Name = "admin_btn";
             this.admin_btn.Size = new System.Drawing.Size(155, 30);
             this.admin_btn.TabIndex = 0;
             this.admin_btn.Text = "Admin";
             this.admin_btn.Click += new System.EventHandler(this.admin_btn_Click);
-            // 
-            // data_panel
-            // 
-            this.data_panel.AutoScroll = true;
-            this.data_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.data_panel.Location = new System.Drawing.Point(155, 0);
-            this.data_panel.Name = "data_panel";
-            this.data_panel.Size = new System.Drawing.Size(421, 511);
-            this.data_panel.TabIndex = 1;
             // 
             // guna2Panel1
             // 
@@ -313,6 +306,16 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(155, 124);
             this.guna2Panel1.TabIndex = 8;
+            // 
+            // admin_name
+            // 
+            this.admin_name.BackColor = System.Drawing.Color.Transparent;
+            this.admin_name.Location = new System.Drawing.Point(31, 95);
+            this.admin_name.Name = "admin_name";
+            this.admin_name.Size = new System.Drawing.Size(0, 0);
+            this.admin_name.TabIndex = 1;
+            this.admin_name.Text = null;
+            this.admin_name.Click += new System.EventHandler(this.admin_profile_Click);
             // 
             // admin_picture
             // 
@@ -325,14 +328,32 @@
             this.admin_picture.TabStop = false;
             this.admin_picture.Click += new System.EventHandler(this.admin_profile_Click);
             // 
-            // admin_name
+            // data_panel
             // 
-            this.admin_name.BackColor = System.Drawing.Color.Transparent;
-            this.admin_name.Location = new System.Drawing.Point(31, 95);
-            this.admin_name.Name = "admin_name";
-            this.admin_name.Size = new System.Drawing.Size(3, 2);
-            this.admin_name.TabIndex = 1;
-            this.admin_name.Click += new System.EventHandler(this.admin_profile_Click);
+            this.data_panel.AutoScroll = true;
+            this.data_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.data_panel.Location = new System.Drawing.Point(155, 0);
+            this.data_panel.Name = "data_panel";
+            this.data_panel.Size = new System.Drawing.Size(421, 511);
+            this.data_panel.TabIndex = 1;
+            // 
+            // admin_dashboard_btn
+            // 
+            this.admin_dashboard_btn.CustomBorderColor = System.Drawing.Color.Black;
+            this.admin_dashboard_btn.CustomBorderThickness = new System.Windows.Forms.Padding(2);
+            this.admin_dashboard_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.admin_dashboard_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.admin_dashboard_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.admin_dashboard_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.admin_dashboard_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.admin_dashboard_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.admin_dashboard_btn.ForeColor = System.Drawing.Color.White;
+            this.admin_dashboard_btn.Location = new System.Drawing.Point(0, 124);
+            this.admin_dashboard_btn.Name = "admin_dashboard_btn";
+            this.admin_dashboard_btn.Size = new System.Drawing.Size(155, 30);
+            this.admin_dashboard_btn.TabIndex = 9;
+            this.admin_dashboard_btn.Text = "DashBoard";
+            this.admin_dashboard_btn.Click += new System.EventHandler(this.admin_dashboard_btn_Click);
             // 
             // AdminDeshBoard
             // 
@@ -377,5 +398,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel admin_name;
         private Guna.UI2.WinForms.Guna2CirclePictureBox admin_picture;
+        private Guna.UI2.WinForms.Guna2Button admin_dashboard_btn;
     }
 }

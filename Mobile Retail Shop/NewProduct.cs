@@ -76,7 +76,7 @@ namespace Mobile_Retail_Shop
 
             string error, query = $"SELECT * FROM [Product Information] WHERE ID = {this.productID}";
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -86,18 +86,18 @@ namespace Mobile_Retail_Shop
 
 
            // product_picture.Image = Utility.ByteArrayToImage((byte[])(dataTable.Rows[0]["Picture"]));
-            compnay_name.Text = dataTable.Rows[0]["Company Name"].ToString();
-            model.Text = dataTable.Rows[0]["Model"].ToString();
-            sim.Text = $"SIM: {dataTable.Rows[0]["SIM"]}";
-            ram.Text = $"RAM: {dataTable.Rows[0]["RAM"]}";
-            rom.Text = $"ROM: {dataTable.Rows[0]["ROM"]}";
-            color.Text = $"COLOR: {dataTable.Rows[0]["Color"]}";
-            price.Text = $"Price: {dataTable.Rows[0]["Price"]}";
-            discount.Text = $"Discount: {dataTable.Rows[0]["Discount"]}";
+            compnay_name.Text = dataSet.Tables[0].Rows[0]["Company Name"].ToString();
+            model.Text = dataSet.Tables[0].Rows[0]["Model"].ToString();
+            sim.Text = $"SIM: {dataSet.Tables[0].Rows[0]["SIM"]}";
+            ram.Text = $"RAM: {dataSet.Tables[0].Rows[0]["RAM"]}";
+            rom.Text = $"ROM: {dataSet.Tables[0].Rows[0]["ROM"]}";
+            color.Text = $"COLOR: {dataSet.Tables[0].Rows[0]["Color"]}";
+            price.Text = $"Price: {dataSet.Tables[0].Rows[0]["Price"]}";
+            discount.Text = $"Discount: {dataSet.Tables[0].Rows[0]["Discount"]}";
 
             // Convert Total Review to decimal and Total Reviewer to int
-            totalReview = Convert.ToDouble(dataTable.Rows[0]["Total Review"]);
-            totalReviewer = Convert.ToInt32(dataTable.Rows[0]["Total Reviewer"]);
+            totalReview = Convert.ToDouble(dataSet.Tables[0].Rows[0]["Total Review"]);
+            totalReviewer = Convert.ToInt32(dataSet.Tables[0].Rows[0]["Total Reviewer"]);
 
             // Calculate the rating
             double ratingValue;

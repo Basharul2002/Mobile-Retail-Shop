@@ -19,7 +19,7 @@ namespace Mobile_Retail_Shop
             string query = "SELECT ID, Name FROM [User Information] WHERE [User Type] = 2";
 
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -27,14 +27,14 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            if (dataTable.Rows.Count == 0)
+            if (dataSet.Tables[0].Rows.Count == 0)
             {
                 owner_cb.Items.Add(new ComboBoxItem { Text = "No Owner", Value = null });
                 submit_btn.Enabled = false; // Disable button if no owner
                 return;
             }
 
-            foreach (DataRow row in dataTable.Rows)
+            foreach (DataRow row in dataSet.Tables[0].Rows)
             {
                 // Create a new ComboBox item with the name
                 var item = new ComboBoxItem

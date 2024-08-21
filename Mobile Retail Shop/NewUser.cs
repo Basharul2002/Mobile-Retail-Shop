@@ -82,18 +82,18 @@ namespace Mobile_Retail_Shop
             // Check the email exists
             DataBase dataBase = new DataBase();
             string query, error;
-            DataTable dataTable;
+           
 
             // Here check have any account input email
             query = $"SELECT TOP 1 * FROM [User Information] WHERE [Email] = '{email_tb.Text}' AND [User Type] = {userType}";
-            dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
             if (!string.IsNullOrEmpty(error))
             {
                 MessageBox.Show($"Class Name: ResistrationForm Function: DataStore 1 \nError: {error}", "Email");
                 return;
             }
 
-            if (dataTable.Rows.Count > 0)
+            if (dataSet.Tables[0].Rows.Count > 0)
             {
                 MessageBox.Show("This EMAIL is already resistered");
                 email_tb.Focus();
@@ -103,14 +103,14 @@ namespace Mobile_Retail_Shop
 
             // Check the phone number is register or not
             query = $"SELECT TOP 1 * FROM [User Information] WHERE [Phone Number] = '{phone_number_tb.Text}' AND [User Type] = {userType}";
-            dataTable = dataBase.DataAccess(query, out error);
+            dataSet = dataBase.DataAccess(query, out error);
             if (!string.IsNullOrEmpty(error))
             {
                 MessageBox.Show($"Class Name: ResistrationForm Function: DataStore 2 \nError: {error}", "Phone Number");
                 return;
             }
 
-            if (dataTable.Rows.Count > 0)
+            if (dataSet.Tables[0].Rows.Count > 0)
             {
                 MessageBox.Show("This PHONE NUMBER is already resistered");
                 phone_number_tb.Focus();

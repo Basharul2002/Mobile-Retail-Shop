@@ -52,15 +52,15 @@ namespace Mobile_Retail_Shop
                         ID = 
             {this.shopOwnerID}";
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
             if (!string.IsNullOrEmpty(error))
             {
                 MessageBox.Show($"Class ShopOwnerInfoDashBoard Function DataLoad \nError: {error}", "Shop  owner information");
                 return;
             }
-            owner_name.Text = $"Name: {dataTable.Rows[0]["Name"]}";
-            owner_email.Text = $"Email: {dataTable.Rows[0]["Email"]}";
-            owner_phone_number.Text = $"Phone Number: {dataTable.Rows[0]["Phone Number"]}";
+            owner_name.Text = $"Name: {dataSet.Tables[0].Rows[0]["Name"]}";
+            owner_email.Text = $"Email: {dataSet.Tables[0].Rows[0]["Email"]}";
+            owner_phone_number.Text = $"Phone Number: {dataSet.Tables[0].Rows[0]["Phone Number"]}";
 
             // Shop Information
             query = $@"SELECT *, 
@@ -70,7 +70,7 @@ namespace Mobile_Retail_Shop
                     FROM [Shop Information]
                     WHERE [User ID] = {this.shopOwnerID}";
 
-            dataTable = dataBase.DataAccess(query, out error);
+            dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -78,12 +78,12 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            total_shop.Text = $"Total Shop: {dataTable.Rows[0]["Total Shop"]}";
+            total_shop.Text = $"Total Shop: {dataSet.Tables[0].Rows[0]["Total Shop"]}";
 
 
             shop_panel.Visible = true;
 
-            if (dataTable.Rows.Count == 0)
+            if (dataSet.Tables[0].Rows.Count == 0)
             {
                 shop_data_panel.Visible = false;
                 zero_shop_panel.Visible = true;
@@ -94,7 +94,7 @@ namespace Mobile_Retail_Shop
 
             //         public ShopAdmin(ShopInformation shopInformation = null, string shopID = null, string shopName = null, string shopEmail = null, string shopOwnerName = null, string totalProduct = null) : this()
 
-            foreach (DataRow row in dataTable.Rows)
+            foreach (DataRow row in dataSet.Tables[0].Rows)
             {
                 ShopAdmin shopAdmin = new ShopAdmin(shopID: row["ID"].ToString(), shopName: row["Name"].ToString(), shopEmail: row["Email"].ToString());
                 shop_data_panel.Controls.Add(shopAdmin);

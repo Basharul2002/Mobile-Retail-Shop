@@ -41,7 +41,7 @@ namespace Mobile_Retail_Shop
 
             DataBase dataBase = new DataBase();
             string error;
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             // If error is not empty that means something is wrong
             // So, user requst is not valid for next 
@@ -53,7 +53,7 @@ namespace Mobile_Retail_Shop
 
             // If no data found in database based on email and password
             // So, user requst is not valid for next 
-            if (dataTable.Rows.Count <= 0)
+            if (dataSet.Tables[0].Rows.Count <= 0)
             {
                 MessageBox.Show("Invalid email or password");
                 return;
@@ -61,26 +61,26 @@ namespace Mobile_Retail_Shop
             }
 
             // User Type 1 mean user is admin
-            if (dataTable.Rows[0]["User Type"].ToString() == "1")
+            if (dataSet.Tables[0].Rows[0]["User Type"].ToString() == "1")
             {
-                AdminDeshBoard adminDeshBoard = new AdminDeshBoard(id: dataTable.Rows[0]["ID"].ToString(), name: dataTable.Rows[0]["Name"].ToString());
+                AdminDeshBoard adminDeshBoard = new AdminDeshBoard(id: dataSet.Tables[0].Rows[0]["ID"].ToString(), name: dataSet.Tables[0].Rows[0]["Name"].ToString());
                 this.Hide();
                 adminDeshBoard.Show();
 
             }
 
             // User Type 2 mean user is shop owner
-            if (dataTable.Rows[0]["User Type"].ToString() == "2")
+            if (dataSet.Tables[0].Rows[0]["User Type"].ToString() == "2")
             {
-                ShopOwner shopOwner = new ShopOwner(showOwnerID: dataTable.Rows[0]["ID"].ToString(), password: password_tb.Text);
+                ShopOwner shopOwner = new ShopOwner(showOwnerID: dataSet.Tables[0].Rows[0]["ID"].ToString(), password: password_tb.Text);
                 this.Hide();
                 shopOwner.Show();
             }
 
             // User Type 3 mean user is customer
-            if (dataTable.Rows[0]["User Type"].ToString() == "3")
+            if (dataSet.Tables[0].Rows[0]["User Type"].ToString() == "3")
             {
-                CustomerDashboard customerDashboard = new CustomerDashboard(dataTable.Rows[0]["ID"].ToString());
+                CustomerDashboard customerDashboard = new CustomerDashboard(dataSet.Tables[0].Rows[0]["ID"].ToString());
                 this.Hide();
                 customerDashboard.Show();
             }
