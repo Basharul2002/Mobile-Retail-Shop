@@ -14,7 +14,7 @@ namespace Mobile_Retail_Shop
     {
         private string customerID;
         private Dictionary<string, CartItem> cartItems;
-        private double totalPrice = 0;
+        private double totalPrice = 0, discount = 0;
 
         public Cart()
         {
@@ -51,9 +51,10 @@ namespace Mobile_Retail_Shop
                                         productPrice: cartItem.Price);
                 cart_list_panel.Controls.Add(cartList);
                 this.totalPrice += cartItem.Price;
+                this.discount += cartItem.Discount;
             }
 
-            total_price.Text = $"Total Price: {this.totalPrice}";
+            total_price.Text = $"Total Price: {this.totalPrice-this.discount}   Discount: {this.discount}";
         }
 
 
@@ -62,16 +63,11 @@ namespace Mobile_Retail_Shop
             if (!CustomerDashboard.Instance.Controls.ContainsKey("Payment"))
             {
                 CustomerDashboard.Instance.Controls.Clear();
-                Payment payment = new Payment(customerID: this.customerID, cartItems: this.cartItems, totalPrice: this.totalPrice);
+                Payment payment = new Payment(customerID: this.customerID, cartItems: this.cartItems, totalPrice: this.totalPrice-this.discount);
                 payment.Dock = DockStyle.Fill;
                 CustomerDashboard.Instance.Controls.Add(payment);
                 this.Hide();
             }
-        }
-
-        private void total_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
