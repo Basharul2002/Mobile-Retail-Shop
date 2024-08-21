@@ -33,7 +33,10 @@ namespace Mobile_Retail_Shop
             this.cart = cart; // Initialize the cart dictionary
             product_details_btn.Tag = product_buy_btn.Tag = id;
             if (shopOwner)
+            {
                 product_buy_btn.Text = "DELETE";
+                //product_edit_btn.Visible = true;
+            }
             else
                 product_buy_btn.Text = "Add Cart";
 
@@ -98,13 +101,13 @@ namespace Mobile_Retail_Shop
             }
 
 
-            CartItem cartItem = new CartItem(productId: dataTable.Rows[0]["ID"].ToString(), productName: dataTable.Rows[0]["Company Name"].ToString() + " " + dataTable.Rows[0]["Model"].ToString(), shopId: dataTable.Rows[0]["Shop ID"].ToString(), quantity: 1, price: Convert.ToDouble(dataTable.Rows[0]["Price"]));
-            cartItem.AddToCart(cart, productID: dataTable.Rows[0]["ID"].ToString(), productName: dataTable.Rows[0]["Company Name"].ToString() +" " + dataTable.Rows[0]["Model"].ToString(), shopID: dataTable.Rows[0]["Shop ID"].ToString(), quantity: 1, price: Convert.ToDouble(dataTable.Rows[0]["Price"]));
+            CartItem cartItem = new CartItem(productId: dataTable.Rows[0]["ID"].ToString(), productName: dataTable.Rows[0]["Company Name"].ToString() + " " + dataTable.Rows[0]["Model"].ToString(), shopId: dataTable.Rows[0]["Shop ID"].ToString(), quantity: 1, price: Convert.ToDouble(dataTable.Rows[0]["Price"]), discount: Convert.ToDouble(dataTable.Rows[0]["Discount"]));
+            cartItem.AddToCart(cart, productID: dataTable.Rows[0]["ID"].ToString(), productName: dataTable.Rows[0]["Company Name"].ToString() +" " + dataTable.Rows[0]["Model"].ToString(), shopID: dataTable.Rows[0]["Shop ID"].ToString(), quantity: 1, price: Convert.ToDouble(dataTable.Rows[0]["Price"]), discount: Convert.ToDouble(dataTable.Rows[0]["Discount"]));
 
         }
 
 
-
+         
         private void product_details_btn_Click(object sender, EventArgs e)
         {
 

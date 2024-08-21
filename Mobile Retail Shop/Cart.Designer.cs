@@ -59,7 +59,6 @@
             this.total_price.Size = new System.Drawing.Size(37, 18);
             this.total_price.TabIndex = 1;
             this.total_price.Text = "Total: ";
-            this.total_price.Click += new System.EventHandler(this.total_Click);
             // 
             // payment_btn
             // 

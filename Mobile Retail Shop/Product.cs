@@ -90,8 +90,8 @@ namespace Mobile_Retail_Shop
         private void add_btn_Click(object sender, EventArgs e)
         {
             remove_btn.Enabled = true;
-            CartItem cartItem = new CartItem(productId: this.productID, productName: compnay_name.Text + " " + model.Text, shopId: this.shopID, quantity: 1, price: Convert.ToDouble(price.Text.Substring(7)));
-            cartItem.AddToCart(cart, productID: this.productID, productName: compnay_name.Text + " " + model.Text, shopID: this.shopID, quantity: 1, price: Convert.ToDouble(price.Text.Substring(7)));
+            CartItem cartItem = new CartItem(productId: this.productID, productName: compnay_name.Text + " " + model.Text, shopId: this.shopID, quantity: 1, price: Convert.ToDouble(price.Text.Substring(7)), discount: Convert.ToDouble(discount.Text.Substring(10)));
+            cartItem.AddToCart(cart, productID: this.productID, productName: compnay_name.Text + " " + model.Text, shopID: this.shopID, quantity: 1, price: Convert.ToDouble(price.Text.Substring(7)), discount: Convert.ToDouble(discount.Text.Substring(10)));
             UpdateQuantityDisplay();
 
         }
@@ -100,8 +100,8 @@ namespace Mobile_Retail_Shop
         {
             if (Convert.ToInt32(this.cart[this.productID].Quantity) > 0)
             {
-                CartItem cartItem = new CartItem(productId: this.productID, productName: compnay_name.Text + " " + model.Text, shopId: this.shopID, quantity: -1, price: (-(Convert.ToDouble(price.Text.Substring(7)))));
-                cartItem.AddToCart(cart, productID: this.productID, productName: compnay_name.Text + " " + model.Text, shopID: this.shopID, quantity: -1, price: (-(Convert.ToDouble(price.Text.Substring(7)))));
+                CartItem cartItem = new CartItem(productId: this.productID, productName: compnay_name.Text + " " + model.Text, shopId: this.shopID, quantity: -1, price: (-(Convert.ToDouble(price.Text.Substring(7)))), discount: -Convert.ToDouble(discount.Text.Substring(10)));
+                cartItem.AddToCart(cart, productID: this.productID, productName: compnay_name.Text + " " + model.Text, shopID: this.shopID, quantity: -1, price: (-(Convert.ToDouble(price.Text.Substring(7)))), discount: -Convert.ToDouble(discount.Text.Substring(10)));
                 UpdateQuantityDisplay();
             }
 

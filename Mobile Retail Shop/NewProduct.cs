@@ -14,7 +14,7 @@ namespace Mobile_Retail_Shop
 {
     public partial class NewProduct : UserControl
     {
-        private bool newProduct, admin;
+        private bool newProduct, admin, shopOwner;
         private string shopID, productID;
         private int totalReviewer;
         private double totalReview;
