@@ -11,7 +11,7 @@ namespace Mobile_Retail_Shop
 {
     internal class DataBase
     {
-        public DataTable DataAccess(string query, out string error)
+        public DataSet DataAccess(string query, out string error)
         {
             try
             {
@@ -29,7 +29,7 @@ namespace Mobile_Retail_Shop
 
                             error = string.Empty;
                             connection.Close();
-                            return dataSet.Tables[0];
+                            return dataSet;
                         }
                     }
                 }

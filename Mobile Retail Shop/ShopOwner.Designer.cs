@@ -35,6 +35,8 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.admin_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.admin_picture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.dashboard_data_panel = new System.Windows.Forms.FlowLayoutPanel();
+            this.dashboard_btn = new Guna.UI2.WinForms.Guna2Button();
             this.left_panel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admin_picture)).BeginInit();
@@ -43,7 +45,7 @@
             // shop_panel
             // 
             this.shop_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.shop_panel.Location = new System.Drawing.Point(0, 124);
+            this.shop_panel.Location = new System.Drawing.Point(0, 169);
             this.shop_panel.Margin = new System.Windows.Forms.Padding(0);
             this.shop_panel.Name = "shop_panel";
             this.shop_panel.Size = new System.Drawing.Size(178, 399);
@@ -51,6 +53,7 @@
             // 
             // data_panel
             // 
+            this.data_panel.AutoScroll = true;
             this.data_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_panel.Location = new System.Drawing.Point(178, 0);
             this.data_panel.Name = "data_panel";
@@ -61,6 +64,7 @@
             // 
             this.left_panel.Controls.Add(this.log_out_btn);
             this.left_panel.Controls.Add(this.shop_panel);
+            this.left_panel.Controls.Add(this.dashboard_btn);
             this.left_panel.Controls.Add(this.guna2Panel1);
             this.left_panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.left_panel.Location = new System.Drawing.Point(0, 0);
@@ -116,11 +120,38 @@
             this.admin_picture.TabStop = false;
             this.admin_picture.Click += new System.EventHandler(this.shop_owner_profile_Click);
             // 
+            // dashboard_data_panel
+            // 
+            this.dashboard_data_panel.AutoScroll = true;
+            this.dashboard_data_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dashboard_data_panel.Location = new System.Drawing.Point(178, 0);
+            this.dashboard_data_panel.Name = "dashboard_data_panel";
+            this.dashboard_data_panel.Size = new System.Drawing.Size(622, 450);
+            this.dashboard_data_panel.TabIndex = 0;
+            // 
+            // dashboard_btn
+            // 
+            this.dashboard_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.dashboard_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.dashboard_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.dashboard_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.dashboard_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dashboard_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dashboard_btn.ForeColor = System.Drawing.Color.White;
+            this.dashboard_btn.Location = new System.Drawing.Point(0, 124);
+            this.dashboard_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.dashboard_btn.Name = "dashboard_btn";
+            this.dashboard_btn.Size = new System.Drawing.Size(178, 45);
+            this.dashboard_btn.TabIndex = 10;
+            this.dashboard_btn.Text = "DashBoard";
+            this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
+            // 
             // ShopOwner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dashboard_data_panel);
             this.Controls.Add(this.data_panel);
             this.Controls.Add(this.left_panel);
             this.Name = "ShopOwner";
@@ -144,5 +175,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel admin_name;
         private Guna.UI2.WinForms.Guna2CirclePictureBox admin_picture;
+        private System.Windows.Forms.FlowLayoutPanel dashboard_data_panel;
+        private Guna.UI2.WinForms.Guna2Button dashboard_btn;
     }
 }

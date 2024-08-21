@@ -165,3 +165,5 @@ D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Reta
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.Balance.resources
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.BalanceWithdraw.resources
 D:\project 101\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopOwnerInfoDashBoard.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.AdminDashboardDataPanel.resources
+D:\University\Github\Mobile-Retail-Shop\Mobile Retail Shop\obj\Debug\Mobile_Retail_Shop.ShopOwnerDashboardData.resources

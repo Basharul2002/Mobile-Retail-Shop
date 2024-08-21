@@ -51,7 +51,7 @@ namespace Mobile_Retail_Shop
                             SA.[Shop ID] = {this.shopID}";
 
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -59,12 +59,12 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            currentBalance = Convert.ToDouble(dataTable.Rows[0]["Current Balance"]);
+            currentBalance = Convert.ToDouble(dataSet.Tables[0].Rows[0]["Current Balance"]);
 
 
-            current_balance.Text = $"Current Balance: {dataTable.Rows[0]["Current Balance"]}";
-            total_earn.Text = $"Total Earn: {currentBalance + Convert.ToDouble(dataTable.Rows[0]["Total Withdraw"])}";
-            total_product_sell.Text = $"Total Product Sell: {dataTable.Rows[0]["Total Quantity"]}";
+            current_balance.Text = $"Current Balance: {dataSet.Tables[0].Rows[0]["Current Balance"]}";
+            total_earn.Text = $"Total Earn: {currentBalance + Convert.ToDouble(dataSet.Tables[0].Rows[0]["Total Withdraw"])}";
+            total_product_sell.Text = $"Total Product Sell: {dataSet.Tables[0].Rows[0]["Total Quantity"]}";
 
         }
 

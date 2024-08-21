@@ -54,8 +54,10 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDashboardDataPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminDashboardDataPanel.Designer.cs">
+      <DependentUpon>AdminDashboardDataPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminDeshBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +219,12 @@
     <Compile Include="ShopOwner.Designer.cs">
       <DependentUpon>ShopOwner.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShopOwnerDashboardData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShopOwnerDashboardData.Designer.cs">
+      <DependentUpon>ShopOwnerDashboardData.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShopOwnerInfoDashBoard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -236,6 +250,9 @@
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility.cs" />
+    <EmbeddedResource Include="AdminDashboardDataPanel.resx">
+      <DependentUpon>AdminDashboardDataPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminDeshBoard.resx">
       <DependentUpon>AdminDeshBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -314,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ShopOwner.resx">
       <DependentUpon>ShopOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopOwnerDashboardData.resx">
+      <DependentUpon>ShopOwnerDashboardData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ShopOwnerInfoDashBoard.resx">
       <DependentUpon>ShopOwnerInfoDashBoard.cs</DependentUpon>

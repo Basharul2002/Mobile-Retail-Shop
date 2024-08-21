@@ -28,6 +28,7 @@ namespace Mobile_Retail_Shop
         private void AdminDeshBoard_Load(object sender, EventArgs e)
         {
             obj = this;
+            DataLoad();
         }
 
         public static AdminDeshBoard Instance
@@ -79,6 +80,13 @@ namespace Mobile_Retail_Shop
             }
         }
 
+        private void DataLoad()
+        {
+            Instance.panelContainer.Controls.Clear();
+            AdminDashboardDataPanel adminDashboardDataPanel = new AdminDashboardDataPanel();
+            adminDashboardDataPanel.Dock = DockStyle.Fill;
+            Instance.panelContainer.Controls.Add(adminDashboardDataPanel);
+        }
         private void new_admin_btn_Click(object sender, EventArgs e)
         {
             Instance.panelContainer.Controls.Clear();
@@ -164,6 +172,11 @@ namespace Mobile_Retail_Shop
         {
             UserProfile userProfile = new UserProfile(this.id);
             userProfile.ShowDialog();
+        }
+
+        private void admin_dashboard_btn_Click(object sender, EventArgs e)
+        {
+            DataLoad();
         }
     }
     

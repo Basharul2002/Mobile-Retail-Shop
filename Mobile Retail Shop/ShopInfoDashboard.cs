@@ -49,7 +49,7 @@ namespace Mobile_Retail_Shop
                         SI.ID = {this.shopID}";
 
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -60,23 +60,23 @@ namespace Mobile_Retail_Shop
             
             
 
-            this.ownerID = dataTable.Rows[0]["Owner ID"].ToString();
+            this.ownerID = dataSet.Tables[0].Rows[0]["Owner ID"].ToString();
 
-            owner_name.Text = $"Name: {dataTable.Rows[0]["Owner Name"]}";
-            owner_email.Text = $"Email: {dataTable.Rows[0]["Owner Email"]}";
-            owner_phone_number.Text = $"Phone Number: {dataTable.Rows[0]["Owner Phone Number"]}";
+            owner_name.Text = $"Name: {dataSet.Tables[0].Rows[0]["Owner Name"]}";
+            owner_email.Text = $"Email: {dataSet.Tables[0].Rows[0]["Owner Email"]}";
+            owner_phone_number.Text = $"Phone Number: {dataSet.Tables[0].Rows[0]["Owner Phone Number"]}";
 
-            shop_name.Text = $"Name: {dataTable.Rows[0]["Shop Name"]}";
-            shop_email.Text = $"Email: {dataTable.Rows[0]["Shop Email"]}";
-            shop_phone_number.Text = $"Phone Number: {dataTable.Rows[0]["Shop Phone Number"]}";
-            shop_address.Text = $"Address: {dataTable.Rows[0]["Shop City"]}";
+            shop_name.Text = $"Name: {dataSet.Tables[0].Rows[0]["Shop Name"]}";
+            shop_email.Text = $"Email: {dataSet.Tables[0].Rows[0]["Shop Email"]}";
+            shop_phone_number.Text = $"Phone Number: {dataSet.Tables[0].Rows[0]["Shop Phone Number"]}";
+            shop_address.Text = $"Address: {dataSet.Tables[0].Rows[0]["Shop City"]}";
 
 
 
 
             // Query for find number of shop for this user
             query = $"SELECT COUNT(ID) AS [Number of Shop] FROM [Shop Information] WHERE [User ID] = '{this.ownerID}'";
-            dataTable = dataBase.DataAccess(query, out error);
+            dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -84,24 +84,24 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            number_of_shop.Text = $"Number of Shop: {dataTable.Rows[0]["Number of Shop"]}";
+            number_of_shop.Text = $"Number of Shop: {dataSet.Tables[0].Rows[0]["Number of Shop"]}";
 
 
 
             //  Query for find number of product for this shop
             query = $"SELECT COUNT(ID) AS [Number of Product] FROM [Product Information] WHERE [Shop ID] = '{shopID}'";
 
-            dataTable = dataBase.DataAccess(query, out error);
+            dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
                 MessageBox.Show($"Class ShopInfoDashboard Function DataLoad \nError: {error}", "number of product");
                 return;
             }
-            total_product.Text = $"Total Product: {dataTable.Rows[0]["Number of Product"].ToString()}";
+            total_product.Text = $"Total Product: {dataSet.Tables[0].Rows[0]["Number of Product"].ToString()}";
 
 
-            if (dataTable.Rows.Count == 0)
+            if (dataSet.Tables[0].Rows.Count == 0)
             {
                 data_result.Visible = false;
                 no_product_panel.Visible = true;
@@ -115,7 +115,7 @@ namespace Mobile_Retail_Shop
 
             // Product information show
             query = $"SELECT * FROM [Product Information] WHERE [Shop ID] = '{shopID}'";
-            dataTable = dataBase.DataAccess(query, out error);
+            dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrEmpty(error))
             {
@@ -123,7 +123,7 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            foreach (DataRow row in dataTable.Rows)
+            foreach (DataRow row in dataSet.Tables[0].Rows)
             {
                 NewProduct product = new NewProduct(admin: true, productID: row["ID"].ToString());
                 data_result.Controls.Add(product);

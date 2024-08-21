@@ -31,7 +31,7 @@ namespace Mobile_Retail_Shop
             query = $"SELECT * FROM [User Information] WHERE ID = {this.userID}";
 
             DataBase dataBase = new DataBase();
-            DataTable dataTable = dataBase.DataAccess(query, out error);
+            DataSet dataSet = dataBase.DataAccess(query, out error);
 
             if (!string.IsNullOrWhiteSpace(error))
             {
@@ -39,11 +39,11 @@ namespace Mobile_Retail_Shop
                 return;
             }
 
-            this.name = name_tb.Text = dataTable.Rows[0]["Name"].ToString();
-            this.email = email_tb.Text = dataTable.Rows[0]["Email"].ToString();
-            this.phoneNumber = phone_number_tb.Text = dataTable.Rows[0]["Phone Number"].ToString();
-            this.city = city_tb.Text = dataTable.Rows[0]["City"].ToString();
-            this.password = dataTable.Rows[0]["Password"].ToString();
+            this.name = name_tb.Text = dataSet.Tables[0].Rows[0]["Name"].ToString();
+            this.email = email_tb.Text = dataSet.Tables[0].Rows[0]["Email"].ToString();
+            this.phoneNumber = phone_number_tb.Text = dataSet.Tables[0].Rows[0]["Phone Number"].ToString();
+            this.city = city_tb.Text = dataSet.Tables[0].Rows[0]["City"].ToString();
+            this.password = dataSet.Tables[0].Rows[0]["Password"].ToString();
         }
 
         private void name_tb_TextChanged(object sender, EventArgs e)

@@ -129,18 +129,18 @@ namespace Mobile_Retail_Shop
             // Check the email exists
             DataBase dataBase = new DataBase();
             string query, error;
-            DataTable dataTable;
 
             // Check if the email is already registered
-            query = $"SELECT TOP 1 * FROM [User Information] WHERE [Email] = '{email_tb.Text}'";
-            dataTable = dataBase.DataAccess(query, out error);
+            query = $@"
+                    SELECT TOP 1 * FROM [User Information] WHERE [Email] = '{email_tb.Text}'";
+            DataSet dataSet = dataBase.DataAccess(query, out error);
             if (!string.IsNullOrEmpty(error))
             {
                 MessageBox.Show($"Class Name: RegistrationForm Function: DataStore 1 \nError: {error}", "Email");
                 return;
             }
 
-            if (dataTable.Rows.Count > 0)
+            if (dataSet.Tables[0].Rows.Count > 0)
             {
                 MessageBox.Show("This EMAIL is already registered");
                 email_tb.Focus();
@@ -149,14 +149,14 @@ namespace Mobile_Retail_Shop
 
             // Check if the phone number is already registered
             query = $"SELECT TOP 1 * FROM [User Information] WHERE [Phone Number] = '{phone_number_tb.Text}' AND [User Type] = {3}";
-            dataTable = dataBase.DataAccess(query, out error);
+            dataSet = dataBase.DataAccess(query, out error);
             if (!string.IsNullOrEmpty(error))
             {
                 MessageBox.Show($"Class Name: RegistrationForm Function: DataStore 2 \nError: {error}", "Phone Number");
                 return;
             }
 
-            if (dataTable.Rows.Count > 0)
+            if (dataSet.Tables[0].Rows.Count > 0)
             {
                 MessageBox.Show("This PHONE NUMBER is already registered");
                 phone_number_tb.Focus();
