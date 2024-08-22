@@ -99,5 +99,10 @@ namespace Mobile_Retail_Shop
             ForgetPassword forgetPassword = new ForgetPassword();
             forgetPassword.Show();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
